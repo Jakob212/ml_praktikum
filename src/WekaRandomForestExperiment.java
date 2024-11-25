@@ -4,6 +4,8 @@ import weka.core.converters.CSVLoader;
 import weka.core.Instances;
 import java.io.File;
 import java.util.Random;
+import weka.filters.Filter;
+import weka.filters.unsupervised.attribute.NumericToNominal;
 
 public class WekaRandomForestExperiment {
 
@@ -11,7 +13,7 @@ public class WekaRandomForestExperiment {
         // 1. Daten laden
         System.out.println("Daten werden geladen...");
         CSVLoader loader = new CSVLoader();
-        File file = new File("ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\eye_movements.csv");
+        File file = new File("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\jannis.csv");
 
         // Datei überprüfen
         if (!file.exists()) {
@@ -21,13 +23,22 @@ public class WekaRandomForestExperiment {
 
         loader.setSource(file);
         Instances data = loader.getDataSet();
+        // Klassenattribut in nominales Attribut umwandeln
+        NumericToNominal convert = new NumericToNominal();
+        convert.setAttributeIndices("" + (data.numAttributes())); // Konvertiere die letzte Spalte
+        convert.setInputFormat(data);
+        data = Filter.useFilter(data, convert);
+
+        // Klassenattribut setzen (nach Konvertierung)
+        data.setClassIndex(data.numAttributes() - 1);
+
         System.out.println("Daten geladen: " + data.numInstances() + " Instanzen, " + data.numAttributes() + " Attribute.");
 
         // Klassenattribut setzen (letzte Spalte)
         data.setClassIndex(data.numAttributes() - 1);
 
         // 2. Parameter
-        int nExperiments = 10;
+        int nExperiments = 100;
         double[] buildTimes = new double[nExperiments];
         double[] evaluateTimes = new double[nExperiments];
         double[] accuracies = new double[nExperiments];
