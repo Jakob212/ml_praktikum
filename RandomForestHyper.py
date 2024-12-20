@@ -1,6 +1,5 @@
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import GridSearchCV, train_test_split
-from sklearn.metrics import accuracy_score
+from sklearn.model_selection import GridSearchCV
 import pandas as pd
 import numpy as np
 
@@ -11,17 +10,17 @@ y = data['class']
 
 # Hyperparameter-Gitter
 param_grid = {
-    'n_estimators': [100],
-    'max_depth': [None, 10],
-    'criterion': ['gini'],
-    'max_features': ['sqrt']
+    'n_estimators': [100, 200, 300],
+    'max_depth': [None, 10, 20, 30],
+    'criterion': ['gini', 'entropy'],
+    'max_features': ['sqrt', 'log2']
 }
 
 accuracies = []
 best_params_list = []
 
-# Mehrere Durchläufe (z. B. 10 Iterationen)
-for i in range(1):
+# 10 Durchläufe
+for i in range(10):
     # Zufälliges Shufflen der Daten in jedem Durchlauf
     X_shuffled, y_shuffled = X.sample(frac=1, random_state=i), y.sample(frac=1, random_state=i)
     
