@@ -24,6 +24,10 @@ for dataset in datasets:
     X = data.drop(target_column, axis=1)
     y = data[target_column]
 
+        # Klassen anzeigen
+    print(f"Klassen: {y.unique()}")
+    print(f"Verteilung: \n{y.value_counts()}")
+
 
 # Hyperparameter-Gitter
 param_grid = {
