@@ -5,15 +5,16 @@ import numpy as np
 
 # Daten laden
 datasets = [
+    'dataset/clf_num/pol.csv',
     'dataset/clf_cat/compas-two-years.csv',
-    'dataset/clf_cat/electricity.csv',    
-    'dataset/clf_num/covertype.csv'
+    'dataset/clf_cat/electricity.csv' 
+    
 ]
 
 target_columns = {
     'dataset/clf_cat/electricity.csv': 'class',
     'dataset/clf_cat/compas-two-years.csv': 'twoyearrecid',
-    'dataset/clf_num/covertype.csv': 'Y'
+    'dataset/clf_num/pol.csv': 'binaryClass'
 }
 
 
