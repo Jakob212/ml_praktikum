@@ -13,7 +13,7 @@ public class WekaRandomForestExperiment {
         // 1. Daten laden
         System.out.println("Daten werden geladen...");
         CSVLoader loader = new CSVLoader();
-        File file = new File("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\jannis.csv");
+        File file = new File("../dataset/clf_num/pol.csv");
 
         // Datei überprüfen
         if (!file.exists()) {
