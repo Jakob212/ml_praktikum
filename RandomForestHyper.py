@@ -6,7 +6,7 @@ import numpy as np
 # Daten laden
 datasets = [
     'dat/covertype.csv',
-    'dat/wine.csv',
+    'dat/wine_quality.csv',
     'dat/letter-recognition.csv'
     
 ]
