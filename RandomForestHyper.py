@@ -5,13 +5,13 @@ import numpy as np
 
 # Daten laden
 datasets = [
-    'dat/covertype.csv',
     'dataset/clf_cat/compas-two-years.csv',
+    'dataset/clf_cat/electricity.csv',    
     'dataset/clf_num/covertype.csv'
 ]
 
 target_columns = {
-    'dat/covertype.csv': 'class',
+    'dataset/clf_cat/electricity.csv': 'class',
     'dataset/clf_cat/compas-two-years.csv': 'twoyearrecid',
     'dataset/clf_num/covertype.csv': 'Y'
 }
