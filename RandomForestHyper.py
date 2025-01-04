@@ -10,13 +10,20 @@ datasets = [
     'dat/wine.csv'
 ]
 
+target_columns = {
+    'dat/covertype.csv': 'class',
+    'dat/letter-recognition.csv': 'yedgex',
+    'dat/wine.csv': 'Proline'
+}
+
 for dataset in datasets:
+    target_column = target_columns[dataset]
     print(f"Verarbeite Datensatz: {dataset}")
-    
-    # Daten laden
+
     data = pd.read_csv(dataset)
-    X = data.drop('class', axis=1)
-    y = data['class']
+    X = data.drop(target_column, axis=1)
+    y = data[target_column]
+
 
 # Hyperparameter-Gitter
 param_grid = {
