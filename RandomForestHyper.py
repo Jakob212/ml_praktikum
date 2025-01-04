@@ -14,14 +14,14 @@ with open(log_file, "w") as log:
 # Daten laden
 datasets = [
     'dat/covertype.csv',
-    'dat/letter-recognition.csv',
-    'dat/wine.csv'
+    'dataset/clf_cat/compas-two-years.csv',
+    'dataset/clf_num/covertype.csv'
 ]
 
 target_columns = {
     'dat/covertype.csv': 'class',
-    'dat/letter-recognition.csv': 'yedgex',
-    'dat/wine.csv': 'Proline'
+    'dataset/clf_cat/compas-two-years.csv': 'twoyearrecid',
+    'dataset/clf_num/covertype.csv': 'Y'
 }
 
 # Gesamtzeit messen
