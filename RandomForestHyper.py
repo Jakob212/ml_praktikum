@@ -4,12 +4,6 @@ import pandas as pd
 import numpy as np
 import time
 
-# Datei für Zwischenergebnisse öffnen
-log_file = "results_log.txt"
-
-with open(log_file, "w") as log:
-    log.write("Hyperparameter-Tuning Ergebnisse\n")
-    log.write("===============================\n")
 
 # Daten laden
 datasets = [
@@ -31,10 +25,6 @@ for dataset in datasets:
     target_column = target_columns[dataset]
     print(f"Verarbeite Datensatz: {dataset}")
 
-    # Ergebnisse ins Log schreiben
-    with open(log_file, "a") as log:
-        log.write(f"\nVerarbeite Datensatz: {dataset}\n")
-
     data = pd.read_csv(dataset)
     X = data.drop(target_column, axis=1)
     y = data[target_column]
@@ -43,9 +33,6 @@ for dataset in datasets:
     print(f"Klassen: {y.unique()}")
     print(f"Verteilung: \n{y.value_counts()}")
 
-    with open(log_file, "a") as log:
-        log.write(f"Klassen: {y.unique()}\n")
-        log.write(f"Verteilung:\n{y.value_counts().to_string()}\n")
 
     # Hyperparameter-Gitter
     param_grid = {
@@ -87,13 +74,6 @@ for dataset in datasets:
         accuracies.append(grid.best_score_)
         best_params_list.append(grid.best_params_)
 
-        # Zwischenergebnisse ins Log schreiben
-        with open(log_file, "a") as log:
-            log.write(f"\nDurchlauf {i + 1}:\n")
-            log.write(f"Beste Genauigkeit: {grid.best_score_:.4f}\n")
-            log.write(f"Beste Hyperparameter: {grid.best_params_}\n")
-            log.write(f"Dauer des Durchlaufs: {run_duration:.2f} Sekunden\n")
-
     # Durchschnittliche Ergebnisse
     mean_accuracy = np.mean(accuracies)
     dataset_end_time = time.time()
@@ -102,14 +82,6 @@ for dataset in datasets:
     print(f"Durchschnittliche Genauigkeit: {mean_accuracy:.4f}")
     print(f"Beste Hyperparameter pro Durchlauf: {best_params_list}")
 
-    with open(log_file, "a") as log:
-        log.write(f"\nDurchschnittliche Genauigkeit: {mean_accuracy:.4f}\n")
-        log.write(f"Beste Hyperparameter pro Durchlauf: {best_params_list}\n")
-        log.write(f"Dauer für Datensatz: {dataset_duration:.2f} Sekunden\n")
-
 # Gesamtzeit berechnen
 total_end_time = time.time()
 total_duration = total_end_time - total_start_time
-
-with open(log_file, "a") as log:
-    log.write(f"\nGesamtdauer des Programms: {total_duration:.2f} Sekunden\n")
