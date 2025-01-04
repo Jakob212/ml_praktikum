@@ -1,13 +1,13 @@
 #!/bin/bash
 #SBATCH --job-name=ml_repo_job       # Name des Jobs
-#SBATCH --output=ml_repo_output_%j.log  # Standard-Ausgabe in eine Datei mit Job-ID
-#SBATCH --reservation=mlcourse         # Nutze die Reservation "mlcourse"
+#SBATCH --output=ml_repo_output_%j.log  # Ausgabe-Log mit Job-ID
+#SBATCH --reservation=mlcourse         # Reservation für deinen Kurs
 #SBATCH --time=02:00:00                # Maximale Laufzeit: 2 Stunden
-#SBATCH --partition=short              # Partition für CPU-Jobs
-#SBATCH --nodes=1                      # Anzahl der zu nutzenden Knoten
-#SBATCH --ntasks=1                     # Anzahl der Tasks
-#SBATCH --cpus-per-task=2              # Anzahl der CPUs pro Task
-#SBATCH --mem=16GB                     # Speicherbedarf pro Knoten
+#SBATCH --partition=parallel           # Partition für parallele CPU-Jobs
+#SBATCH --nodes=1                      # 1 Knoten verwenden
+#SBATCH --ntasks=1                     # 1 Task pro Knoten
+#SBATCH --cpus-per-task=4              # 4 CPUs pro Task
+#SBATCH --mem=16GB                     # Speicherbedarf
 
 # Modul laden (angepasst auf die erforderliche Python-Version)
 module load lang/Python/3.11.3-GCCcore-12.3.0
