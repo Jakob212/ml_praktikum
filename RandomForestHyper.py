@@ -6,8 +6,9 @@ import numpy as np
 # Daten laden
 datasets = [
     'dat/covertype.csv',
-    'dat/letter-recognition.csv',
-    'dat/wine.csv'
+    'dat/wine.csv',
+    'dat/letter-recognition.csv'
+    
 ]
 
 target_columns = {
