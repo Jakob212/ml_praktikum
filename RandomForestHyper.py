@@ -17,38 +17,41 @@ target_columns = {
     'dataset/clf_num/pol.csv': 'binaryClass'
 }
 
-# Hyperparameter-Gitter
-param_grid = {
-    'n_estimators': [50, 100, 150],
-    'min_samples_leaf': [10, 30],
-    'max_features': ['sqrt', 'log2']
-}
-
+# Funktion zur Verarbeitung eines einzelnen Datensatzes
 def process_dataset(dataset, target_column):
     print(f"Verarbeite Datensatz: {dataset}")
 
-    data = pd.read_csv(dataset)
-    X = data.drop(target_column, axis=1)
-    y = data[target_column]
+    data = pd.read_csv(dataset).copy()  # Kopiere Daten, um Konflikte zu vermeiden
+    X = data.drop(target_column, axis=1).copy()
+    y = data[target_column].copy()
 
     # Klassen anzeigen
     print(f"Klassen: {y.unique()}")
     print(f"Verteilung: \n{y.value_counts()}")
 
+    # Hyperparameter-Gitter
+    param_grid = {
+        'n_estimators': [50, 100, 150],
+        'min_samples_leaf': [10, 30],
+        'max_features': ['sqrt', 'log2']
+    }
+
     accuracies = []
     best_params_list = []
 
-    for i in range(15):  # Schleife auf 15 erweitert
+    # 10 Durchläufe
+    for i in range(10):
         # Zufälliges Shufflen der Daten in jedem Durchlauf
-        X_shuffled, y_shuffled = X.sample(frac=1, random_state=i), y.sample(frac=1, random_state=i)
+        random_state = 42 + i  # Eindeutiger Seed für jeden Durchlauf
+        X_shuffled, y_shuffled = X.sample(frac=1, random_state=random_state), y.sample(frac=1, random_state=random_state)
 
         # GridSearchCV initialisieren
         grid = GridSearchCV(
             estimator=RandomForestClassifier(random_state=42),
             param_grid=param_grid,
-            cv=10,  # 10-fache Kreuzvalidierung
+            cv=10,               # 10-fache Kreuzvalidierung
             scoring='accuracy',
-            n_jobs=-1  # Parallelisiere GridSearchCV
+            n_jobs=2            # Parallele Verarbeitung innerhalb von GridSearch
         )
 
         # Training und Suche
@@ -61,17 +64,10 @@ def process_dataset(dataset, target_column):
     # Durchschnittliche Ergebnisse
     mean_accuracy = np.mean(accuracies)
 
-    print(f"Durchschnittliche Genauigkeit: {mean_accuracy:.4f}")
-    print(f"Beste Hyperparameter pro Durchlauf: {best_params_list}")
-    return dataset, mean_accuracy, best_params_list
+    print(f"Durchschnittliche Genauigkeit von {dataset}: {mean_accuracy:.4f}")
+    print(f"Beste Hyperparameter pro Durchlauf: {best_params_list}\n")
 
-# Parallelisierte Verarbeitung aller Datensätze
-results = Parallel(n_jobs=-1)(
+# Parallele Verarbeitung aller Datensätze
+results = Parallel(n_jobs=2, prefer="processes")(  # Nutzt alle verfügbaren Kerne
     delayed(process_dataset)(dataset, target_columns[dataset]) for dataset in datasets
 )
-
-# Ergebnisse zusammenfassen
-for dataset, mean_accuracy, best_params_list in results:
-    print(f"Ergebnisse für {dataset}:")
-    print(f"Durchschnittliche Genauigkeit: {mean_accuracy:.4f}")
-    print(f"Beste Hyperparameter pro Durchlauf: {best_params_list}")

@@ -6,7 +6,7 @@
 #SBATCH --partition=short              # Partition für CPU-Jobs
 #SBATCH --nodes=1                      # Anzahl der zu nutzenden Knoten
 #SBATCH --ntasks=1                     # Anzahl der Tasks
-#SBATCH --cpus-per-task=4              # Anzahl der CPUs pro Task
+#SBATCH --cpus-per-task=2              # Anzahl der CPUs pro Task
 #SBATCH --mem=16GB                     # Speicherbedarf pro Knoten
 
 # Modul laden (angepasst auf die erforderliche Python-Version)
