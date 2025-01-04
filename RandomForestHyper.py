@@ -2,8 +2,6 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import GridSearchCV
 import pandas as pd
 import numpy as np
-import time
-
 
 # Daten laden
 datasets = [
@@ -18,8 +16,6 @@ target_columns = {
     'dataset/clf_num/covertype.csv': 'Y'
 }
 
-# Gesamtzeit messen
-total_start_time = time.time()
 
 for dataset in datasets:
     target_column = target_columns[dataset]
@@ -44,8 +40,6 @@ for dataset in datasets:
     accuracies = []
     best_params_list = []
 
-    # Zeitmessung pro Datensatz
-    dataset_start_time = time.time()
 
     # 10 Durchläufe
     for i in range(1):
@@ -60,28 +54,16 @@ for dataset in datasets:
             scoring='accuracy',
         )
         
-        # Zeitmessung pro Durchlauf
-        run_start_time = time.time()
         
         # Training und Suche
         grid.fit(X_shuffled, y_shuffled)
         
-        # Durchlaufzeit berechnen
-        run_end_time = time.time()
-        run_duration = run_end_time - run_start_time
-
         # Ergebnisse speichern
         accuracies.append(grid.best_score_)
         best_params_list.append(grid.best_params_)
 
     # Durchschnittliche Ergebnisse
     mean_accuracy = np.mean(accuracies)
-    dataset_end_time = time.time()
-    dataset_duration = dataset_end_time - dataset_start_time
 
     print(f"Durchschnittliche Genauigkeit: {mean_accuracy:.4f}")
     print(f"Beste Hyperparameter pro Durchlauf: {best_params_list}")
-
-# Gesamtzeit berechnen
-total_end_time = time.time()
-total_duration = total_end_time - total_start_time
