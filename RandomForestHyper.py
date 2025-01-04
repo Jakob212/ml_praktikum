@@ -14,7 +14,7 @@ datasets = [
 target_columns = {
     'dat/covertype.csv': 'class',
     'dat/letter-recognition.csv': 'yedgex',
-    'dat/wine.csv': 'Proline'
+    'dat/wine.csv': 'quality'
 }
 
 for dataset in datasets:
