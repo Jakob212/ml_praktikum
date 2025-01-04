@@ -14,7 +14,7 @@ datasets = [
 target_columns = {
     'dat/covertype.csv': 'class',
     'dataset/clf_num/covertype.csv': 'Y',
-    'dataset/compas-two-years.csv': 'twoyearrecid'
+    'dataset/clf_cat/compas-two-years.csv': 'twoyearrecid'
 }
 
 for dataset in datasets:
