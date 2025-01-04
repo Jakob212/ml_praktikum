@@ -4,15 +4,24 @@ import pandas as pd
 import numpy as np
 
 # Daten laden
-data = pd.read_csv('dataset/clf_num/jannis.csv')
-X = data.drop('class', axis=1)
-y = data['class']
+datasets = [
+    'dat/covertype.csv',
+    'dat/letter-recognition.csv',
+    'dat/wine.csv'
+]
+
+for dataset in datasets:
+    print(f"Verarbeite Datensatz: {dataset}")
+    
+    # Daten laden
+    data = pd.read_csv(dataset)
+    X = data.drop('class', axis=1)
+    y = data['class']
 
 # Hyperparameter-Gitter
 param_grid = {
-    'n_estimators': [100, 200, 300],
-    'max_depth': [None, 10, 20, 30],
-    'criterion': ['gini', 'entropy'],
+    'n_estimators': [50, 100, 150],
+    'min_samples_leaf': [10, 30],
     'max_features': ['sqrt', 'log2']
 }
 
@@ -20,7 +29,7 @@ accuracies = []
 best_params_list = []
 
 # 10 Durchläufe
-for i in range(10):
+for i in range(1):
     # Zufälliges Shufflen der Daten in jedem Durchlauf
     X_shuffled, y_shuffled = X.sample(frac=1, random_state=i), y.sample(frac=1, random_state=i)
     
