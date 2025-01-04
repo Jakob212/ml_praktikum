@@ -71,6 +71,7 @@ for dataset in datasets:
             param_grid=param_grid,
             cv=10,               # 10-fache Kreuzvalidierung
             scoring='accuracy',
+            n_jobs=-1
         )
         
         # Zeitmessung pro Durchlauf
