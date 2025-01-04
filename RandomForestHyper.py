@@ -6,15 +6,15 @@ import numpy as np
 # Daten laden
 datasets = [
     'dat/covertype.csv',
-    'dat/wine_quality.csv',
-    'dat/letter-recognition.csv'
+    'dataset/clf_cat/compas-two-years.csv',
+    'dataset/clf_num/covertype.csv'
     
 ]
 
 target_columns = {
     'dat/covertype.csv': 'class',
-    'dat/letter-recognition.csv': 'yedgex',
-    'dat/wine_quality.csv': 'quality'
+    'dataset/clf_num/covertype.csv': 'Y',
+    'dataset/compas-two-years.csv': 'twoyearrecid'
 }
 
 for dataset in datasets:
