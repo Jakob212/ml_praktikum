@@ -10,7 +10,6 @@ datasets = [
 
 target_columns = {
     'dataset/clf_num/covertype.csv': 'Y'
-=======
 }
 
 
