@@ -6,11 +6,11 @@ import numpy as np
 # Daten laden
 datasets = [
     'dataset/clf_num/covertype.csv'
-    
 ]
 
 target_columns = {
     'dataset/clf_num/covertype.csv': 'Y'
+=======
 }
 
 
