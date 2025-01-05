@@ -1,4 +1,3 @@
-package ml_praktikum_jagoetz_wkathari;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.trees.RandomForest;
@@ -13,7 +12,7 @@ import java.util.Random;
 public class WekaRandomForestGridSearch {
     public static void main(String[] args) throws Exception {
         // Pfad zur CSV-Datei anpassen
-        String csvFile = "C:\\Users\\jakob\\Documents\\Praktikum\\ML_Praktikum\\ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\jannis.csv";
+        String csvFile = "../dataset/clf_num/pol.csv";
                         
 
         // CSV laden
