@@ -5,12 +5,12 @@ import numpy as np
 
 # Daten laden
 datasets = [
-    'dataset/clf_num/Higgs.csv'
+    'dat/covertype.csv'
     
 ]
 
 target_columns = {
-    'dataset/clf_num/Higgs.csv': 'target'
+    'dataset/clf_num/Higgs.csv': 'target    '
 }
 
 
