@@ -26,31 +26,14 @@ public class WekaRandomForestHyper {
         loader.setSource(file);
         Instances data = loader.getDataSet();
 
-        // Klassenattribut dynamisch auswählen
-        String targetColumn = "Target"; // Zielspalte, anpassbar
-        int targetIndex = -1;
-        for (int i = 0; i < data.numAttributes(); i++) {
-            if (data.attribute(i).name().equalsIgnoreCase(targetColumn)) {
-                targetIndex = i;
-                break;
-            }
-        }
+        // Klassenattribut in nominales Attribut umwandeln
+        NumericToNominal convert = new NumericToNominal();
+        convert.setAttributeIndices("" + (data.numAttributes())); // Konvertiere die letzte Spalte
+        convert.setInputFormat(data);
+        data = Filter.useFilter(data, convert);
 
-        if (targetIndex == -1) {
-            System.out.println("Fehler: Zielspalte '" + targetColumn + "' nicht gefunden.");
-            return;
-        }
-
-        // Konvertiere die Zielspalte zu nominal, falls nötig
-        if (!data.attribute(targetIndex).isNominal()) {
-            StringToNominal convert = new StringToNominal();
-            convert.setAttributeIndices(String.valueOf(targetIndex + 1)); // Weka verwendet 1-basierte Indizes
-            convert.setInputFormat(data);
-            data = Filter.useFilter(data, convert);
-        }
-
-        // Klassenattribut setzen
-        data.setClassIndex(targetIndex);
+        // Klassenattribut setzen (nach Konvertierung)
+        data.setClassIndex(data.numAttributes() - 1);
 
         System.out.println("Daten geladen: " + data.numInstances() + " Instanzen, " + data.numAttributes() + " Attribute.");
 
