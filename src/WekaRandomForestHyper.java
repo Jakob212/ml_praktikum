@@ -15,7 +15,7 @@ public class WekaRandomForestHyper {
         // 1. Daten laden
         System.out.println("Daten werden geladen...");
         CSVLoader loader = new CSVLoader();
-        File file = new File("../dataset/clf_cat/compas-two-years.csv");
+        File file = new File("../dataset/clf_cat/electricity.csv");
 
         // Datei überprüfen
         if (!file.exists()) {
