@@ -10,7 +10,7 @@
 #SBATCH --mem=16GB                     # Speicherbedarf
 
 # Modul laden (falls erforderlich, abhängig von der Cluster-Konfiguration)
-# module load lang/Java/11.0
+module load lang/Java/11.0
 
 cd /lustre/project/ki-mlpractical/group1/ml_praktikum_jagoetz_wkathari/src
 
