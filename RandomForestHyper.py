@@ -5,11 +5,11 @@ import numpy as np
 
 # Daten laden
 datasets = [
-    'dat/academic_success.csv'
+    'dat/diabetes.csv'
 ]
 
 target_columns = {
-    'dat/academic_success.csv': 'Target'
+    'dat/diabetes.csv': 'Diabetes_012'
 }
 
 
