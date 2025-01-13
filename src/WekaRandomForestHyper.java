@@ -15,7 +15,7 @@ public class WekaRandomForestHyper {
         // 1. Daten laden
         System.out.println("Daten werden geladen...");
         CSVLoader loader = new CSVLoader();
-        File file = new File("../dat/academic_success.csv");
+        File file = new File("../dat/diabetes.csv");
 
         // Datei überprüfen
         if (!file.exists()) {
@@ -33,7 +33,7 @@ public class WekaRandomForestHyper {
         data = Filter.useFilter(data, convert);
 
         // Klassenattribut setzen (nach Konvertierung)
-        data.setClassIndex(data.numAttributes() - 1);
+        data.setClassIndex(data.numAttributes(0));
 
         System.out.println("Daten geladen: " + data.numInstances() + " Instanzen, " + data.numAttributes() + " Attribute.");
 
