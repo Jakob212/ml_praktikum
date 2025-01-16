@@ -33,7 +33,7 @@ public class WekaRandomForestHyper {
         data = Filter.useFilter(data, convert);
 
         // Klassenattribut setzen (nach Konvertierung)
-        data.setClassIndex(data.numAttributes(0));
+        data.setClassIndex(data.numAttributes());
 
         System.out.println("Daten geladen: " + data.numInstances() + " Instanzen, " + data.numAttributes() + " Attribute.");
 

@@ -1,8 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=WekaRandomForest
-#SBATCH --output=WekaRandomForest_%j.out
-#SBATCH --error=WekaRandomForest_%j.err
-#SBATCH --time=24:00:00                # Maximale Laufzeit: 24 Stunden
+#SBATCH --job-name=RFWeka
+#SBATCH --output=RFWeka_%j.out
+#SBATCH --time=4-00:00:00               # Maximale Laufzeit: 4 Tage
 #SBATCH --partition=parallel           # Partition für parallele CPU-Jobs
 #SBATCH --nodes=1                      # 1 Knoten verwenden
 #SBATCH --ntasks=1                     # 1 Task pro Knoten
