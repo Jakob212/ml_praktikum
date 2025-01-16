@@ -2,7 +2,7 @@
 #SBATCH --job-name=ml_repo_job       # Name des Jobs
 #SBATCH --output=ml_repo_output_%j.log  # Ausgabe-Log mit Job-ID
 #SBATCH --error=ml_repo_error_%j.log
-#SBATCH --time=4-00:00:00                # Maximale Laufzeit: 4 Tage
+#SBATCH --time=96:00:00                # Maximale Laufzeit: 4 Tage
 #SBATCH --partition=parallel           # Partition für parallele CPU-Jobs
 #SBATCH --nodes=1                      # 1 Knoten verwenden
 #SBATCH --ntasks=1                     # 1 Task pro Knoten
