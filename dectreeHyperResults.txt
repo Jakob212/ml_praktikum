@@ -1,0 +1,446 @@
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv
+Klassen: [0 1]
+Verteilung: 
+twoyearrecid
+0    2483
+1    2483
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv: 0.6593 (Std: 0.0028)
+Bester Durchlauf mit Accuracy: 0.6633
+Hyperparameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10} (in 7 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\default-of-credit-card-clients.csv
+Klassen: [0 1]
+Verteilung: 
+y
+0    6636
+1    6636
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\default-of-credit-card-clients.csv: 0.6878 (Std: 0.0025)
+Bester Durchlauf mit Accuracy: 0.6921
+Hyperparameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10} (in 4 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\electricity.csv
+Klassen: ['DOWN' 'UP']
+Verteilung:
+class
+DOWN    19237
+UP      19237
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\electricity.csv: 0.8841 (Std: 0.0010)
+Bester Durchlauf mit Accuracy: 0.8859
+Hyperparameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Häufigste Parameterkombination: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1} (in 9 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\eye_movements.csv
+Klassen: [0 1]
+Verteilung:
+label
+0    3804
+1    3804
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\eye_movements.csv: 0.5848 (Std: 0.0037)
+Bester Durchlauf mit Accuracy: 0.5925
+Hyperparameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1} (in 7 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\road-safety.csv
+Klassen: [0 1]
+Verteilung:
+SexofDriver
+0    55881
+1    55881
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\road-safety.csv: 0.7614 (Std: 0.0005)
+Bester Durchlauf mit Accuracy: 0.7624
+Hyperparameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10} (in 6 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\albert.csv
+Klassen: [0 1]
+Verteilung:
+class
+0    29126
+1    29126
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\albert.csv: 0.6351 (Std: 0.0010)
+Bester Durchlauf mit Accuracy: 0.6370
+Hyperparameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 5} (in 4 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv
+Klassen: [1 2]
+Verteilung:
+Class
+1    5289
+2    5289
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv: 0.7765 (Std: 0.0030)
+Bester Durchlauf mit Accuracy: 0.7811
+Hyperparameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10} (in 10 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv
+Klassen: [0 1]
+Verteilung:
+target
+0    1717
+1    1717
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv: 0.7247 (Std: 0.0048)
+Bester Durchlauf mit Accuracy: 0.7332
+Hyperparameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1} (in 5 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv
+Klassen: [0 1]
+Verteilung:
+price_above_median
+0    10317
+1    10317
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv: 0.8597 (Std: 0.0014)
+Bester Durchlauf mit Accuracy: 0.8618
+Hyperparameter: {'max_depth': 20, 'max_features': None, 'min_samples_leaf': 10}
+Häufigste Parameterkombination: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 10} (in 4 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv
+Klassen: [0 1]
+Verteilung:
+SeriousDlqin2yrs
+0    8357
+1    8357
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv: 0.7560 (Std: 0.0019)
+Bester Durchlauf mit Accuracy: 0.7592
+Hyperparameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10} (in 9 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv
+Klassen: [0 1]
+Verteilung:
+y
+0    6636
+1    6636
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv: 0.6841 (Std: 0.0024)
+Bester Durchlauf mit Accuracy: 0.6884
+Hyperparameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1} (in 5 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv
+Klassen: [0 1]
+Verteilung:
+readmitted
+0    35545
+1    35545
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv: 0.6017 (Std: 0.0004)
+Bester Durchlauf mit Accuracy: 0.6023
+Hyperparameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 5} (in 4 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv
+Klassen: ['DOWN' 'UP']
+Verteilung:
+class
+DOWN    19237
+UP      19237
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv: 0.8720 (Std: 0.0016)
+Bester Durchlauf mit Accuracy: 0.8743
+Hyperparameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Häufigste Parameterkombination: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1} (in 10 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv
+Klassen: [0 1]
+Verteilung:
+label
+0    3804
+1    3804
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv: 0.5855 (Std: 0.0041)
+Bester Durchlauf mit Accuracy: 0.5917
+Hyperparameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1} (in 10 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv
+Klassen: [0 1]
+Verteilung:
+RiskPerformance
+0    5000
+1    5000
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv: 0.6889 (Std: 0.0021)
+Bester Durchlauf mit Accuracy: 0.6924
+Hyperparameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 5}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10} (in 4 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv
+Klassen: ['N' 'P']
+Verteilung:
+binaryClass
+N    6744
+P    6744
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv: 0.8386 (Std: 0.0016)
+Bester Durchlauf mit Accuracy: 0.8416
+Hyperparameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10} (in 4 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\jannis.csv
+Klassen: [0 1]
+Verteilung:
+class
+0    28790
+1    28790
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\jannis.csv: 0.7474 (Std: 0.0019)
+Bester Durchlauf mit Accuracy: 0.7502
+Hyperparameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1} (in 6 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv
+Klassen: ['g' 'h']
+Verteilung:
+class
+g    6688
+h    6688
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv: 0.8219 (Std: 0.0016)
+Bester Durchlauf mit Accuracy: 0.8240
+Hyperparameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10} (in 6 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv
+Klassen: [False  True]
+Verteilung:
+signal
+False    36499
+True     36499
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv: 0.9028 (Std: 0.0006)
+Bester Durchlauf mit Accuracy: 0.9041
+Hyperparameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Häufigste Parameterkombination: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1} (in 5 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv
+Klassen: ['N' 'P']
+Verteilung:
+binaryClass
+N    5041
+P    5041
+Name: count, dtype: int64
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv: 0.9753 (Std: 0.0011)
+Bester Durchlauf mit Accuracy: 0.9770
+Hyperparameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Häufigste Parameterkombination: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1} (in 7 von 10 Durchläufen)
+
+
+===========================================================================================================================================
+
+WEKA:
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv
+Klassen-Attribut: binaryClass
+Is nominal? true
+Is numeric? false
+Verteilung: {P=6744, N=6744}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv: 0,8339 (Std: 0,0010)
+Bester Durchlauf mit Accuracy: 0,8356
+Hyperparameter: {max_depth=10, min_samples_leaf=10, max_features=null}
+Häufigste Parameterkombination: {max_depth=10, max_features=null, min_samples_leaf=10} (in 5 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv
+Klassen-Attribut: class
+Is nominal? true
+Is numeric? false
+Verteilung: {g=6688, h=6688}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv: 0,8150 (Std: 0,0019)
+Bester Durchlauf mit Accuracy: 0,8177
+Hyperparameter: {max_depth=10, min_samples_leaf=1, max_features=null}
+Häufigste Parameterkombination: {max_depth=10, max_features=null, min_samples_leaf=10} (in 7 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv
+Klassen-Attribut: binaryClass
+Is nominal? true
+Is numeric? false
+Verteilung: {P=5041, N=5041}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv: 0,9651 (Std: 0,0010)
+Bester Durchlauf mit Accuracy: 0,9669
+Hyperparameter: {max_depth=20, min_samples_leaf=1, max_features=null}
+Häufigste Parameterkombination: {max_depth=20, max_features=null, min_samples_leaf=1} (in 4 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: twoyearrecid
+Is nominal? true
+Is numeric? false
+Verteilung: {0=2483, 1=2483}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv: 0,6520 (Std: 0,0030)
+Bester Durchlauf mit Accuracy: 0,6575
+Hyperparameter: {max_depth=10, min_samples_leaf=5, max_features=null}
+Häufigste Parameterkombination: {max_depth=10, max_features=sqrt, min_samples_leaf=10} (in 5 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\default-of-credit-card-clients.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: y
+Is nominal? true
+Is numeric? false
+Verteilung: {0=6636, 1=6636}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\default-of-credit-card-clients.csv: 0,6917 (Std: 0,0025)
+Bester Durchlauf mit Accuracy: 0,6954
+Hyperparameter: {max_depth=10, min_samples_leaf=1, max_features=null}
+Häufigste Parameterkombination: {max_depth=10, max_features=null, min_samples_leaf=1} (in 3 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\electricity.csv
+Klassen-Attribut: class
+Is nominal? true
+Is numeric? false
+Verteilung: {DOWN=19237, UP=19237}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\electricity.csv: 0,8723 (Std: 0,0015)
+Bester Durchlauf mit Accuracy: 0,8748
+Hyperparameter: {max_depth=null, min_samples_leaf=1, max_features=null}
+Häufigste Parameterkombination: {max_depth=null, max_features=null, min_samples_leaf=1} (in 10 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\eye_movements.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: label
+Is nominal? true
+Is numeric? false
+Verteilung: {0=3804, 1=3804}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\eye_movements.csv: 0,5788 (Std: 0,0047)
+Bester Durchlauf mit Accuracy: 0,5870
+Hyperparameter: {max_depth=10, min_samples_leaf=5, max_features=null}
+Häufigste Parameterkombination: {max_depth=10, max_features=null, min_samples_leaf=5} (in 3 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\road-safety.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: SexofDriver
+Is nominal? true
+Is numeric? false
+Verteilung: {0=55881, 1=55881}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\road-safety.csv: 0,7399 (Std: 0,0019)
+Bester Durchlauf mit Accuracy: 0,7436
+Hyperparameter: {max_depth=20, min_samples_leaf=10, max_features=null}
+Häufigste Parameterkombination: {max_depth=20, max_features=null, min_samples_leaf=10} (in 4 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: Class
+Is nominal? true
+Is numeric? false
+Verteilung: {1=5289, 2=5289}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv: 0,7785 (Std: 0,0020)
+Bester Durchlauf mit Accuracy: 0,7809
+Hyperparameter: {max_depth=10, min_samples_leaf=10, max_features=null}
+Häufigste Parameterkombination: {max_depth=10, max_features=null, min_samples_leaf=10} (in 4 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: price_above_median
+Is nominal? true
+Is numeric? false
+Verteilung: {0=10317, 1=10317}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv: 0,8548 (Std: 0,0022)
+Bester Durchlauf mit Accuracy: 0,8588
+Hyperparameter: {max_depth=20, min_samples_leaf=10, max_features=null}
+Häufigste Parameterkombination: {max_depth=20, max_features=null, min_samples_leaf=10} (in 4 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: SeriousDlqin2yrs
+Is nominal? true
+Is numeric? false
+Verteilung: {0=8357, 1=8357}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv: 0,7577 (Std: 0,0015)
+Bester Durchlauf mit Accuracy: 0,7606
+Hyperparameter: {max_depth=10, min_samples_leaf=10, max_features=null}
+Häufigste Parameterkombination: {max_depth=10, max_features=null, min_samples_leaf=10} (in 5 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: y
+Is nominal? true
+Is numeric? false
+Verteilung: {0=6636, 1=6636}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv: 0,6927 (Std: 0,0019)
+Bester Durchlauf mit Accuracy: 0,6970
+Hyperparameter: {max_depth=10, min_samples_leaf=10, max_features=null}
+Häufigste Parameterkombination: {max_depth=10, max_features=null, min_samples_leaf=10} (in 8 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: readmitted
+Is nominal? true
+Is numeric? false
+Verteilung: {0=35545, 1=35545}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv: 0,6026 (Std: 0,0007)
+Bester Durchlauf mit Accuracy: 0,6039
+Hyperparameter: {max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Häufigste Parameterkombination: {max_depth=10, max_features=null, min_samples_leaf=5} (in 5 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv
+Klassen-Attribut: class
+Is nominal? true
+Is numeric? false
+Verteilung: {DOWN=19237, UP=19237}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv: 0,8487 (Std: 0,0028)
+Bester Durchlauf mit Accuracy: 0,8530
+Hyperparameter: {max_depth=null, min_samples_leaf=1, max_features=null}
+Häufigste Parameterkombination: {max_depth=null, max_features=null, min_samples_leaf=1} (in 10 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: label
+Is nominal? true
+Is numeric? false
+Verteilung: {0=3804, 1=3804}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv: 0,5770 (Std: 0,0023)
+Bester Durchlauf mit Accuracy: 0,5803
+Hyperparameter: {max_depth=null, min_samples_leaf=1, max_features=null}
+Häufigste Parameterkombination: {max_depth=10, max_features=null, min_samples_leaf=1} (in 4 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\jannis.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: class
+Is nominal? true
+Is numeric? false
+Verteilung: {0=28790, 1=28790}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\jannis.csv: 0,7267 (Std: 0,0011)
+Bester Durchlauf mit Accuracy: 0,7293
+Hyperparameter: {max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Häufigste Parameterkombination: {max_depth=10, max_features=sqrt, min_samples_leaf=10} (in 5 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv
+Klassen-Attribut: signal
+Is nominal? true
+Is numeric? false
+Verteilung: {True=36499, False=36499}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv: 0,8857 (Std: 0,0009)
+Bester Durchlauf mit Accuracy: 0,8874
+Hyperparameter: {max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Häufigste Parameterkombination: {max_depth=10, max_features=sqrt, min_samples_leaf=1} (in 5 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: target
+Is nominal? true
+Is numeric? false
+Verteilung: {0=1717, 1=1717}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv: 0,7040 (Std: 0,0043)
+Bester Durchlauf mit Accuracy: 0,7129
+Hyperparameter: {max_depth=null, min_samples_leaf=1, max_features=sqrt}
+Häufigste Parameterkombination: {max_depth=null, max_features=sqrt, min_samples_leaf=5} (in 2 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: RiskPerformance
+Is nominal? true
+Is numeric? false
+Verteilung: {0=5000, 1=5000}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv: 0,6871 (Std: 0,0015)
+Bester Durchlauf mit Accuracy: 0,6897
+Hyperparameter: {max_depth=10, min_samples_leaf=10, max_features=null}
+Häufigste Parameterkombination: {max_depth=10, max_features=null, min_samples_leaf=10} (in 4 von 10 Durchläufen)
