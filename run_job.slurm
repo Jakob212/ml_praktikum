@@ -15,8 +15,5 @@ module load lang/Python/3.11.3-GCCcore-12.3.0
 # Wechsle in das Verzeichnis des Repositories
 cd /lustre/project/ki-mlpractical/group1/ml_praktikum_jagoetz_wkathari
 
-# Stelle sicher, dass die neueste Version des Repositories geladen wird
-git pull origin main
-
 # Führe das Python-Skript aus
 python RandomForestHyper.py
