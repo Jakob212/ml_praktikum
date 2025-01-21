@@ -444,3 +444,14 @@ Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\
 Bester Durchlauf mit Accuracy: 0,6897
 Hyperparameter: {max_depth=10, min_samples_leaf=10, max_features=null}
 Häufigste Parameterkombination: {max_depth=10, max_features=null, min_samples_leaf=10} (in 4 von 10 Durchläufen)
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\albert.csv
+Klasse ist numerisch, wandle in nominal um ...
+Klassen-Attribut: class
+Is nominal? true
+Is numeric? false
+Verteilung: {0=29126, 1=29126}
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\albert.csv: 0,6360 (Std: 0,0012)
+Bester Durchlauf mit Accuracy: 0,6376
+Hyperparameter: {max_depth=10, min_samples_leaf=5, max_features=null}
+Häufigste Parameterkombination: {max_depth=10, max_features=log2, min_samples_leaf=10} (in 3 von 10 Durchläufen)
