@@ -3,7 +3,6 @@ package ml_praktikum_jagoetz_wkathari;
 import weka.core.converters.CSVLoader;
 import weka.core.Instances;
 import weka.classifiers.trees.RandomTree;
-import weka.classifiers.Evaluation;
 import weka.filters.unsupervised.attribute.NumericToNominal;
 import weka.filters.Filter;
 
@@ -13,18 +12,8 @@ import java.util.stream.Collectors;
 
 import static java.lang.Math.*;
 
-/**
- * Entspricht grob dem Python-Beispiel mit GridSearchCV & DecisionTreeClassifier.
- * - Lädt CSV-Dateien, konvertiert die Klasse ggf. von numerisch zu nominal
- * - Führt 10 Wiederholungen mit zufälligem Shufflen (Train/Test 2/3 : 1/3) durch
- * - In jeder Wiederholung:
- *   -> Grid-Search über (max_depth, min_samples_leaf, max_features), 3-fach CV auf dem Trainingsset
- *   -> Finde bestes Param-Set, trainiere damit, evaluiere auf Testset
- * - Gibt Mittelwert, Std-Abweichung, beste und häufigste Param-Kombination aus
- */
 public class WekaGridSearchDecisionTree {
 
-    // Pfade zu den CSVs
     static String[] datasets = {
         "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\house_16H.csv",
         "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\jannis.csv",
@@ -45,7 +34,6 @@ public class WekaGridSearchDecisionTree {
         "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\heloc.csv"
     };
 
-    // Mapping: Datei -> Name der Zielspalte
     static Map<String, String> targetColumns = new HashMap<>();
     static {
         targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\house_16H.csv", "binaryClass");
@@ -77,7 +65,6 @@ public class WekaGridSearchDecisionTree {
         Integer[] minSamplesLeafVals = { 1, 5, 10 };
         String[] maxFeaturesVals = { null, "sqrt", "log2" };
 
-        // Wir speichern pro Datensatz die Ergebnisse
         for (String dataset : datasets) {
             // Prüfen, ob wir eine Zielspalte haben
             if (!targetColumns.containsKey(dataset)) {
@@ -106,7 +93,7 @@ public class WekaGridSearchDecisionTree {
             }
             data.setClassIndex(classIndex);
 
-            // 2a) Falls numerisch => NumericToNominal
+            // Falls numerisch => NumericToNominal
             if (data.classAttribute().isNumeric()) {
                 NumericToNominal ntm = new NumericToNominal();
                 ntm.setOptions(new String[] {"-R", String.valueOf(classIndex+1)});
@@ -132,22 +119,20 @@ public class WekaGridSearchDecisionTree {
                 Instances train = new Instances(shuffled, 0, trainSize);
                 Instances test  = new Instances(shuffled, trainSize, shuffled.numInstances() - trainSize);
 
-                // c) "GridSearchCV" = wir testen alle Kombis, machen 3-fach CV auf dem Trainings-Set
+                // c) "GridSearchCV" -Parameter-Kombinationen, 3-fach CV
                 double bestCVAcc = 0.0;
                 String[] bestOptions = null;
                 Map<String,Object> bestParamMap = null;
 
-                // Wie in scikit-learn: Schleife über Parameter-Kombis
                 int numFeatures = train.numAttributes() - 1; // abzüglich Klasse
                 for (Integer md : maxDepthVals) {
                     for (Integer msl : minSamplesLeafVals) {
                         for (String mf : maxFeaturesVals) {
-                            // Entsprechung scikit => Weka
                             int depth = (md == null) ? 0 : md;  // 0 => unbeschränkt
                             int minLeaf = msl;
 
-                            // max_features
-                            int k;  // -K
+                            // max_features -> -K
+                            int k;
                             if (mf == null) {
                                 k = 0; // alle
                             } else if ("sqrt".equals(mf)) {
@@ -158,20 +143,19 @@ public class WekaGridSearchDecisionTree {
                                 k = 0;
                             }
 
-                            // Options für RandomTree
                             String[] opts = {
                                 "-depth", String.valueOf(depth),
                                 "-M", String.valueOf(minLeaf),
                                 "-K", String.valueOf(k),
-                                "-S", "42"   // fester Seed für Reproduzierbarkeit der Splits
+                                "-S", "42"
                             };
                             RandomTree rt = new RandomTree();
                             rt.setOptions(opts);
 
-                            // 3-fach CV auf 'train'
-                            Evaluation evalCV = new Evaluation(train);
+                            weka.classifiers.Evaluation evalCV = new weka.classifiers.Evaluation(train);
                             evalCV.crossValidateModel(rt, train, 3, new Random(run));
                             double cvAccuracy = evalCV.pctCorrect() / 100.0;
+
                             if (cvAccuracy > bestCVAcc) {
                                 bestCVAcc = cvAccuracy;
                                 bestOptions = opts;
@@ -185,7 +169,7 @@ public class WekaGridSearchDecisionTree {
                     }
                 }
 
-                // d) Haben nun bestes Param-Set => trainieren final auf komplettem Train
+                // d) Bestes Param-Set -> trainieren
                 RandomTree bestModel = new RandomTree();
                 if (bestOptions != null) {
                     bestModel.setOptions(bestOptions);
@@ -193,7 +177,7 @@ public class WekaGridSearchDecisionTree {
                 bestModel.buildClassifier(train);
 
                 // e) Test-Accuracy
-                Evaluation evalTest = new Evaluation(train);
+                weka.classifiers.Evaluation evalTest = new weka.classifiers.Evaluation(train);
                 evalTest.evaluateModel(bestModel, test);
                 double testAcc = evalTest.pctCorrect() / 100.0;
                 testAccuracies.add(testAcc);
@@ -202,7 +186,6 @@ public class WekaGridSearchDecisionTree {
                 double elapsedSec = (endTime - startTime) / 1000.0;
                 runTimes.add(elapsedSec);
 
-                // Speichern der besten Parameter
                 bestParamsList.add(bestParamMap);
 
                 System.out.printf("Run %2d: Test-Acc=%.4f, Zeit=%.2fs, Params=%s\n",
@@ -210,7 +193,14 @@ public class WekaGridSearchDecisionTree {
                                   (bestParamMap != null) ? bestParamMap.toString() : "null");
             }
 
-            // 4) Auswertung (wie im Python-Code)
+            // --- Hier geben wir die "Matrix" (Liste) aller 10 Test-Accuracies kommasepariert aus ---
+            System.out.println("\nMatrix (Liste) der 10 Test-Accuracies kommasepariert:");
+            String matrixString = testAccuracies.stream()
+                    .map(acc -> String.format(Locale.US, "%.4f", acc))
+                    .collect(Collectors.joining(", "));
+            System.out.println("[" + matrixString + "]");
+
+            // 4) Auswertung (Mittelwert, Std-Abw.)
             double meanAcc = mean(testAccuracies);
             double stdAcc = stddev(testAccuracies, meanAcc);
             double meanTime = mean(runTimes);
@@ -233,17 +223,15 @@ public class WekaGridSearchDecisionTree {
                               bestParamsList.get(bestRunIdx));
 
             // Häufigste Param-Kombi
-            //   wir wandeln jede Map in einen String (o. sortierte Tupel), zählen Frequenzen
             Map<String,Integer> freqMap = new HashMap<>();
             for (Map<String,Object> pm : bestParamsList) {
                 if (pm == null) continue;
                 String key = pm.entrySet().stream()
                         .map(e -> e.getKey()+"="+e.getValue())
-                        .sorted()   // Sortierung, damit "max_depth=10 ..." immer gleicher String
-                        .collect(Collectors.joining(","));
+                        .sorted()
+                        .collect(Collectors.joining(",")); 
                 freqMap.put(key, freqMap.getOrDefault(key, 0) + 1);
             }
-            // die häufigste:
             String mostCommonKey = null;
             int maxCount = 0;
             for (String k : freqMap.keySet()) {

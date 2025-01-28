@@ -9,6 +9,8 @@ import weka.classifiers.Evaluation;
 
 import java.io.File;
 import java.util.*;
+import java.util.stream.Collectors;  // <--- WICHTIG für das .stream().collect(...)
+import java.util.Locale;            // <--- Damit Dezimalpunkt immer '.' ist
 
 public class WekaDecisionTree {
 
@@ -141,14 +143,12 @@ public class WekaDecisionTree {
                 Instances train = new Instances(shuffled, 0, trainSize);
                 Instances test  = new Instances(shuffled, trainSize, testSize);
 
-                // c) RandomTree konfigurieren - analog zu scikit's DecisionTree mit max_features='sqrt'
-                //    und min_samples_leaf=10, unbeschränkter Tiefe
+                // c) RandomTree konfigurieren
                 String[] options = {
                     "-depth", MAX_DEPTH,                        // 0 => kein Limit
                     "-M", String.valueOf(MIN_SAMPLES_LEAF),     // min instances per leaf
                     "-K", String.valueOf(kFeatures),            // sqrt(#features)
                     "-S", String.valueOf(SEED)                  // random seed
-                    // Achtung: "SEED" hier identisch für alle runs => Replizierbarkeit
                 };
                 RandomTree rt = new RandomTree();
                 rt.setOptions(options);
@@ -175,6 +175,14 @@ public class WekaDecisionTree {
 
                 System.out.printf("Durchlauf %2d Dauer: %.4fs\n", run+1, sec);
             }
+
+            // Nach allen 15 Wiederholungen: "Matrix" der Test-Accuracies kommasepariert ausgeben
+            System.out.println("\nMatrix (Liste) der 15 Test-Accuracies kommasepariert:");
+            String matrixString = testAccuracies.stream()
+                    // Locale.US => immer Dezimalpunkt
+                    .map(acc -> String.format(Locale.US, "%.4f", acc))
+                    .collect(Collectors.joining(", "));
+            System.out.println("[" + matrixString + "]");
 
             // 6) Statistik
             double meanTest   = mean(testAccuracies);
@@ -239,7 +247,6 @@ public class WekaDecisionTree {
     }
 
     // Zweiseitiger p-Wert; für große df Approx. via Normalverteilung
-    // Siehe Kommentar im Random-Forest-Code
     private static double twoTailedPValue(double tStat, int df) {
         // Betragswert => symmetrische Normalapprox
         double z = Math.abs(tStat);
@@ -249,7 +256,6 @@ public class WekaDecisionTree {
 
     // Einfache Approximations-Implementierung der Fehlerfunktion erf(...)
     private static double erf(double x) {
-        // sign erf
         double sign = (x < 0) ? -1.0 : 1.0;
         x = Math.abs(x);
 
@@ -262,4 +268,3 @@ public class WekaDecisionTree {
         return sign * y;
     }
 }
-

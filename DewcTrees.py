@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split, cross_val_score
 from statistics import mean, stdev
-from scipy.stats import ttest_1samp
+from scipy.stats import t
 
 class Tee:
     def __init__(self, *files):
@@ -76,50 +76,59 @@ for dataset in datasets:
     if dataset not in target_columns:
         print(f"**WARNUNG**: Kein Zielspalteneintrag für {dataset}. Überspringe diesen Datensatz.")
         continue
+    
     target_col = target_columns[dataset]
     print(f"\n=== Verarbeite Datensatz: {dataset} ===")
+    
     df = pd.read_csv(dataset)
     X = df.drop(columns=[target_col])
     y = df[target_col]
+    
     print("Klassenverteilung:")
     print(y.value_counts())
+    
     test_accuracies = []
     inner_cv_accuracies = []
     run_times = []
+    
     for i in range(15):
         start_time = time.time()
+        
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, test_size=1/3, random_state=i, shuffle=True
         )
         clf = DecisionTreeClassifier(**fixed_params)
+        
         cv_scores = cross_val_score(clf, X_train, y_train, cv=3, scoring='accuracy')
         inner_cv_accuracies.append(cv_scores.mean())
+        
         clf.fit(X_train, y_train)
         test_accuracy = clf.score(X_test, y_test)
         test_accuracies.append(test_accuracy)
+        
         end_time = time.time()
         elapsed = end_time - start_time
         run_times.append(elapsed)
+        
         print(f"Durchlauf {i+1} Dauer: {elapsed:.4f}s")
+    
+    # Geben Sie hier die "Matrix" (NumPy-Array) mit den 15 Accuracies aus:
+    acc_matrix = np.array(test_accuracies).reshape(1, -1)  # Form: 1x15
+    print("\nMatrix mit den 15 Test-Accuracies (1 Zeile, 15 Spalten):")
+    acc_matrix_str = np.array2string(acc_matrix, separator=', ')
+    print(acc_matrix_str)
+    
     mean_test_acc = mean(test_accuracies)
     std_test_acc = stdev(test_accuracies)
-    print(f"Test-Accuracy über 15 Wiederholungen: {mean_test_acc:.4f} ± {std_test_acc:.4f}")
+    print(f"\nTest-Accuracy über 15 Wiederholungen: {mean_test_acc:.4f} ± {std_test_acc:.4f}")
+    
     mean_inner_cv_acc = mean(inner_cv_accuracies)
     std_inner_cv_acc = stdev(inner_cv_accuracies)
     print(f"Innere CV-Accuracy (3-fach) Mittelwert: {mean_inner_cv_acc:.4f} ± {std_inner_cv_acc:.4f}")
+    
     mean_run_time = mean(run_times)
     std_run_time = stdev(run_times)
     print(f"Durchschnittliche Dauer: {mean_run_time:.4f}s ± {std_run_time:.4f}s")
-    if y.nunique() == 2:
-        stat, p_value = ttest_1samp(test_accuracies, 0.5)
-        print("\nSignifikanztest (Ein-Stichproben-t-Test gegen 0.5):")
-        print(f"T-Statistik: {stat:.4f}, p-Wert: {p_value:.6f}")
-        if p_value < 0.05:
-            print(f"==> Die mittlere Accuracy ({mean_test_acc:.3f}) ist signifikant von 0.5 verschieden (5%-Niveau).")
-        else:
-            print(f"==> Kein signifikanter Unterschied zu 0.5 (5%-Niveau).")
-    else:
-        print("\n(Signifikanztest gegen 0.5 nicht durchgeführt, da keine binäre Klassifikation.)")
 
 sys.stdout = original_stdout
 f.close()
