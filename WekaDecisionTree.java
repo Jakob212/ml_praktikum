@@ -197,24 +197,8 @@ public class WekaDecisionTree {
             double stdTime  = stddev(runTimes, meanTime);
             System.out.printf("Durchschnittliche Dauer: %.4fs ± %.4fs\n", meanTime, stdTime);
 
-            // 7) Ein-Stichproben-t-Test gegen 0.5, falls binär
-            if (data.classAttribute().isNominal() && data.classAttribute().numValues() == 2) {
-                double tStat = oneSampleTTest(testAccuracies, 0.5);
-                double pVal  = twoTailedPValue(tStat, testAccuracies.size() - 1);
-
-                System.out.println("\nSignifikanztest (t-Test gegen 0.5):");
-                System.out.printf("T-Statistik: %.4f, p-Wert: %.6f\n", tStat, pVal);
-                if (pVal < 0.05) {
-                    System.out.printf("==> Mittlere Accuracy (%.3f) ist signifikant von 0.5 verschieden.\n", meanTest);
-                } else {
-                    System.out.println("==> Kein signifikanter Unterschied zu 0.5 (5%-Niveau).");
-                }
-            } else {
-                System.out.println("\n(Signifikanztest nicht durchgeführt, da keine binäre Klassifikation.)");
-            }
+            
         }
-
-        System.out.println("Fertig! Alle Ergebnisse stehen hier in der Konsole.");
     }
 
     // Hilfsfunktionen für Mittelwert & Stdabw.:
@@ -233,38 +217,5 @@ public class WekaDecisionTree {
             sumSq += diff * diff;
         }
         return Math.sqrt(sumSq / (vals.size() - 1));
-    }
-
-    // Ein-Stichproben-t-Test gegen mu=0.5
-    private static double oneSampleTTest(List<Double> vals, double mu) {
-        int n = vals.size();
-        if (n < 2) return 0.0; // kein sinnvoller t-Test bei n=1
-
-        double m = mean(vals);
-        double s = stddev(vals, m);
-        if (s == 0) return 0.0;  // alle Werte identisch => t=0
-        return (m - mu) / (s / Math.sqrt(n));
-    }
-
-    // Zweiseitiger p-Wert; für große df Approx. via Normalverteilung
-    private static double twoTailedPValue(double tStat, int df) {
-        // Betragswert => symmetrische Normalapprox
-        double z = Math.abs(tStat);
-        double phi = 0.5 * (1.0 + erf(z / Math.sqrt(2.0)));
-        return 2.0 * (1.0 - phi);
-    }
-
-    // Einfache Approximations-Implementierung der Fehlerfunktion erf(...)
-    private static double erf(double x) {
-        double sign = (x < 0) ? -1.0 : 1.0;
-        x = Math.abs(x);
-
-        // Formel Approx. nach Abramowitz/Stegun
-        double p = 0.3275911;
-        double t = 1.0 / (1.0 + p * x);
-        double a1 = 0.254829592, a2 = -0.284496736, a3 = 1.421413741,
-               a4 = -1.453152027, a5 = 1.061405429;
-        double y = 1.0 - ((((a5 * t + a4) * t + a3) * t + a2) * t + a1) * t * Math.exp(-x*x);
-        return sign * y;
     }
 }

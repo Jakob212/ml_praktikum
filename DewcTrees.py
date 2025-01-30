@@ -1,21 +1,10 @@
-import sys
 import time
 import pandas as pd
 import numpy as np
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.model_selection import train_test_split, cross_val_score, KFold
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 from statistics import mean, stdev
-from scipy.stats import t
-
-class Tee:
-    def __init__(self, *files):
-        self.files = files
-    def write(self, data):
-        for f in self.files:
-            f.write(data)
-    def flush(self):
-        for f in self.files:
-            f.flush()
 
 datasets = [
     'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\house_16H.csv', 
@@ -62,15 +51,12 @@ target_columns = {
 }
 
 fixed_params = {
+    'criterion': 'entropy',
     'max_depth': None,
     'min_samples_leaf': 10,
     'max_features': 'sqrt',
     'random_state': 42
 }
-
-f = open("decision_tree_results.txt", "w", encoding="utf-8")
-original_stdout = sys.stdout
-sys.stdout = Tee(sys.stdout, f)
 
 for dataset in datasets:
     if dataset not in target_columns:
@@ -83,6 +69,10 @@ for dataset in datasets:
     df = pd.read_csv(dataset)
     X = df.drop(columns=[target_col])
     y = df[target_col]
+    
+    if pd.api.types.is_numeric_dtype(y):
+        print(f"Zielspalte '{target_col}' ist numerisch. Konvertiere zu String.")
+        y = y.astype(str)
     
     print("Klassenverteilung:")
     print(y.value_counts())
@@ -97,39 +87,31 @@ for dataset in datasets:
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, test_size=1/3, random_state=i, shuffle=True
         )
+        
+        cv = KFold(n_splits=3, shuffle=True, random_state=i)
         clf = DecisionTreeClassifier(**fixed_params)
         
-        cv_scores = cross_val_score(clf, X_train, y_train, cv=3, scoring='accuracy')
+        cv_scores = cross_val_score(clf, X_train, y_train, cv=cv, scoring='accuracy')
         inner_cv_accuracies.append(cv_scores.mean())
         
         clf.fit(X_train, y_train)
-        test_accuracy = clf.score(X_test, y_test)
+        y_pred = clf.predict(X_test)
+        
+        # Metrikenberechnung (nur für Zeitmessung)
+        test_accuracy = accuracy_score(y_test, y_pred)
+        _ = precision_score(y_test, y_pred, average='macro', zero_division=0)
+        _ = recall_score(y_test, y_pred, average='macro', zero_division=0)
+        _ = f1_score(y_test, y_pred, average='macro', zero_division=0)
+        _ = confusion_matrix(y_test, y_pred)
+        
         test_accuracies.append(test_accuracy)
-        
-        end_time = time.time()
-        elapsed = end_time - start_time
-        run_times.append(elapsed)
-        
-        print(f"Durchlauf {i+1} Dauer: {elapsed:.4f}s")
+        run_times.append(time.time() - start_time)
+        print(f"Durchlauf {i+1} Dauer: {run_times[-1]:.4f}s")
     
-    # Geben Sie hier die "Matrix" (NumPy-Array) mit den 15 Accuracies aus:
-    acc_matrix = np.array(test_accuracies).reshape(1, -1)  # Form: 1x15
-    print("\nMatrix mit den 15 Test-Accuracies (1 Zeile, 15 Spalten):")
-    acc_matrix_str = np.array2string(acc_matrix, separator=', ')
-    print(acc_matrix_str)
+    acc_matrix = np.array(test_accuracies).reshape(1, -1)
+    print("\nMatrix mit den 15 Test-Accuracies:")
+    print(np.array2string(acc_matrix, separator=', '))
     
-    mean_test_acc = mean(test_accuracies)
-    std_test_acc = stdev(test_accuracies)
-    print(f"\nTest-Accuracy über 15 Wiederholungen: {mean_test_acc:.4f} ± {std_test_acc:.4f}")
-    
-    mean_inner_cv_acc = mean(inner_cv_accuracies)
-    std_inner_cv_acc = stdev(inner_cv_accuracies)
-    print(f"Innere CV-Accuracy (3-fach) Mittelwert: {mean_inner_cv_acc:.4f} ± {std_inner_cv_acc:.4f}")
-    
-    mean_run_time = mean(run_times)
-    std_run_time = stdev(run_times)
-    print(f"Durchschnittliche Dauer: {mean_run_time:.4f}s ± {std_run_time:.4f}s")
-
-sys.stdout = original_stdout
-f.close()
-print("Fertig! Alle Ausgaben wurden zusätzlich in 'decision_tree_results.txt' gespeichert.")
+    print(f"\nTest-Accuracy (M ± SD): {mean(test_accuracies):.4f} ± {stdev(test_accuracies):.4f}")
+    print(f"CV-Accuracy (M ± SD): {mean(inner_cv_accuracies):.4f} ± {stdev(inner_cv_accuracies):.4f}")
+    print(f"Laufzeit (M ± SD): {mean(run_times):.4f}s ± {stdev(run_times):.4f}s")

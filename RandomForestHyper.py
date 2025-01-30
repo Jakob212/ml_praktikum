@@ -3,13 +3,48 @@ from sklearn.model_selection import GridSearchCV
 import pandas as pd
 import numpy as np
 
-# Daten laden
 datasets = [
-    'dataset/clf_cat/albert.csv'
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\house_16H.csv', 
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\jannis.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\MagicTelescope.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\MiniBooNE.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\pol.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\compas-two-years.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\road-safety.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\albert.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\bank-marketing.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\Bioresponse.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\california.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\credit.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\default-of-credit-card-clients.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\Diabetes130US.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\electricity.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\eye_movements.csv',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\heloc.csv'
 ]
 
 target_columns = {
-    'dataset/clf_cat/albert.csv': 'class'
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\house_16H.csv': 'binaryClass',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\jannis.csv': 'class',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\MagicTelescope.csv': 'class',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\MiniBooNE.csv': 'signal',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\pol.csv': 'binaryClass',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\Higgs.csv': 'target',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\compas-two-years.csv': 'twoyearrecid',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\default-of-credit-card-clients.csv': 'y',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\electricity.csv': 'class',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\eye_movements.csv': 'label',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\road-safety.csv': 'SexofDriver',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\albert.csv': 'class',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\bank-marketing.csv': 'Class',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\Bioresponse.csv': 'target',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\california.csv': 'price_above_median',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\credit.csv': 'SeriousDlqin2yrs',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\default-of-credit-card-clients.csv': 'y',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\Diabetes130US.csv': 'readmitted',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\electricity.csv': 'class',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\eye_movements.csv': 'label',
+    'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\heloc.csv': 'RiskPerformance',
 }
 
 

@@ -1,21 +1,10 @@
-import sys
 import time
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.model_selection import train_test_split, cross_val_score, KFold
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix
 from statistics import mean, stdev
-from scipy.stats import ttest_1samp
-
-class Tee:
-    def __init__(self, *files):
-        self.files = files
-    def write(self, data):
-        for f in self.files:
-            f.write(data)
-    def flush(self):
-        for f in self.files:
-            f.flush()
 
 datasets = [
     'ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\house_16H.csv', 
@@ -70,62 +59,72 @@ forest_params = {
     'n_jobs': -1
 }
 
-f = open("random_forest_results.txt", "w", encoding="utf-8")
-original_stdout = sys.stdout
-sys.stdout = Tee(sys.stdout, f)
-
 for dataset in datasets:
     if dataset not in target_columns:
-        print(f"**WARNUNG**: Kein Zielspalteneintrag für {dataset}. Überspringe diesen Datensatz.")
+        print(f"**WARNUNG**: Kein Zielspalteneintrag für {dataset}. Überspringe.")
         continue
+    
     target_col = target_columns[dataset]
     print(f"\n=== Verarbeite Datensatz: {dataset} ===")
+    
     df = pd.read_csv(dataset)
     X = df.drop(columns=[target_col])
     y = df[target_col]
+    
+    # Zielvariable konvertieren wie in WEKA
+    if pd.api.types.is_numeric_dtype(y):
+        print(f"Konvertiere numerische Zielvariable '{target_col}' zu String")
+        y = y.astype(str)
+    
     print("Klassenverteilung:")
     print(y.value_counts())
+    
     test_accuracies = []
-    inner_cv_accuracies = []
+    cv_accuracies = []
     run_times = []
+    
     for i in range(15):
         start_time = time.time()
+        
+        # 1) Train-Test-Split mit seed=i
         X_train, X_test, y_train, y_test = train_test_split(
             X, y, 
             test_size=1/3, 
             random_state=i, 
             shuffle=True
         )
+        
+        # 2) 3-fach CV mit Shuffling wie in WEKA
+        cv = KFold(n_splits=3, shuffle=True, random_state=i)
         clf = RandomForestClassifier(**forest_params)
-        cv_scores = cross_val_score(clf, X_train, y_train, cv=3, scoring='accuracy')
-        inner_cv_accuracies.append(cv_scores.mean())
+        
+        # 3) Cross-Validation auf Trainingsdaten
+        cv_scores = cross_val_score(clf, X_train, y_train, cv=cv, scoring='accuracy')
+        cv_accuracies.append(np.mean(cv_scores))
+        
+        # 4) Training auf gesamten Trainingsdaten
         clf.fit(X_train, y_train)
-        test_accuracy = clf.score(X_test, y_test)
-        test_accuracies.append(test_accuracy)
-        end_time = time.time()
-        rt = end_time - start_time
-        run_times.append(rt)
-        print(f"Durchlauf {i+1} Dauer: {rt:.4f}s")
-    mean_test_acc = mean(test_accuracies)
-    std_test_acc = stdev(test_accuracies)
-    print(f"Test-Accuracy (15 Wiederholungen): {mean_test_acc:.4f} ± {std_test_acc:.4f}")
-    mean_inner_cv_acc = mean(inner_cv_accuracies)
-    std_inner_cv_acc = stdev(inner_cv_accuracies)
-    print(f"Innere CV-Accuracy (3-fach, Durchschnitt): {mean_inner_cv_acc:.4f} ± {std_inner_cv_acc:.4f}")
-    mean_run_time = mean(run_times)
-    std_run_time = stdev(run_times)
-    print(f"Durchschnittliche Dauer: {mean_run_time:.4f}s ± {std_run_time:.4f}s")
-    if y.nunique() == 2:
-        stat, p_value = ttest_1samp(test_accuracies, 0.5)
-        print("\nSignifikanztest (Ein-Stichproben-t-Test gegen 0.5):")
-        print(f"T-Statistik: {stat:.4f}, p-Wert: {p_value:.6f}")
-        if p_value < 0.05:
-            print(f"==> Die mittlere Accuracy ({mean_test_acc:.3f}) ist signifikant von 0.5 verschieden (5%-Niveau).")
-        else:
-            print(f"==> Kein signifikanter Unterschied zu 0.5 (5%-Niveau).")
-    else:
-        print("\n(Signifikanztest gegen 0.5 nicht durchgeführt, da y keine binäre Klassifikation ist.)")
+        
+        # 5) Evaluation mit allen Metriken (für faire Zeitmessung)
+        y_pred = clf.predict(X_test)
+        test_acc = accuracy_score(y_test, y_pred)
+        _ = precision_score(y_test, y_pred, average='macro', zero_division=0)
+        _ = recall_score(y_test, y_pred, average='macro', zero_division=0)
+        _ = f1_score(y_test, y_pred, average='macro', zero_division=0)
+        _ = confusion_matrix(y_test, y_pred)
+        
+        test_accuracies.append(test_acc)
+        elapsed = time.time() - start_time
+        run_times.append(elapsed)
+        
+        print(f"Durchlauf {i+1}: {elapsed:.2f}s")
 
-sys.stdout = original_stdout
-f.close()
-print("Fertig! Alle Ausgaben wurden in 'random_forest_results.txt' gespeichert.")
+    # Ausgabe im WEKA-Format
+    print("\nTest-Accuracies (15 Runs):")
+    print(", ".join(f"{acc:.4f}" for acc in test_accuracies))
+    
+    print(f"\nTest-Accuracy (M±SD): {mean(test_accuracies):.4f} ± {stdev(test_accuracies):.4f}")
+    print(f"CV-Accuracy (M±SD): {mean(cv_accuracies):.4f} ± {stdev(cv_accuracies):.4f}")
+    print(f"Laufzeit (M±SD): {mean(run_times):.2f}s ± {stdev(run_times):.2f}s")
+
+print("\nFertig! Alle Ergebnisse wurden auf der Konsole ausgegeben.")
