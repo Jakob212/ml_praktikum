@@ -166,3 +166,61 @@ Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\
 Standardabweichung der Genauigkeit: 0.0023
 Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}]
 Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv
+Klassen: [False  True]
+Verteilung: 
+signal
+False    36499
+True     36499
+Name: count, dtype: int64
+Beste Genauigkeit: 0.9301
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Beste Genauigkeit: 0.9295
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Beste Genauigkeit: 0.9302
+
+Beste Genauigkeit: 0.9295
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Beste Genauigkeit: 0.9302
+Beste Genauigkeit: 0.9295
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Beste Genauigkeit: 0.9302
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Beste Genauigkeit: 0.9302
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.9302
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv: 0.9300
+Standardabweichung der Genauigkeit: 0.0003
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv
+Klassen: [1 2]
+Verteilung:
+Class
+1    5289
+2    5289
+Name: count, dtype: int64
+Beste Genauigkeit: 0.8025
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.8022
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.8051
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv: 0.8033
+Standardabweichung der Genauigkeit: 0.0013
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}
