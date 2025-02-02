@@ -102,3 +102,67 @@ Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\
 Standardabweichung der Genauigkeit: 0.0003
 Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 50}, {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}]
 Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}
+
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\road-safety.csv
+Klassen: [0 1]
+Verteilung:
+SexofDriver
+0    55881
+1    55881
+Name: count, dtype: int64
+Beste Genauigkeit: 0.7812
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.7810
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.7816
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\road-safety.csv: 0.7812
+Standardabweichung der Genauigkeit: 0.0002
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\albert.csv
+Klassen: [0 1]
+Verteilung: 
+class
+0    29126
+1    29126
+Name: count, dtype: int64
+Beste Genauigkeit: 0.6590
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.6577
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 100}
+
+Beste Genauigkeit: 0.6589
+Beste Parameter: {'max_features': 'log2', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\albert.csv: 0.6585
+Standardabweichung der Genauigkeit: 0.0006
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 100}, {'max_features': 'log2', 'min_samples_leaf': 10, 'n_estimators': 150}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv
+Klassen: [0 1]
+Verteilung: 
+label
+0    3804
+1    3804
+Name: count, dtype: int64
+Beste Genauigkeit: 0.6343
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.6288
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}
+
+Beste Genauigkeit: 0.6305
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv: 0.6312
+Standardabweichung der Genauigkeit: 0.0023
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
