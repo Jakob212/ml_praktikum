@@ -224,3 +224,87 @@ Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\
 Standardabweichung der Genauigkeit: 0.0013
 Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}]
 Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv
+Klassen: [0 1]
+Verteilung: 
+SeriousDlqin2yrs
+0    8357
+1    8357
+Name: count, dtype: int64
+Beste Genauigkeit: 0.7784
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 50}
+
+Beste Genauigkeit: 0.7793
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 100}
+
+Beste Genauigkeit: 0.7783
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 100}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv: 0.7786
+Standardabweichung der Genauigkeit: 0.0005
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 50}, {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 100}, {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 100}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 100}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv
+Klassen: [0 1]
+Verteilung: 
+y
+0    6636
+1    6636
+Name: count, dtype: int64
+Beste Genauigkeit: 0.7197
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.7190
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.7181
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv: 0.7189
+Standardabweichung der Genauigkeit: 0.0006
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv
+Klassen: [0 1]
+Verteilung: 
+readmitted
+0    35545
+1    35545
+Name: count, dtype: int64
+Beste Genauigkeit: 0.6070
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.6063
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.6073
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv: 0.6069
+Standardabweichung der Genauigkeit: 0.0004
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv
+Klassen: [0 1]
+Verteilung: 
+RiskPerformance
+0    5000
+1    5000
+Name: count, dtype: int64
+Beste Genauigkeit: 0.7179
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.7188
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.7190
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv: 0.7186
+Standardabweichung der Genauigkeit: 0.0005
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}
