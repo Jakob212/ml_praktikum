@@ -1,341 +1,1253 @@
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv ===
+Klassenverteilung:
 binaryClass
 N    6744
 P    6744
 Name: count, dtype: int64
-Run 1 Accuracy: 0.8347 Time: 3.6476s
-Run 2 Accuracy: 0.8381 Time: 4.0213s
-Run 3 Accuracy: 0.8396 Time: 3.8327s
-Run 4 Accuracy: 0.8312 Time: 3.7831s
-Run 5 Accuracy: 0.8403 Time: 3.7242s
-Run 6 Accuracy: 0.8352 Time: 3.6772s
-Run 7 Accuracy: 0.8312 Time: 3.7417s
-Run 8 Accuracy: 0.8372 Time: 3.9861s
-Run 9 Accuracy: 0.8436 Time: 3.8743s
-Run 10 Accuracy: 0.8356 Time: 3.6855s
-Average Accuracy: 0.8367 ± 0.0039
-Average Time: 3.7974s ± 0.1295s
-Best Run: 9 Accuracy: 0.8436 {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
-Most Common: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10} in 7 of 10 runs
+Run 1:
+Test-Accuracy: 0.8347
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 7.63s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\jannis.csv
+Run 2:
+Test-Accuracy: 0.8381
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.65s
+
+Run 3:
+Test-Accuracy: 0.8396
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 7.67s
+
+Run 4:
+Test-Accuracy: 0.8312
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.63s
+
+Run 5:
+Test-Accuracy: 0.8403
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 7.65s
+
+Run 6:
+Test-Accuracy: 0.8352
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.64s
+
+Run 7:
+Test-Accuracy: 0.8312
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.80s
+
+Run 8:
+Test-Accuracy: 0.8372
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.71s
+
+Run 9:
+Test-Accuracy: 0.8436
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.79s
+
+Run 10:
+Test-Accuracy: 0.8356
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.63s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.8347, 0.8381, 0.8396, 0.8312, 0.8403, 0.8352, 0.8312, 0.8372, 0.8436, 0.8356
+
+Durchschnittliche Accuracy: 0.8367 ± 0.0037
+Durchschnittliche Laufzeit: 7.68s ± 0.06s
+
+Bester Run (Nr. 9):
+Accuracy: 0.8436
+Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+
+Häufigste Parameterkombination (7/10):
+{'min_samples_leaf': 10, 'max_depth': 10, 'max_features': None}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\jannis.csv ===
+Konvertiere Zielspalte 'class' zu String.
+Klassenverteilung:
 class
 0    28790
 1    28790
 Name: count, dtype: int64
-Run 1 Accuracy: 0.7428 Time: 52.6111s
-Run 2 Accuracy: 0.7402 Time: 52.4182s
-Run 3 Accuracy: 0.7356 Time: 53.2919s
-Run 4 Accuracy: 0.7421 Time: 51.9057s
-Run 5 Accuracy: 0.7381 Time: 52.3226s
-Run 6 Accuracy: 0.7450 Time: 50.7394s
-Run 7 Accuracy: 0.7459 Time: 51.6921s
-Run 8 Accuracy: 0.7389 Time: 52.2566s
-Run 9 Accuracy: 0.7422 Time: 50.6825s
-Run 10 Accuracy: 0.7461 Time: 52.1039s
-Average Accuracy: 0.7417 ± 0.0035
-Average Time: 52.0024s ± 0.8046s
-Best Run: 10 Accuracy: 0.7461 {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
-Most Common: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1} in 7 of 10 runs
+Run 1:
+Test-Accuracy: 0.7428
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 118.40s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv
+Run 2:
+Test-Accuracy: 0.7402
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 118.03s
+
+Run 3:
+Test-Accuracy: 0.7356
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 121.59s
+
+Run 4:
+Test-Accuracy: 0.7421
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 117.37s
+
+Run 5:
+Test-Accuracy: 0.7381
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 118.32s
+
+Run 6:
+Test-Accuracy: 0.7450
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 116.87s
+
+Run 7:
+Test-Accuracy: 0.7459
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 118.90s
+
+Run 8:
+Test-Accuracy: 0.7389
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 120.06s
+
+Run 9:
+Test-Accuracy: 0.7422
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 117.07s
+
+Run 10:
+Test-Accuracy: 0.7461
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 119.23s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.7428, 0.7402, 0.7356, 0.7421, 0.7381, 0.7450, 0.7459, 0.7389, 0.7422, 0.7461
+
+Durchschnittliche Accuracy: 0.7417 ± 0.0033
+Durchschnittliche Laufzeit: 118.58s ± 1.37s
+
+Bester Run (Nr. 10):
+Accuracy: 0.7461
+Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+
+Häufigste Parameterkombination (7/10):
+{'max_depth': 10, 'min_samples_leaf': 1, 'max_features': None}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv ===
+Klassenverteilung:
 class
 g    6688
 h    6688
 Name: count, dtype: int64
-Run 1 Accuracy: 0.8181 Time: 2.9515s
-Run 2 Accuracy: 0.8143 Time: 2.8820s
-Run 3 Accuracy: 0.8186 Time: 2.9178s
-Run 4 Accuracy: 0.8053 Time: 2.8831s
-Run 5 Accuracy: 0.8049 Time: 2.9044s
-Run 6 Accuracy: 0.8143 Time: 3.0564s
-Run 7 Accuracy: 0.8127 Time: 2.9429s
-Run 8 Accuracy: 0.8181 Time: 2.8992s
-Run 9 Accuracy: 0.8134 Time: 2.9857s
-Run 10 Accuracy: 0.8188 Time: 2.9724s
-Average Accuracy: 0.8139 ± 0.0051
-Average Time: 2.9395s ± 0.0546s
-Best Run: 10 Accuracy: 0.8188 {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
-Most Common: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5} in 5 of 10 runs
+Run 1:
+Test-Accuracy: 0.8181
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 6.33s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv
+Run 2:
+Test-Accuracy: 0.8143
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 6.21s
+
+Run 3:
+Test-Accuracy: 0.8186
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 6.29s
+
+Run 4:
+Test-Accuracy: 0.8053
+Beste Parameter: {'max_depth': 20, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 6.23s
+
+Run 5:
+Test-Accuracy: 0.8049
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 6.24s
+
+Run 6:
+Test-Accuracy: 0.8143
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 6.45s
+
+Run 7:
+Test-Accuracy: 0.8127
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 6.39s
+
+Run 8:
+Test-Accuracy: 0.8181
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 6.30s
+
+Run 9:
+Test-Accuracy: 0.8134
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 6.28s
+
+Run 10:
+Test-Accuracy: 0.8188
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 6.34s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.8181, 0.8143, 0.8186, 0.8053, 0.8049, 0.8143, 0.8127, 0.8181, 0.8134, 0.8188
+
+Durchschnittliche Accuracy: 0.8139 ± 0.0049
+Durchschnittliche Laufzeit: 6.31s ± 0.07s
+
+Bester Run (Nr. 10):
+Accuracy: 0.8188
+Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+
+Häufigste Parameterkombination (5/10):
+{'min_samples_leaf': 5, 'max_depth': 10, 'max_features': None}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv ===
+Konvertiere Zielspalte 'signal' zu String.
+Klassenverteilung:
 signal
 False    36499
 True     36499
 Name: count, dtype: int64
-Run 1 Accuracy: 0.9015 Time: 68.5889s
-Run 2 Accuracy: 0.8956 Time: 68.0156s
-Run 3 Accuracy: 0.8991 Time: 68.6725s
-Run 4 Accuracy: 0.9005 Time: 67.3507s
-Run 5 Accuracy: 0.9002 Time: 66.7898s
-Run 6 Accuracy: 0.8965 Time: 67.6888s
-Run 7 Accuracy: 0.9024 Time: 69.0279s
-Run 8 Accuracy: 0.8980 Time: 67.4708s
-Run 9 Accuracy: 0.9023 Time: 67.9628s
-Run 10 Accuracy: 0.8976 Time: 68.6380s
-Average Accuracy: 0.8994 ± 0.0024
-Average Time: 68.0206s ± 0.7089s
-Best Run: 7 Accuracy: 0.9024 {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
-Most Common: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10} in 5 of 10 runs
+Run 1:
+Test-Accuracy: 0.9015
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 154.67s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv
+Run 2:
+Test-Accuracy: 0.8956
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 152.89s
+
+Run 3:
+Test-Accuracy: 0.8991
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 154.90s
+
+Run 4:
+Test-Accuracy: 0.9005
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 153.04s
+
+Run 5:
+Test-Accuracy: 0.9002
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 151.42s
+
+Run 6:
+Test-Accuracy: 0.8965
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 153.71s
+
+Run 7:
+Test-Accuracy: 0.9024
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 155.91s
+
+Run 8:
+Test-Accuracy: 0.8980
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 153.03s
+
+Run 9:
+Test-Accuracy: 0.9023
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 153.51s
+
+Run 10:
+Test-Accuracy: 0.8976
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 155.52s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.9015, 0.8956, 0.8991, 0.9005, 0.9002, 0.8965, 0.9024, 0.8980, 0.9023, 0.8976
+
+Durchschnittliche Accuracy: 0.8994 ± 0.0023
+Durchschnittliche Laufzeit: 153.86s ± 1.31s
+
+Bester Run (Nr. 7):
+Accuracy: 0.9024
+Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+
+Häufigste Parameterkombination (5/10):
+{'min_samples_leaf': 10, 'max_depth': 10, 'max_features': None}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv ===
+Klassenverteilung:
 binaryClass
 N    5041
 P    5041
 Name: count, dtype: int64
-Run 1 Accuracy: 0.9699 Time: 1.1526s
-Run 2 Accuracy: 0.9691 Time: 1.1790s
-Run 3 Accuracy: 0.9708 Time: 1.1717s
-Run 4 Accuracy: 0.9714 Time: 1.1635s
-Run 5 Accuracy: 0.9729 Time: 1.1893s
-Run 6 Accuracy: 0.9714 Time: 1.1577s
-Run 7 Accuracy: 0.9723 Time: 1.1675s
-Run 8 Accuracy: 0.9673 Time: 1.1693s
-Run 9 Accuracy: 0.9705 Time: 1.1671s
-Run 10 Accuracy: 0.9685 Time: 1.1847s
-Average Accuracy: 0.9704 ± 0.0018
-Average Time: 1.1703s ± 0.0115s
-Best Run: 5 Accuracy: 0.9729 {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
-Most Common: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1} in 7 of 10 runs
+Run 1:
+Test-Accuracy: 0.9699
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 2.47s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv
+Run 2:
+Test-Accuracy: 0.9691
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 2.53s
+
+Run 3:
+Test-Accuracy: 0.9708
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 2.53s
+
+Run 4:
+Test-Accuracy: 0.9714
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 2.52s
+
+Run 5:
+Test-Accuracy: 0.9729
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 2.54s
+
+Run 6:
+Test-Accuracy: 0.9714
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 2.51s
+
+Run 7:
+Test-Accuracy: 0.9723
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 2.52s
+
+Run 8:
+Test-Accuracy: 0.9673
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 2.51s
+
+Run 9:
+Test-Accuracy: 0.9705
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 2.53s
+
+Run 10:
+Test-Accuracy: 0.9685
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 2.59s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.9699, 0.9691, 0.9708, 0.9714, 0.9729, 0.9714, 0.9723, 0.9673, 0.9705, 0.9685
+
+Durchschnittliche Accuracy: 0.9704 ± 0.0017
+Durchschnittliche Laufzeit: 2.53s ± 0.03s
+
+Bester Run (Nr. 5):
+Accuracy: 0.9729
+Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+
+Häufigste Parameterkombination (7/10):
+{'max_features': None, 'min_samples_leaf': 1, 'max_depth': 10}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv ===
+Konvertiere Zielspalte 'twoyearrecid' zu String.
+Klassenverteilung:
 twoyearrecid
 0    2483
 1    2483
 Name: count, dtype: int64
-Run 1 Accuracy: 0.6498 Time: 0.3517s
-Run 2 Accuracy: 0.6359 Time: 0.3344s
-Run 3 Accuracy: 0.6449 Time: 0.3419s
-Run 4 Accuracy: 0.6431 Time: 0.3497s
-Run 5 Accuracy: 0.6673 Time: 0.3441s
-Run 6 Accuracy: 0.6498 Time: 0.3450s
-Run 7 Accuracy: 0.6220 Time: 0.3471s
-Run 8 Accuracy: 0.6649 Time: 0.3372s
-Run 9 Accuracy: 0.6498 Time: 0.3333s
-Run 10 Accuracy: 0.6582 Time: 0.3326s
-Average Accuracy: 0.6486 ± 0.0134
-Average Time: 0.3417s ± 0.0070s
-Best Run: 5 Accuracy: 0.6673 {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 10}
-Most Common: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 10} in 5 of 10 runs
+Run 1:
+Test-Accuracy: 0.6498
+Beste Parameter: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 1.18s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_cat\road-safety.csv
+Run 2:
+Test-Accuracy: 0.6359
+Beste Parameter: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 1.23s
+
+Run 3:
+Test-Accuracy: 0.6449
+Beste Parameter: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 1.19s
+
+Run 4:
+Test-Accuracy: 0.6431
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 5}
+Zeit: 1.18s
+
+Run 5:
+Test-Accuracy: 0.6673
+Beste Parameter: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 1.19s
+
+Run 6:
+Test-Accuracy: 0.6498
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 1.19s
+
+Run 7:
+Test-Accuracy: 0.6220
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 1.19s
+
+Run 8:
+Test-Accuracy: 0.6649
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 1.20s
+
+Run 9:
+Test-Accuracy: 0.6498
+Beste Parameter: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 1.23s
+
+Run 10:
+Test-Accuracy: 0.6582
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 1.20s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.6498, 0.6359, 0.6449, 0.6431, 0.6673, 0.6498, 0.6220, 0.6649, 0.6498, 0.6582
+
+Durchschnittliche Accuracy: 0.6486 ± 0.0127
+Durchschnittliche Laufzeit: 1.20s ± 0.02s
+
+Bester Run (Nr. 5):
+Accuracy: 0.6673
+Parameter: {'max_depth': None, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+
+Häufigste Parameterkombination (5/10):
+{'max_features': 'sqrt', 'max_depth': None, 'min_samples_leaf': 10}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\road-safety.csv ===
+Konvertiere Zielspalte 'SexofDriver' zu String.
+Klassenverteilung:
 SexofDriver
 0    55881
 1    55881
 Name: count, dtype: int64
-Run 1 Accuracy: 0.7600 Time: 23.6691s
-Run 2 Accuracy: 0.7631 Time: 23.7906s
-Run 3 Accuracy: 0.7580 Time: 23.7817s
-Run 4 Accuracy: 0.7607 Time: 23.5549s
-Run 5 Accuracy: 0.7569 Time: 23.9926s
-Run 6 Accuracy: 0.7624 Time: 23.7209s
-Run 7 Accuracy: 0.7580 Time: 23.7008s
-Run 8 Accuracy: 0.7612 Time: 24.0836s
-Run 9 Accuracy: 0.7582 Time: 23.6951s
-Run 10 Accuracy: 0.7588 Time: 23.7447s
-Average Accuracy: 0.7597 ± 0.0021
-Average Time: 23.7734s ± 0.1557s
-Best Run: 2 Accuracy: 0.7631 {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
-Most Common: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5} in 6 of 10 runs
+Run 1:
+Test-Accuracy: 0.7600
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 65.88s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_cat\albert.csv
+Run 2:
+Test-Accuracy: 0.7631
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 66.09s
+
+Run 3:
+Test-Accuracy: 0.7580
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 65.82s
+
+Run 4:
+Test-Accuracy: 0.7607
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 65.67s
+
+Run 5:
+Test-Accuracy: 0.7569
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 66.30s
+
+Run 6:
+Test-Accuracy: 0.7624
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 66.05s
+
+Run 7:
+Test-Accuracy: 0.7580
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 65.48s
+
+Run 8:
+Test-Accuracy: 0.7612
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 66.11s
+
+Run 9:
+Test-Accuracy: 0.7582
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 65.52s
+
+Run 10:
+Test-Accuracy: 0.7588
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 66.09s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.7600, 0.7631, 0.7580, 0.7607, 0.7569, 0.7624, 0.7580, 0.7612, 0.7582, 0.7588
+
+Durchschnittliche Accuracy: 0.7597 ± 0.0020
+Durchschnittliche Laufzeit: 65.90s ± 0.26s
+
+Bester Run (Nr. 2):
+Accuracy: 0.7631
+Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+
+Häufigste Parameterkombination (6/10):
+{'min_samples_leaf': 5, 'max_features': None, 'max_depth': 10}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\albert.csv ===
+Konvertiere Zielspalte 'class' zu String.
+Klassenverteilung:
 class
 0    29126
 1    29126
 Name: count, dtype: int64
-Run 1 Accuracy: 0.6308 Time: 10.5696s
-Run 2 Accuracy: 0.6275 Time: 10.5949s
-Run 3 Accuracy: 0.6235 Time: 10.4927s
-Run 4 Accuracy: 0.6293 Time: 10.5227s
-Run 5 Accuracy: 0.6320 Time: 10.3986s
-Run 6 Accuracy: 0.6318 Time: 10.5418s
-Run 7 Accuracy: 0.6301 Time: 10.5141s
-Run 8 Accuracy: 0.6296 Time: 10.3630s
-Run 9 Accuracy: 0.6290 Time: 10.4635s
-Run 10 Accuracy: 0.6339 Time: 10.4802s
-Average Accuracy: 0.6298 ± 0.0028
-Average Time: 10.4941s ± 0.0721s
-Best Run: 10 Accuracy: 0.6339 {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 5}
-Most Common: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 5} in 4 of 10 runs
+Run 1:
+Test-Accuracy: 0.6308
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Zeit: 29.40s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv
+Run 2:
+Test-Accuracy: 0.6275
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 29.90s
+
+Run 3:
+Test-Accuracy: 0.6235
+Beste Parameter: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 5}
+Zeit: 29.71s
+
+Run 4:
+Test-Accuracy: 0.6293
+Beste Parameter: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 10}
+Zeit: 29.58s
+
+Run 5:
+Test-Accuracy: 0.6320
+Beste Parameter: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 5}
+Zeit: 29.57s
+
+Run 6:
+Test-Accuracy: 0.6318
+Beste Parameter: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 10}
+Zeit: 29.60s
+
+Run 7:
+Test-Accuracy: 0.6301
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 29.52s
+
+Run 8:
+Test-Accuracy: 0.6296
+Beste Parameter: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 10}
+Zeit: 29.57s
+
+Run 9:
+Test-Accuracy: 0.6290
+Beste Parameter: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 5}
+Zeit: 29.74s
+
+Run 10:
+Test-Accuracy: 0.6339
+Beste Parameter: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 5}
+Zeit: 29.43s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.6308, 0.6275, 0.6235, 0.6293, 0.6320, 0.6318, 0.6301, 0.6296, 0.6290, 0.6339
+
+Durchschnittliche Accuracy: 0.6298 ± 0.0027
+Durchschnittliche Laufzeit: 29.60s ± 0.14s
+
+Bester Run (Nr. 10):
+Accuracy: 0.6339
+Parameter: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 5}
+
+Häufigste Parameterkombination (4/10):
+{'max_features': 'log2', 'min_samples_leaf': 5, 'max_depth': 10}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv ===
+Konvertiere Zielspalte 'Class' zu String.
+Klassenverteilung:
 Class
 1    5289
 2    5289
 Name: count, dtype: int64
-Run 1 Accuracy: 0.7669 Time: 0.7875s
-Run 2 Accuracy: 0.7791 Time: 0.8112s
-Run 3 Accuracy: 0.7740 Time: 0.7840s
-Run 4 Accuracy: 0.7700 Time: 0.7799s
-Run 5 Accuracy: 0.7816 Time: 0.7723s
-Run 6 Accuracy: 0.7836 Time: 0.7771s
-Run 7 Accuracy: 0.7745 Time: 0.7712s
-Run 8 Accuracy: 0.7791 Time: 0.7679s
-Run 9 Accuracy: 0.7745 Time: 0.7720s
-Run 10 Accuracy: 0.7666 Time: 0.7640s
-Average Accuracy: 0.7750 ± 0.0059
-Average Time: 0.7787s ± 0.0135s
-Best Run: 6 Accuracy: 0.7836 {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
-Most Common: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10} in 10 of 10 runs
+Run 1:
+Test-Accuracy: 0.7669
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 2.75s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv
+Run 2:
+Test-Accuracy: 0.7791
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 2.76s
+
+Run 3:
+Test-Accuracy: 0.7740
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 2.86s
+
+Run 4:
+Test-Accuracy: 0.7700
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 2.81s
+
+Run 5:
+Test-Accuracy: 0.7816
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 2.74s
+
+Run 6:
+Test-Accuracy: 0.7836
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 2.78s
+
+Run 7:
+Test-Accuracy: 0.7745
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 2.75s
+
+Run 8:
+Test-Accuracy: 0.7791
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 2.74s
+
+Run 9:
+Test-Accuracy: 0.7745
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 2.76s
+
+Run 10:
+Test-Accuracy: 0.7666
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 2.75s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.7669, 0.7791, 0.7740, 0.7700, 0.7816, 0.7836, 0.7745, 0.7791, 0.7745, 0.7666
+
+Durchschnittliche Accuracy: 0.7750 ± 0.0056
+Durchschnittliche Laufzeit: 2.77s ± 0.04s
+
+Bester Run (Nr. 6):
+Accuracy: 0.7836
+Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+
+Häufigste Parameterkombination (10/10):
+{'min_samples_leaf': 10, 'max_features': None, 'max_depth': 10}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv ===
+Konvertiere Zielspalte 'target' zu String.
+Klassenverteilung:
 target
 0    1717
 1    1717
 Name: count, dtype: int64
-Run 1 Accuracy: 0.7258 Time: 4.3490s
-Run 2 Accuracy: 0.7284 Time: 4.2902s
-Run 3 Accuracy: 0.7258 Time: 4.1996s
-Run 4 Accuracy: 0.7135 Time: 4.1760s
-Run 5 Accuracy: 0.7013 Time: 4.1624s
-Run 6 Accuracy: 0.7135 Time: 4.1946s
-Run 7 Accuracy: 0.6812 Time: 4.2268s
-Run 8 Accuracy: 0.7231 Time: 4.2491s
-Run 9 Accuracy: 0.7223 Time: 4.1616s
-Run 10 Accuracy: 0.6987 Time: 4.2643s
-Average Accuracy: 0.7134 ± 0.0153
-Average Time: 4.2274s ± 0.0611s
-Best Run: 2 Accuracy: 0.7284 {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
-Most Common: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1} in 5 of 10 runs
+Run 1:
+Test-Accuracy: 0.7258
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 9.57s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv
+Run 2:
+Test-Accuracy: 0.7284
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 9.47s
+
+Run 3:
+Test-Accuracy: 0.7258
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 9.16s
+
+Run 4:
+Test-Accuracy: 0.7135
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 9.19s
+
+Run 5:
+Test-Accuracy: 0.7013
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 9.16s
+
+Run 6:
+Test-Accuracy: 0.7135
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 8.97s
+
+Run 7:
+Test-Accuracy: 0.6812
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 9.31s
+
+Run 8:
+Test-Accuracy: 0.7231
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 9.28s
+
+Run 9:
+Test-Accuracy: 0.7223
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 9.19s
+
+Run 10:
+Test-Accuracy: 0.6987
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 9.41s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.7258, 0.7284, 0.7258, 0.7135, 0.7013, 0.7135, 0.6812, 0.7231, 0.7223, 0.6987
+
+Durchschnittliche Accuracy: 0.7134 ± 0.0145
+Durchschnittliche Laufzeit: 9.27s ± 0.17s
+
+Bester Run (Nr. 2):
+Accuracy: 0.7284
+Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+
+Häufigste Parameterkombination (5/10):
+{'max_features': None, 'min_samples_leaf': 1, 'max_depth': 10}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv ===
+Konvertiere Zielspalte 'price_above_median' zu String.
+Klassenverteilung:
 price_above_median
 0    10317
 1    10317
 Name: count, dtype: int64
-Run 1 Accuracy: 0.8460 Time: 2.5593s
-Run 2 Accuracy: 0.8523 Time: 2.5842s
-Run 3 Accuracy: 0.8533 Time: 2.6145s
-Run 4 Accuracy: 0.8498 Time: 2.6202s
-Run 5 Accuracy: 0.8492 Time: 2.6398s
-Run 6 Accuracy: 0.8502 Time: 2.5910s
-Run 7 Accuracy: 0.8465 Time: 2.6196s
-Run 8 Accuracy: 0.8566 Time: 2.6244s
-Run 9 Accuracy: 0.8485 Time: 2.6266s
-Run 10 Accuracy: 0.8476 Time: 2.6217s
-Average Accuracy: 0.8500 ± 0.0033
-Average Time: 2.6101s ± 0.0243s
-Best Run: 8 Accuracy: 0.8566 {'max_depth': None, 'max_features': None, 'min_samples_leaf': 10}
-Most Common: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 10} in 5 of 10 runs
+Run 1:
+Test-Accuracy: 0.8460
+Beste Parameter: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 1}
+Zeit: 7.79s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv
+Run 2:
+Test-Accuracy: 0.8523
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.84s
+
+Run 3:
+Test-Accuracy: 0.8533
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.84s
+
+Run 4:
+Test-Accuracy: 0.8498
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.99s
+
+Run 5:
+Test-Accuracy: 0.8492
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.88s
+
+Run 6:
+Test-Accuracy: 0.8502
+Beste Parameter: {'max_depth': 10, 'max_features': 'log2', 'min_samples_leaf': 5}
+Zeit: 7.78s
+
+Run 7:
+Test-Accuracy: 0.8465
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.86s
+
+Run 8:
+Test-Accuracy: 0.8566
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.92s
+
+Run 9:
+Test-Accuracy: 0.8485
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.95s
+
+Run 10:
+Test-Accuracy: 0.8476
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 7.94s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.8460, 0.8523, 0.8533, 0.8498, 0.8492, 0.8502, 0.8465, 0.8566, 0.8485, 0.8476
+
+Durchschnittliche Accuracy: 0.8500 ± 0.0031
+Durchschnittliche Laufzeit: 7.88s ± 0.07s
+
+Bester Run (Nr. 8):
+Accuracy: 0.8566
+Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 10}
+
+Häufigste Parameterkombination (5/10):
+{'max_depth': None, 'min_samples_leaf': 10, 'max_features': None}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv ===
+Konvertiere Zielspalte 'SeriousDlqin2yrs' zu String.
+Klassenverteilung:
 SeriousDlqin2yrs
 0    8357
 1    8357
 Name: count, dtype: int64
-Run 1 Accuracy: 0.7538 Time: 1.5569s
-Run 2 Accuracy: 0.7417 Time: 1.6074s
-Run 3 Accuracy: 0.7529 Time: 1.5503s
-Run 4 Accuracy: 0.7496 Time: 1.5854s
-Run 5 Accuracy: 0.7478 Time: 1.5889s
-Run 6 Accuracy: 0.7398 Time: 1.5652s
-Run 7 Accuracy: 0.7516 Time: 1.5770s
-Run 8 Accuracy: 0.7487 Time: 1.5872s
-Run 9 Accuracy: 0.7513 Time: 1.5889s
-Run 10 Accuracy: 0.7572 Time: 1.5804s
-Average Accuracy: 0.7494 ± 0.0053
-Average Time: 1.5788s ± 0.0171s
-Best Run: 10 Accuracy: 0.7572 {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
-Most Common: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10} in 5 of 10 runs
+Run 1:
+Test-Accuracy: 0.7538
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 5.13s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv
+Run 2:
+Test-Accuracy: 0.7417
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 5.22s
+
+Run 3:
+Test-Accuracy: 0.7529
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 5.15s
+
+Run 4:
+Test-Accuracy: 0.7496
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 5.18s
+
+Run 5:
+Test-Accuracy: 0.7478
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 5.23s
+
+Run 6:
+Test-Accuracy: 0.7398
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 5.14s
+
+Run 7:
+Test-Accuracy: 0.7516
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 5.20s
+
+Run 8:
+Test-Accuracy: 0.7487
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 5.18s
+
+Run 9:
+Test-Accuracy: 0.7513
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 5.13s
+
+Run 10:
+Test-Accuracy: 0.7572
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 5.15s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.7538, 0.7417, 0.7529, 0.7496, 0.7478, 0.7398, 0.7516, 0.7487, 0.7513, 0.7572
+
+Durchschnittliche Accuracy: 0.7494 ± 0.0050
+Durchschnittliche Laufzeit: 5.17s ± 0.03s
+
+Bester Run (Nr. 10):
+Accuracy: 0.7572
+Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+
+Häufigste Parameterkombination (5/10):
+{'max_features': 'sqrt', 'min_samples_leaf': 10, 'max_depth': 10}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv ===
+Konvertiere Zielspalte 'y' zu String.
+Klassenverteilung:
 y
 0    6636
 1    6636
 Name: count, dtype: int64
-Run 1 Accuracy: 0.6679 Time: 2.5926s
-Run 2 Accuracy: 0.6738 Time: 2.5825s
-Run 3 Accuracy: 0.6756 Time: 2.5231s
-Run 4 Accuracy: 0.6817 Time: 2.5933s
-Run 5 Accuracy: 0.6813 Time: 2.5073s
-Run 6 Accuracy: 0.6655 Time: 2.5207s
-Run 7 Accuracy: 0.6939 Time: 2.5691s
-Run 8 Accuracy: 0.6781 Time: 2.5350s
-Run 9 Accuracy: 0.6575 Time: 2.4909s
-Run 10 Accuracy: 0.6691 Time: 2.5141s
-Average Accuracy: 0.6745 ± 0.0102
-Average Time: 2.5429s ± 0.0380s
-Best Run: 7 Accuracy: 0.6939 {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
-Most Common: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10} in 3 of 10 runs
+Run 1:
+Test-Accuracy: 0.6679
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 6.99s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv
+Run 2:
+Test-Accuracy: 0.6738
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 6.76s
+
+Run 3:
+Test-Accuracy: 0.6756
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 6.82s
+
+Run 4:
+Test-Accuracy: 0.6817
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 6.93s
+
+Run 5:
+Test-Accuracy: 0.6813
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Zeit: 6.77s
+
+Run 6:
+Test-Accuracy: 0.6655
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 6.79s
+
+Run 7:
+Test-Accuracy: 0.6939
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 6.98s
+
+Run 8:
+Test-Accuracy: 0.6781
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 5}
+Zeit: 6.83s
+
+Run 9:
+Test-Accuracy: 0.6575
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 5}
+Zeit: 6.75s
+
+Run 10:
+Test-Accuracy: 0.6691
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 6.82s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.6679, 0.6738, 0.6756, 0.6817, 0.6813, 0.6655, 0.6939, 0.6781, 0.6575, 0.6691
+
+Durchschnittliche Accuracy: 0.6745 ± 0.0097
+Durchschnittliche Laufzeit: 6.84s ± 0.08s
+
+Bester Run (Nr. 7):
+Accuracy: 0.6939
+Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+
+Häufigste Parameterkombination (3/10):
+{'min_samples_leaf': 10, 'max_features': None, 'max_depth': 10}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv ===
+Konvertiere Zielspalte 'readmitted' zu String.
+Klassenverteilung:
 readmitted
 0    35545
 1    35545
 Name: count, dtype: int64
-Run 1 Accuracy: 0.6000 Time: 3.0544s
-Run 2 Accuracy: 0.5999 Time: 3.0926s
-Run 3 Accuracy: 0.6024 Time: 3.0853s
-Run 4 Accuracy: 0.5977 Time: 3.1135s
-Run 5 Accuracy: 0.5966 Time: 3.1080s
-Run 6 Accuracy: 0.5982 Time: 3.0640s
-Run 7 Accuracy: 0.6013 Time: 3.1010s
-Run 8 Accuracy: 0.6055 Time: 3.0717s
-Run 9 Accuracy: 0.5994 Time: 3.0525s
-Run 10 Accuracy: 0.6004 Time: 3.1512s
-Average Accuracy: 0.6001 ± 0.0025
-Average Time: 3.0894s ± 0.0306s
-Best Run: 8 Accuracy: 0.6055 {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
-Most Common: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1} in 6 of 10 runs
+Run 1:
+Test-Accuracy: 0.6000
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Zeit: 15.88s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv
+Run 2:
+Test-Accuracy: 0.5999
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 15.72s
+
+Run 3:
+Test-Accuracy: 0.6024
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Zeit: 15.79s
+
+Run 4:
+Test-Accuracy: 0.5977
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 15.65s
+
+Run 5:
+Test-Accuracy: 0.5966
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Zeit: 15.77s
+
+Run 6:
+Test-Accuracy: 0.5982
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Zeit: 15.94s
+
+Run 7:
+Test-Accuracy: 0.6013
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 15.75s
+
+Run 8:
+Test-Accuracy: 0.6055
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Zeit: 15.84s
+
+Run 9:
+Test-Accuracy: 0.5994
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Zeit: 15.63s
+
+Run 10:
+Test-Accuracy: 0.6004
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 15.89s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.6000, 0.5999, 0.6024, 0.5977, 0.5966, 0.5982, 0.6013, 0.6055, 0.5994, 0.6004
+
+Durchschnittliche Accuracy: 0.6001 ± 0.0024
+Durchschnittliche Laufzeit: 15.79s ± 0.10s
+
+Bester Run (Nr. 8):
+Accuracy: 0.6055
+Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+
+Häufigste Parameterkombination (6/10):
+{'max_features': 'sqrt', 'min_samples_leaf': 1, 'max_depth': 10}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv ===
+Klassenverteilung:
 class
 DOWN    19237
 UP      19237
 Name: count, dtype: int64
-Run 1 Accuracy: 0.8596 Time: 5.2871s
-Run 2 Accuracy: 0.8566 Time: 5.2005s
-Run 3 Accuracy: 0.8595 Time: 5.1912s
-Run 4 Accuracy: 0.8575 Time: 5.1484s
-Run 5 Accuracy: 0.8592 Time: 5.1773s
-Run 6 Accuracy: 0.8554 Time: 5.1532s
-Run 7 Accuracy: 0.8567 Time: 5.1615s
-Run 8 Accuracy: 0.8591 Time: 5.1546s
-Run 9 Accuracy: 0.8568 Time: 5.2456s
-Run 10 Accuracy: 0.8574 Time: 5.1987s
-Average Accuracy: 0.8578 ± 0.0015
-Average Time: 5.1918s ± 0.0447s
-Best Run: 1 Accuracy: 0.8596 {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
-Most Common: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1} in 7 of 10 runs
+Run 1:
+Test-Accuracy: 0.8596
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 11.14s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv
+Run 2:
+Test-Accuracy: 0.8566
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 11.16s
+
+Run 3:
+Test-Accuracy: 0.8595
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 11.17s
+
+Run 4:
+Test-Accuracy: 0.8575
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 11.10s
+
+Run 5:
+Test-Accuracy: 0.8592
+Beste Parameter: {'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 11.14s
+
+Run 6:
+Test-Accuracy: 0.8554
+Beste Parameter: {'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 11.16s
+
+Run 7:
+Test-Accuracy: 0.8567
+Beste Parameter: {'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 11.09s
+
+Run 8:
+Test-Accuracy: 0.8591
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 11.12s
+
+Run 9:
+Test-Accuracy: 0.8568
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 11.19s
+
+Run 10:
+Test-Accuracy: 0.8574
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 11.23s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.8596, 0.8566, 0.8595, 0.8575, 0.8592, 0.8554, 0.8567, 0.8591, 0.8568, 0.8574
+
+Durchschnittliche Accuracy: 0.8578 ± 0.0014
+Durchschnittliche Laufzeit: 11.15s ± 0.04s
+
+Bester Run (Nr. 1):
+Accuracy: 0.8596
+Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+
+Häufigste Parameterkombination (7/10):
+{'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv ===
+Konvertiere Zielspalte 'label' zu String.
+Klassenverteilung:
 label
 0    3804
 1    3804
 Name: count, dtype: int64
-Run 1 Accuracy: 0.5812 Time: 1.5870s
-Run 2 Accuracy: 0.5678 Time: 1.6916s
-Run 3 Accuracy: 0.5915 Time: 1.6556s
-Run 4 Accuracy: 0.5647 Time: 1.6414s
-Run 5 Accuracy: 0.5836 Time: 1.6454s
-Run 6 Accuracy: 0.5686 Time: 1.6676s
-Run 7 Accuracy: 0.5722 Time: 1.6933s
-Run 8 Accuracy: 0.5828 Time: 1.6422s
-Run 9 Accuracy: 0.5793 Time: 1.6796s
-Run 10 Accuracy: 0.5781 Time: 1.6716s
-Average Accuracy: 0.5770 ± 0.0084
-Average Time: 1.6575s ± 0.0314s
-Best Run: 3 Accuracy: 0.5915 {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
-Most Common: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5} in 4 of 10 runs
+Run 1:
+Test-Accuracy: 0.5812
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 4.14s
 
-ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv
+Run 2:
+Test-Accuracy: 0.5678
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 4.29s
+
+Run 3:
+Test-Accuracy: 0.5915
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 4.28s
+
+Run 4:
+Test-Accuracy: 0.5647
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 4.22s
+
+Run 5:
+Test-Accuracy: 0.5836
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 4.29s
+
+Run 6:
+Test-Accuracy: 0.5686
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 10}
+Zeit: 4.34s
+
+Run 7:
+Test-Accuracy: 0.5722
+Beste Parameter: {'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 4.37s
+
+Run 8:
+Test-Accuracy: 0.5828
+Beste Parameter: {'max_depth': None, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 4.28s
+
+Run 9:
+Test-Accuracy: 0.5793
+Beste Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+Zeit: 4.31s
+
+Run 10:
+Test-Accuracy: 0.5781
+Beste Parameter: {'max_depth': 20, 'max_features': None, 'min_samples_leaf': 1}
+Zeit: 4.32s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.5812, 0.5678, 0.5915, 0.5647, 0.5836, 0.5686, 0.5722, 0.5828, 0.5793, 0.5781
+
+Durchschnittliche Accuracy: 0.5770 ± 0.0080
+Durchschnittliche Laufzeit: 4.28s ± 0.06s
+
+Bester Run (Nr. 3):
+Accuracy: 0.5915
+Parameter: {'max_depth': 10, 'max_features': None, 'min_samples_leaf': 5}
+
+Häufigste Parameterkombination (4/10):
+{'min_samples_leaf': 5, 'max_features': None, 'max_depth': 10}
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv ===
+Konvertiere Zielspalte 'RiskPerformance' zu String.
+Klassenverteilung:
 RiskPerformance
 0    5000
 1    5000
 Name: count, dtype: int64
-Run 1 Accuracy: 0.6818 Time: 1.3214s
-Run 2 Accuracy: 0.6803 Time: 1.3195s
-Run 3 Accuracy: 0.6845 Time: 1.3261s
-Run 4 Accuracy: 0.6746 Time: 1.3282s
-Run 5 Accuracy: 0.6836 Time: 1.3863s
-Run 6 Accuracy: 0.6770 Time: 1.3215s
-Run 7 Accuracy: 0.6944 Time: 1.3404s
-Run 8 Accuracy: 0.6779 Time: 1.3039s
-Run 9 Accuracy: 0.6854 Time: 1.3177s
-Run 10 Accuracy: 0.6731 Time: 1.3226s
-Average Accuracy: 0.6812 ± 0.0062
-Average Time: 1.3288s ± 0.0222s
-Best Run: 7 Accuracy: 0.6944 {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
-Most Common: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10} in 6 of 10 runs
+Run 1:
+Test-Accuracy: 0.6818
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 3.83s
 
-Done. All output is printed on console and stored in 'results.txt'.
+Run 2:
+Test-Accuracy: 0.6803
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 3.86s
+
+Run 3:
+Test-Accuracy: 0.6845
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 5}
+Zeit: 3.90s
+
+Run 4:
+Test-Accuracy: 0.6746
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 3.84s
+
+Run 5:
+Test-Accuracy: 0.6836
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 3.86s
+
+Run 6:
+Test-Accuracy: 0.6770
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 3.81s
+
+Run 7:
+Test-Accuracy: 0.6944
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+Zeit: 3.83s
+
+Run 8:
+Test-Accuracy: 0.6779
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 5}
+Zeit: 3.81s
+
+Run 9:
+Test-Accuracy: 0.6854
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Zeit: 3.83s
+
+Run 10:
+Test-Accuracy: 0.6731
+Beste Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1}
+Zeit: 3.84s
+
+
+==================================================
+Ergebniszusammenfassung:
+
+Test-Accuracies (10 Runs):
+0.6818, 0.6803, 0.6845, 0.6746, 0.6836, 0.6770, 0.6944, 0.6779, 0.6854, 0.6731
+
+Durchschnittliche Accuracy: 0.6812 ± 0.0059
+Durchschnittliche Laufzeit: 3.84s ± 0.03s
+
+Bester Run (Nr. 7):
+Accuracy: 0.6944
+Parameter: {'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 10}
+
+Häufigste Parameterkombination (6/10):
+{'max_features': 'sqrt', 'min_samples_leaf': 10, 'max_depth': 10}

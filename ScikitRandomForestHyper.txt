@@ -1,0 +1,104 @@
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv
+Klassen: ['N' 'P']
+Verteilung: 
+binaryClass
+N    5041
+P    5041
+Name: count, dtype: int64
+Beste Genauigkeit: 0.9744
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.9745
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}
+
+Beste Genauigkeit: 0.9747
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv: 0.9745
+Standardabweichung der Genauigkeit: 0.0001
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv
+Klassen: ['DOWN' 'UP']
+Verteilung: 
+class
+DOWN    19237
+UP      19237
+Name: count, dtype: int64
+Beste Genauigkeit: 0.8574
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.8568
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}
+
+Beste Genauigkeit: 0.8564
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv: 0.8569
+Standardabweichung der Genauigkeit: 0.0004
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv
+Klassen: ['g' 'h']
+Verteilung: 
+class
+g    6688
+h    6688
+Name: count, dtype: int64
+Beste Genauigkeit: 0.8527
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.8535
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Beste Genauigkeit: 0.8532
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv: 0.8531
+Standardabweichung der Genauigkeit: 0.0003
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv
+Klassen: ['N' 'P']
+Verteilung: 
+binaryClass
+N    6744
+P    6744
+Name: count, dtype: int64
+Beste Genauigkeit: 0.8783
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.8775
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Beste Genauigkeit: 0.8765
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv: 0.8774
+Standardabweichung der Genauigkeit: 0.0008
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv
+Klassen: [0 1]
+Verteilung:
+twoyearrecid
+0    2483
+1    2483
+Name: count, dtype: int64
+Beste Genauigkeit: 0.6756
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.6750
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 50}
+
+Beste Genauigkeit: 0.6756
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv: 0.6754
+Standardabweichung der Genauigkeit: 0.0003
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 50}, {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 30, 'n_estimators': 150}
