@@ -1,265 +1,436 @@
 === Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv ===
 Klassenverteilung:
 {P=6744, N=6744}
-Durchlauf  1 Dauer: 2,7390s
-Durchlauf  2 Dauer: 1,7030s
-Durchlauf  3 Dauer: 1,5650s
-Durchlauf  4 Dauer: 1,6280s
-Durchlauf  5 Dauer: 1,9700s
-Durchlauf  6 Dauer: 1,6330s
-Durchlauf  7 Dauer: 1,7170s
-Durchlauf  8 Dauer: 1,9630s
-Durchlauf  9 Dauer: 1,7010s
-Durchlauf 10 Dauer: 1,6540s
-Durchlauf 11 Dauer: 2,0240s
-Durchlauf 12 Dauer: 1,6860s
-Durchlauf 13 Dauer: 1,6350s
-Durchlauf 14 Dauer: 1,9860s
-Durchlauf 15 Dauer: 1,7320s
+Durchlauf  1 Dauer: 7,7480s
+Durchlauf  2 Dauer: 4,0260s
+Durchlauf  3 Dauer: 4,0230s
+Durchlauf  4 Dauer: 3,5670s
+Durchlauf  5 Dauer: 3,2560s
+Durchlauf  6 Dauer: 3,9340s
+Durchlauf  7 Dauer: 3,9600s
+Durchlauf  8 Dauer: 3,3880s
+Durchlauf  9 Dauer: 3,0950s
+Durchlauf 10 Dauer: 3,6280s
+Durchlauf 11 Dauer: 2,6870s
+Durchlauf 12 Dauer: 2,4940s
+Durchlauf 13 Dauer: 2,8160s
+Durchlauf 14 Dauer: 3,1110s
+Durchlauf 15 Dauer: 3,9120s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.8812, 0.8799, 0.8810, 0.8823, 0.8754, 0.8857, 0.8861, 0.8779, 0.8792, 0.8699, 0.8726, 0.8728, 0.8810, 0.8835, 0.8808]
 Test-Accuracy (15 Wiederholungen): 0,8793 ± 0,0048
 Innere CV-Accuracy (3-fach, Durchschnitt): 0,8762 ± 0,0028
-Durchschnittliche Dauer: 1,8224s ± 0,2951s
-
-Signifikanztest (Ein-Stichproben-t-Test gegen 0.5):
-T-Statistik: 307,5786, p-Wert (approx.): 0,000000
-==> Die mittlere Accuracy (0,879) ist signifikant von 0.5 verschieden (5%-Niveau).
+Durchschnittliche Dauer: 3,7097s ± 1,2264s
 
 === Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\jannis.csv ===
 Klasse ist numerisch, wandle in nominal um ...
 Klassenverteilung:
 {0=28790, 1=28790}
-Durchlauf  1 Dauer: 28,0210s
-Durchlauf  2 Dauer: 29,8250s
-Durchlauf  3 Dauer: 26,9260s
-Durchlauf  4 Dauer: 27,3490s
-Durchlauf  5 Dauer: 27,6020s
-Durchlauf  6 Dauer: 28,2130s
-Durchlauf  7 Dauer: 27,3980s
-Durchlauf  8 Dauer: 27,4280s
-Durchlauf  9 Dauer: 33,5160s
-Durchlauf 10 Dauer: 46,0080s
-Durchlauf 11 Dauer: 45,2240s
-Durchlauf 12 Dauer: 45,6290s
-Durchlauf 13 Dauer: 39,9690s
-Durchlauf 14 Dauer: 30,8830s
-Durchlauf 15 Dauer: 31,0700s
+Durchlauf  1 Dauer: 31,0450s
+Durchlauf  2 Dauer: 28,7230s
+Durchlauf  3 Dauer: 32,7750s
+Durchlauf  4 Dauer: 43,3110s
+Durchlauf  5 Dauer: 68,3310s
+Durchlauf  6 Dauer: 38,3180s
+Durchlauf  7 Dauer: 40,7040s
+Durchlauf  8 Dauer: 66,1660s
+Durchlauf  9 Dauer: 39,2880s
+Durchlauf 10 Dauer: 31,3530s
+Durchlauf 11 Dauer: 37,3950s
+Durchlauf 12 Dauer: 62,4510s
+Durchlauf 13 Dauer: 43,4230s
+Durchlauf 14 Dauer: 30,5880s
+Durchlauf 15 Dauer: 32,4920s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.7822, 0.7773, 0.7845, 0.7790, 0.7858, 0.7816, 0.7815, 0.7808, 0.7844, 0.7854, 0.7833, 0.7834, 0.7829, 0.7801, 0.7787]
 Test-Accuracy (15 Wiederholungen): 0,7821 ± 0,0025
 Innere CV-Accuracy (3-fach, Durchschnitt): 0,7787 ± 0,0011
-Durchschnittliche Dauer: 33,0041s ± 7,3356s
-
-Signifikanztest (Ein-Stichproben-t-Test gegen 0.5):
-T-Statistik: 431,4290, p-Wert (approx.): 0,000000
-==> Die mittlere Accuracy (0,782) ist signifikant von 0.5 verschieden (5%-Niveau).
+Durchschnittliche Dauer: 41,7575s ± 13,2493s
 
 === Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv ===
 Klassenverteilung:
 {g=6688, h=6688}
-Durchlauf  1 Dauer: 2,2160s
-Durchlauf  2 Dauer: 2,4000s
-Durchlauf  3 Dauer: 2,3610s
-Durchlauf  4 Dauer: 2,2040s
-Durchlauf  5 Dauer: 2,1220s
-Durchlauf  6 Dauer: 1,9670s
-Durchlauf  7 Dauer: 2,1090s
-Durchlauf  8 Dauer: 2,1070s
-Durchlauf  9 Dauer: 2,4840s
-Durchlauf 10 Dauer: 2,2160s
-Durchlauf 11 Dauer: 2,1570s
-Durchlauf 12 Dauer: 2,0610s
-Durchlauf 13 Dauer: 2,0580s
-Durchlauf 14 Dauer: 2,0460s
-Durchlauf 15 Dauer: 2,1630s
+Durchlauf  1 Dauer: 2,9070s
+Durchlauf  2 Dauer: 2,7680s
+Durchlauf  3 Dauer: 3,3410s
+Durchlauf  4 Dauer: 2,8810s
+Durchlauf  5 Dauer: 2,9870s
+Durchlauf  6 Dauer: 3,7950s
+Durchlauf  7 Dauer: 3,1290s
+Durchlauf  8 Dauer: 3,1040s
+Durchlauf  9 Dauer: 3,7620s
+Durchlauf 10 Dauer: 3,5300s
+Durchlauf 11 Dauer: 4,0860s
+Durchlauf 12 Dauer: 4,5080s
+Durchlauf 13 Dauer: 4,7950s
+Durchlauf 14 Dauer: 4,2680s
+Durchlauf 15 Dauer: 4,1080s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.8578, 0.8571, 0.8540, 0.8504, 0.8515, 0.8556, 0.8571, 0.8529, 0.8560, 0.8479, 0.8610, 0.8652, 0.8592, 0.8614, 0.8502]
 Test-Accuracy (15 Wiederholungen): 0,8558 ± 0,0048
 Innere CV-Accuracy (3-fach, Durchschnitt): 0,8516 ± 0,0033
-Durchschnittliche Dauer: 2,1781s ± 0,1423s
-
-Signifikanztest (Ein-Stichproben-t-Test gegen 0.5):
-T-Statistik: 289,2715, p-Wert (approx.): 0,000000
-==> Die mittlere Accuracy (0,856) ist signifikant von 0.5 verschieden (5%-Niveau).
+Durchschnittliche Dauer: 3,5979s ± 0,6471s
 
 === Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv ===
 Klassenverteilung:
 {True=36499, False=36499}
-Durchlauf  1 Dauer: 31,8040s
-Durchlauf  2 Dauer: 32,5240s
-Durchlauf  3 Dauer: 33,4080s
-Durchlauf  4 Dauer: 33,0120s
-Durchlauf  5 Dauer: 32,7870s
-Durchlauf  6 Dauer: 32,3150s
-Durchlauf  7 Dauer: 32,6930s
-Durchlauf  8 Dauer: 33,4590s
-Durchlauf  9 Dauer: 32,9930s
-Durchlauf 10 Dauer: 32,9080s
-Durchlauf 11 Dauer: 32,7140s
-Durchlauf 12 Dauer: 32,5900s
-Durchlauf 13 Dauer: 32,9250s
-Durchlauf 14 Dauer: 33,5420s
-Durchlauf 15 Dauer: 33,0800s
+Durchlauf  1 Dauer: 55,7960s
+Durchlauf  2 Dauer: 40,2560s
+Durchlauf  3 Dauer: 47,8400s
+Durchlauf  4 Dauer: 74,1120s
+Durchlauf  5 Dauer: 45,3340s
+Durchlauf  6 Dauer: 55,8570s
+Durchlauf  7 Dauer: 61,5320s
+Durchlauf  8 Dauer: 42,1970s
+Durchlauf  9 Dauer: 65,2140s
+Durchlauf 10 Dauer: 59,7680s
+Durchlauf 11 Dauer: 38,7760s
+Durchlauf 12 Dauer: 47,2280s
+Durchlauf 13 Dauer: 71,8640s
+Durchlauf 14 Dauer: 42,8300s
+Durchlauf 15 Dauer: 49,7020s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.9336, 0.9295, 0.9346, 0.9306, 0.9316, 0.9302, 0.9352, 0.9333, 0.9311, 0.9321, 0.9310, 0.9316, 0.9303, 0.9317, 0.9309]
 Test-Accuracy (15 Wiederholungen): 0,9318 ± 0,0017
 Innere CV-Accuracy (3-fach, Durchschnitt): 0,9288 ± 0,0008
-Durchschnittliche Dauer: 32,8503s ± 0,4528s
-
-Signifikanztest (Ein-Stichproben-t-Test gegen 0.5):
-T-Statistik: 1007,6624, p-Wert (approx.): 0,000000
-==> Die mittlere Accuracy (0,932) ist signifikant von 0.5 verschieden (5%-Niveau).
+Durchschnittliche Dauer: 53,2204s ± 11,3359s
 
 === Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv ===
 Klassenverteilung:
 {P=5041, N=5041}
-Durchlauf  1 Dauer: 0,9390s
-Durchlauf  2 Dauer: 0,9650s
-Durchlauf  3 Dauer: 1,2890s
-Durchlauf  4 Dauer: 1,2240s
-Durchlauf  5 Dauer: 1,1330s
-Durchlauf  6 Dauer: 1,3560s
-Durchlauf  7 Dauer: 1,2250s
-Durchlauf  8 Dauer: 1,1970s
-Durchlauf  9 Dauer: 1,1850s
-Durchlauf 10 Dauer: 1,3590s
-Durchlauf 11 Dauer: 1,1790s
-Durchlauf 12 Dauer: 1,1820s
-Durchlauf 13 Dauer: 1,2590s
-Durchlauf 14 Dauer: 1,2400s
-Durchlauf 15 Dauer: 1,1870s
+Durchlauf  1 Dauer: 3,0580s
+Durchlauf  2 Dauer: 2,9870s
+Durchlauf  3 Dauer: 2,8980s
+Durchlauf  4 Dauer: 3,7060s
+Durchlauf  5 Dauer: 3,3740s
+Durchlauf  6 Dauer: 3,4590s
+Durchlauf  7 Dauer: 3,5430s
+Durchlauf  8 Dauer: 3,3930s
+Durchlauf  9 Dauer: 3,4190s
+Durchlauf 10 Dauer: 3,5330s
+Durchlauf 11 Dauer: 3,4090s
+Durchlauf 12 Dauer: 2,9700s
+Durchlauf 13 Dauer: 3,0340s
+Durchlauf 14 Dauer: 2,7970s
+Durchlauf 15 Dauer: 2,7840s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.9819, 0.9824, 0.9836, 0.9789, 0.9830, 0.9810, 0.9827, 0.9789, 0.9804, 0.9786, 0.9774, 0.9762, 0.9833, 0.9816, 0.9801]
 Test-Accuracy (15 Wiederholungen): 0,9807 ± 0,0023
 Innere CV-Accuracy (3-fach, Durchschnitt): 0,9770 ± 0,0012
-Durchschnittliche Dauer: 1,1946s ± 0,1172s
-
-Signifikanztest (Ein-Stichproben-t-Test gegen 0.5):
-T-Statistik: 813,5822, p-Wert (approx.): 0,000000
-==> Die mittlere Accuracy (0,981) ist signifikant von 0.5 verschieden (5%-Niveau).
+Durchschnittliche Dauer: 3,2243s ± 0,3017s
 
 === Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv ===
 Klasse ist numerisch, wandle in nominal um ...
 Klassenverteilung:
 {0=2483, 1=2483}
-Durchlauf  1 Dauer: 0,5540s
-Durchlauf  2 Dauer: 0,5430s
-Durchlauf  3 Dauer: 0,4680s
-Durchlauf  4 Dauer: 0,5190s
-Durchlauf  5 Dauer: 0,4930s
-Durchlauf  6 Dauer: 0,5170s
-Durchlauf  7 Dauer: 0,5810s
-Durchlauf  8 Dauer: 0,5180s
-Durchlauf  9 Dauer: 0,4630s
-Durchlauf 10 Dauer: 0,5240s
-Durchlauf 11 Dauer: 0,4740s
-Durchlauf 12 Dauer: 0,4670s
-Durchlauf 13 Dauer: 0,5160s
-Durchlauf 14 Dauer: 0,4630s
-Durchlauf 15 Dauer: 0,5160s
+Durchlauf  1 Dauer: 1,0410s
+Durchlauf  2 Dauer: 1,3500s
+Durchlauf  3 Dauer: 1,0800s
+Durchlauf  4 Dauer: 1,0470s
+Durchlauf  5 Dauer: 1,0810s
+Durchlauf  6 Dauer: 1,2580s
+Durchlauf  7 Dauer: 1,2240s
+Durchlauf  8 Dauer: 0,9910s
+Durchlauf  9 Dauer: 0,9440s
+Durchlauf 10 Dauer: 0,8460s
+Durchlauf 11 Dauer: 1,0070s
+Durchlauf 12 Dauer: 1,1550s
+Durchlauf 13 Dauer: 1,0100s
+Durchlauf 14 Dauer: 0,9460s
+Durchlauf 15 Dauer: 0,8960s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.6550, 0.6520, 0.6320, 0.6465, 0.6556, 0.6489, 0.6622, 0.6544, 0.6465, 0.6544, 0.6447, 0.6701, 0.6640, 0.6562, 0.6538]
 Test-Accuracy (15 Wiederholungen): 0,6531 ± 0,0090
 Innere CV-Accuracy (3-fach, Durchschnitt): 0,6512 ± 0,0084
-Durchschnittliche Dauer: 0,5077s ± 0,0359s
-
-Signifikanztest (Ein-Stichproben-t-Test gegen 0.5):
-T-Statistik: 65,8624, p-Wert (approx.): 0,000000
-==> Die mittlere Accuracy (0,653) ist signifikant von 0.5 verschieden (5%-Niveau).
+Durchschnittliche Dauer: 1,0584s ± 0,1388s
 
 === Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\road-safety.csv ===
 Klasse ist numerisch, wandle in nominal um ...
 Klassenverteilung:
 {0=55881, 1=55881}
-Durchlauf  1 Dauer: 44,7560s
-Durchlauf  2 Dauer: 44,6250s
-Durchlauf  3 Dauer: 44,8730s
-Durchlauf  4 Dauer: 44,8460s
-Durchlauf  5 Dauer: 43,9210s
-Durchlauf  6 Dauer: 45,0550s
-Durchlauf  7 Dauer: 45,6910s
-Durchlauf  8 Dauer: 64,4270s
-Durchlauf  9 Dauer: 45,2190s
-Durchlauf 10 Dauer: 46,0540s
-Durchlauf 11 Dauer: 43,7040s
-Durchlauf 12 Dauer: 43,6890s
-Durchlauf 13 Dauer: 43,4740s
-Durchlauf 14 Dauer: 42,7640s
-Durchlauf 15 Dauer: 48,9470s
+Durchlauf  1 Dauer: 57,2600s
+Durchlauf  2 Dauer: 70,1120s
+Durchlauf  3 Dauer: 86,7750s
+Durchlauf  4 Dauer: 61,3020s
+Durchlauf  5 Dauer: 89,2250s
+Durchlauf  6 Dauer: 59,1130s
+Durchlauf  7 Dauer: 88,3240s
+Durchlauf  8 Dauer: 61,4140s
+Durchlauf  9 Dauer: 92,5290s
+Durchlauf 10 Dauer: 57,7430s
+Durchlauf 11 Dauer: 90,2830s
+Durchlauf 12 Dauer: 53,7310s
+Durchlauf 13 Dauer: 63,3810s
+Durchlauf 14 Dauer: 44,9270s
+Durchlauf 15 Dauer: 39,9590s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.7844, 0.7847, 0.7879, 0.7863, 0.7843, 0.7839, 0.7868, 0.7871, 0.7842, 0.7859, 0.7885, 0.7865, 0.7838, 0.7851, 0.7864]
 Test-Accuracy (15 Wiederholungen): 0,7857 ± 0,0015
 Innere CV-Accuracy (3-fach, Durchschnitt): 0,7789 ± 0,0008
-Durchschnittliche Dauer: 46,1363s ± 5,2603s
-
-Signifikanztest (Ein-Stichproben-t-Test gegen 0.5):
-T-Statistik: 744,5906, p-Wert (approx.): 0,000000
-==> Die mittlere Accuracy (0,786) ist signifikant von 0.5 verschieden (5%-Niveau).
+Durchschnittliche Dauer: 67,7385s ± 17,4214s
 
 === Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\albert.csv ===
 Klasse ist numerisch, wandle in nominal um ...
 Klassenverteilung:
 {0=29126, 1=29126}
-Durchlauf  1 Dauer: 15,1970s
-Durchlauf  2 Dauer: 17,2040s
-Durchlauf  3 Dauer: 16,0730s
-Durchlauf  4 Dauer: 16,8180s
-Durchlauf  5 Dauer: 16,1310s
-Durchlauf  6 Dauer: 16,4210s
-Durchlauf  7 Dauer: 16,0940s
-Durchlauf  8 Dauer: 16,0410s
-Durchlauf  9 Dauer: 16,4160s
-Durchlauf 10 Dauer: 16,1940s
-Durchlauf 11 Dauer: 16,1830s
-Durchlauf 12 Dauer: 16,3450s
-Durchlauf 13 Dauer: 15,9790s
-Durchlauf 14 Dauer: 16,3520s
-Durchlauf 15 Dauer: 16,1970s
+Durchlauf  1 Dauer: 18,6060s
+Durchlauf  2 Dauer: 21,9080s
+Durchlauf  3 Dauer: 24,1710s
+Durchlauf  4 Dauer: 20,5800s
+Durchlauf  5 Dauer: 18,7210s
+Durchlauf  6 Dauer: 16,5870s
+Durchlauf  7 Dauer: 15,9220s
+Durchlauf  8 Dauer: 14,8420s
+Durchlauf  9 Dauer: 15,0910s
+Durchlauf 10 Dauer: 15,5720s
+Durchlauf 11 Dauer: 16,7920s
+Durchlauf 12 Dauer: 18,5520s
+Durchlauf 13 Dauer: 21,1400s
+Durchlauf 14 Dauer: 25,1840s
+Durchlauf 15 Dauer: 22,0410s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.6585, 0.6552, 0.6517, 0.6590, 0.6556, 0.6550, 0.6534, 0.6527, 0.6558, 0.6506, 0.6583, 0.6555, 0.6494, 0.6548, 0.6557]
 Test-Accuracy (15 Wiederholungen): 0,6547 ± 0,0028
 Innere CV-Accuracy (3-fach, Durchschnitt): 0,6538 ± 0,0021
-Durchschnittliche Dauer: 16,2430s ± 0,4321s
-
-Signifikanztest (Ein-Stichproben-t-Test gegen 0.5):
-T-Statistik: 214,2926, p-Wert (approx.): 0,000000
-==> Die mittlere Accuracy (0,655) ist signifikant von 0.5 verschieden (5%-Niveau).
+Durchschnittliche Dauer: 19,0473s ± 3,3237s
 
 === Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv ===
 Klasse ist numerisch, wandle in nominal um ...
 Klassenverteilung:
 {1=5289, 2=5289}
-Durchlauf  1 Dauer: 1,3230s
-Durchlauf  2 Dauer: 1,3370s
-Durchlauf  3 Dauer: 1,1950s
-Durchlauf  4 Dauer: 1,4980s
-Durchlauf  5 Dauer: 1,3570s
-Durchlauf  6 Dauer: 1,2050s
-Durchlauf  7 Dauer: 1,4520s
-Durchlauf  8 Dauer: 1,3780s
-Durchlauf  9 Dauer: 1,3040s
-Durchlauf 10 Dauer: 1,4790s
-Durchlauf 11 Dauer: 1,4820s
-Durchlauf 12 Dauer: 1,2230s
-Durchlauf 13 Dauer: 1,3720s
-Durchlauf 14 Dauer: 1,2660s
-Durchlauf 15 Dauer: 1,1590s
+Durchlauf  1 Dauer: 1,3800s
+Durchlauf  2 Dauer: 1,5370s
+Durchlauf  3 Dauer: 1,5800s
+Durchlauf  4 Dauer: 1,4040s
+Durchlauf  5 Dauer: 1,5930s
+Durchlauf  6 Dauer: 1,2350s
+Durchlauf  7 Dauer: 1,5250s
+Durchlauf  8 Dauer: 1,5590s
+Durchlauf  9 Dauer: 1,2930s
+Durchlauf 10 Dauer: 1,5240s
+Durchlauf 11 Dauer: 1,5520s
+Durchlauf 12 Dauer: 1,1610s
+Durchlauf 13 Dauer: 1,3890s
+Durchlauf 14 Dauer: 1,6210s
+Durchlauf 15 Dauer: 1,4090s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.8049, 0.7941, 0.8074, 0.8009, 0.8012, 0.8060, 0.8111, 0.8108, 0.8006, 0.8026, 0.8100, 0.8114, 0.8032, 0.7995, 0.7986]
 Test-Accuracy (15 Wiederholungen): 0,8042 ± 0,0052
 Innere CV-Accuracy (3-fach, Durchschnitt): 0,7987 ± 0,0045
-Durchschnittliche Dauer: 1,3353s ± 0,1109s
-
-Signifikanztest (Ein-Stichproben-t-Test gegen 0.5):
-T-Statistik: 225,3167, p-Wert (approx.): 0,000000
-==> Die mittlere Accuracy (0,804) ist signifikant von 0.5 verschieden (5%-Niveau).
+Durchschnittliche Dauer: 1,4508s ± 0,1400s
 
 === Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv ===
 Klasse ist numerisch, wandle in nominal um ...
 Klassenverteilung:
 {0=1717, 1=1717}
-Durchlauf  1 Dauer: 0,9430s
-Durchlauf  2 Dauer: 0,9960s
-Durchlauf  3 Dauer: 1,3950s
-Durchlauf  4 Dauer: 1,5320s
-Durchlauf  5 Dauer: 1,4680s
-Durchlauf  6 Dauer: 1,4390s
-Durchlauf  7 Dauer: 1,3740s
-Durchlauf  8 Dauer: 1,5510s
-Durchlauf  9 Dauer: 1,3890s
-Durchlauf 10 Dauer: 1,4770s
-Durchlauf 11 Dauer: 1,5000s
-Durchlauf 12 Dauer: 1,4730s
-Durchlauf 13 Dauer: 1,6620s
-Durchlauf 14 Dauer: 1,5100s
-Durchlauf 15 Dauer: 1,3730s
+Durchlauf  1 Dauer: 1,3580s
+Durchlauf  2 Dauer: 1,5910s
+Durchlauf  3 Dauer: 1,5090s
+Durchlauf  4 Dauer: 1,4230s
+Durchlauf  5 Dauer: 1,5080s
+Durchlauf  6 Dauer: 1,3740s
+Durchlauf  7 Dauer: 1,3880s
+Durchlauf  8 Dauer: 1,3990s
+Durchlauf  9 Dauer: 1,4630s
+Durchlauf 10 Dauer: 1,3750s
+Durchlauf 11 Dauer: 1,3680s
+Durchlauf 12 Dauer: 1,4170s
+Durchlauf 13 Dauer: 1,3230s
+Durchlauf 14 Dauer: 1,3160s
+Durchlauf 15 Dauer: 1,3630s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.7956, 0.7764, 0.7834, 0.8052, 0.7878, 0.8000, 0.7790, 0.7677, 0.7913, 0.7869, 0.8052, 0.7773, 0.7817, 0.7537, 0.7878]
 Test-Accuracy (15 Wiederholungen): 0,7853 ± 0,0138
 Innere CV-Accuracy (3-fach, Durchschnitt): 0,7601 ± 0,0091
-Durchschnittliche Dauer: 1,4055s ± 0,1930s
+Durchschnittliche Dauer: 1,4117s ± 0,0762s
 
-Signifikanztest (Ein-Stichproben-t-Test gegen 0.5):
-T-Statistik: 79,9203, p-Wert (approx.): 0,000000
-==> Die mittlere Accuracy (0,785) ist signifikant von 0.5 verschieden (5%-Niveau).
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv ===
+Klasse ist numerisch, wandle in nominal um ...
+Klassenverteilung:
+{0=10317, 1=10317}
+Durchlauf  1 Dauer: 2,5870s
+Durchlauf  2 Dauer: 2,3650s
+Durchlauf  3 Dauer: 2,2630s
+Durchlauf  4 Dauer: 2,1850s
+Durchlauf  5 Dauer: 2,3860s
+Durchlauf  6 Dauer: 2,4370s
+Durchlauf  7 Dauer: 2,5040s
+Durchlauf  8 Dauer: 2,4640s
+Durchlauf  9 Dauer: 2,2860s
+Durchlauf 10 Dauer: 1,8710s
+Durchlauf 11 Dauer: 1,9940s
+Durchlauf 12 Dauer: 2,2320s
+Durchlauf 13 Dauer: 2,3890s
+Durchlauf 14 Dauer: 2,5140s
+Durchlauf 15 Dauer: 2,4860s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.8878, 0.8864, 0.8854, 0.8971, 0.8926, 0.8907, 0.8869, 0.8920, 0.8927, 0.8869, 0.8937, 0.8901, 0.8946, 0.8859, 0.8940]
+Test-Accuracy (15 Wiederholungen): 0,8904 ± 0,0037
+Innere CV-Accuracy (3-fach, Durchschnitt): 0,8857 ± 0,0015
+Durchschnittliche Dauer: 2,3309s ± 0,1986s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv ===
+Klasse ist numerisch, wandle in nominal um ...
+Klassenverteilung:
+{0=8357, 1=8357}
+Durchlauf  1 Dauer: 2,3430s
+Durchlauf  2 Dauer: 2,2060s
+Durchlauf  3 Dauer: 2,2880s
+Durchlauf  4 Dauer: 2,4620s
+Durchlauf  5 Dauer: 2,2940s
+Durchlauf  6 Dauer: 2,3100s
+Durchlauf  7 Dauer: 2,1790s
+Durchlauf  8 Dauer: 2,3800s
+Durchlauf  9 Dauer: 2,9220s
+Durchlauf 10 Dauer: 2,5440s
+Durchlauf 11 Dauer: 2,6930s
+Durchlauf 12 Dauer: 2,4360s
+Durchlauf 13 Dauer: 2,8010s
+Durchlauf 14 Dauer: 2,4990s
+Durchlauf 15 Dauer: 2,5240s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.7745, 0.7776, 0.7772, 0.7762, 0.7751, 0.7708, 0.7731, 0.7815, 0.7702, 0.7778, 0.7701, 0.7790, 0.7670, 0.7805, 0.7740]
+Test-Accuracy (15 Wiederholungen): 0,7750 ± 0,0042
+Innere CV-Accuracy (3-fach, Durchschnitt): 0,7727 ± 0,0033
+Durchschnittliche Dauer: 2,4587s ± 0,2139s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv ===
+Klasse ist numerisch, wandle in nominal um ...
+Klassenverteilung:
+{0=6636, 1=6636}
+Durchlauf  1 Dauer: 2,4750s
+Durchlauf  2 Dauer: 2,7590s
+Durchlauf  3 Dauer: 2,4980s
+Durchlauf  4 Dauer: 2,7330s
+Durchlauf  5 Dauer: 2,6860s
+Durchlauf  6 Dauer: 2,9950s
+Durchlauf  7 Dauer: 3,2430s
+Durchlauf  8 Dauer: 2,9560s
+Durchlauf  9 Dauer: 3,2230s
+Durchlauf 10 Dauer: 2,9090s
+Durchlauf 11 Dauer: 3,0540s
+Durchlauf 12 Dauer: 3,0580s
+Durchlauf 13 Dauer: 3,1990s
+Durchlauf 14 Dauer: 3,8470s
+Durchlauf 15 Dauer: 3,6480s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.7179, 0.7071, 0.7052, 0.7138, 0.7127, 0.7068, 0.7104, 0.7043, 0.7100, 0.7086, 0.7032, 0.7129, 0.7032, 0.6976, 0.6980]
+Test-Accuracy (15 Wiederholungen): 0,7075 ± 0,0057
+Innere CV-Accuracy (3-fach, Durchschnitt): 0,7104 ± 0,0041
+Durchschnittliche Dauer: 3,0189s ± 0,3829s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv ===
+Klasse ist numerisch, wandle in nominal um ...
+Klassenverteilung:
+{0=35545, 1=35545}
+Durchlauf  1 Dauer: 18,8180s
+Durchlauf  2 Dauer: 19,1650s
+Durchlauf  3 Dauer: 17,7660s
+Durchlauf  4 Dauer: 14,7020s
+Durchlauf  5 Dauer: 15,0280s
+Durchlauf  6 Dauer: 14,1910s
+Durchlauf  7 Dauer: 13,4390s
+Durchlauf  8 Dauer: 14,5260s
+Durchlauf  9 Dauer: 14,2100s
+Durchlauf 10 Dauer: 12,4850s
+Durchlauf 11 Dauer: 12,5660s
+Durchlauf 12 Dauer: 13,7970s
+Durchlauf 13 Dauer: 15,0580s
+Durchlauf 14 Dauer: 15,2880s
+Durchlauf 15 Dauer: 17,3570s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.5780, 0.5790, 0.5833, 0.5788, 0.5786, 0.5866, 0.5809, 0.5786, 0.5859, 0.5799, 0.5814, 0.5808, 0.5823, 0.5821, 0.5810]
+Test-Accuracy (15 Wiederholungen): 0,5811 ± 0,0026
+Innere CV-Accuracy (3-fach, Durchschnitt): 0,5830 ± 0,0023
+Durchschnittliche Dauer: 15,2264s ± 2,1074s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv ===
+Klassenverteilung:
+{DOWN=19237, UP=19237}
+Durchlauf  1 Dauer: 8,1590s
+Durchlauf  2 Dauer: 8,5590s
+Durchlauf  3 Dauer: 8,1060s
+Durchlauf  4 Dauer: 8,0760s
+Durchlauf  5 Dauer: 8,2640s
+Durchlauf  6 Dauer: 6,5480s
+Durchlauf  7 Dauer: 7,8690s
+Durchlauf  8 Dauer: 7,0200s
+Durchlauf  9 Dauer: 5,8340s
+Durchlauf 10 Dauer: 7,2140s
+Durchlauf 11 Dauer: 6,5650s
+Durchlauf 12 Dauer: 5,3790s
+Durchlauf 13 Dauer: 6,9870s
+Durchlauf 14 Dauer: 6,2360s
+Durchlauf 15 Dauer: 5,6190s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.8696, 0.8706, 0.8690, 0.8675, 0.8681, 0.8729, 0.8701, 0.8704, 0.8692, 0.8656, 0.8684, 0.8717, 0.8726, 0.8667, 0.8683]
+Test-Accuracy (15 Wiederholungen): 0,8694 ± 0,0021
+Innere CV-Accuracy (3-fach, Durchschnitt): 0,8581 ± 0,0012
+Durchschnittliche Dauer: 7,0957s ± 1,0450s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv ===
+Klasse ist numerisch, wandle in nominal um ...
+Klassenverteilung:
+{0=3804, 1=3804}
+Durchlauf  1 Dauer: 1,4250s
+Durchlauf  2 Dauer: 1,4350s
+Durchlauf  3 Dauer: 1,5790s
+Durchlauf  4 Dauer: 1,5810s
+Durchlauf  5 Dauer: 1,5900s
+Durchlauf  6 Dauer: 1,5740s
+Durchlauf  7 Dauer: 1,5490s
+Durchlauf  8 Dauer: 1,5460s
+Durchlauf  9 Dauer: 1,4420s
+Durchlauf 10 Dauer: 1,4930s
+Durchlauf 11 Dauer: 1,4970s
+Durchlauf 12 Dauer: 1,4690s
+Durchlauf 13 Dauer: 1,6270s
+Durchlauf 14 Dauer: 1,3410s
+Durchlauf 15 Dauer: 1,3920s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.6187, 0.6329, 0.6262, 0.6380, 0.6424, 0.6151, 0.6258, 0.6427, 0.6242, 0.6167, 0.6345, 0.6396, 0.6317, 0.6471, 0.6313]
+Test-Accuracy (15 Wiederholungen): 0,6311 ± 0,0099
+Innere CV-Accuracy (3-fach, Durchschnitt): 0,6122 ± 0,0073
+Durchschnittliche Dauer: 1,5027s ± 0,0837s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv ===
+Klasse ist numerisch, wandle in nominal um ...
+Klassenverteilung:
+{0=5000, 1=5000}
+Durchlauf  1 Dauer: 1,8730s
+Durchlauf  2 Dauer: 1,7250s
+Durchlauf  3 Dauer: 1,6680s
+Durchlauf  4 Dauer: 1,4300s
+Durchlauf  5 Dauer: 1,7240s
+Durchlauf  7 Dauer: 1,7740s
+Durchlauf  8 Dauer: 1,3670s
+Durchlauf  9 Dauer: 1,7480s
+Durchlauf 10 Dauer: 1,7480s
+Durchlauf 11 Dauer: 1,6700s
+Durchlauf 12 Dauer: 1,3450s
+Durchlauf 13 Dauer: 1,7910s
+Durchlauf 14 Dauer: 1,6750s
+Durchlauf 15 Dauer: 1,7150s
+
+Matrix (Liste) der 15 Test-Accuracies kommasepariert:
+[0.7219, 0.7177, 0.7243, 0.7186, 0.7246, 0.7198, 0.7210, 0.7189, 0.7033, 0.7087, 0.7225, 0.7132, 0.7153, 0.7168, 0.7234]
+Test-Accuracy (15 Wiederholungen): 0,7180 ± 0,0060
+Innere CV-Accuracy (3-fach, Durchschnitt): 0,7157 ± 0,0034
+Durchschnittliche Dauer: 1,6613s ± 0,1560s
+Fertig! Alle Ausgaben erscheinen hier in der Konsole.

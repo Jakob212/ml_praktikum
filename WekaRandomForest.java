@@ -16,14 +16,14 @@ public class WekaRandomForest {
 
     // List of CSV datasets
     static String[] datasets = {
-            "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\house_16H.csv",
-            "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\jannis.csv",
+            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\house_16H.csv",
+            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\jannis.csv",
             "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\MagicTelescope.csv",
-            "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\MiniBooNE.csv",
+            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\MiniBooNE.csv",
             "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\pol.csv",
             "ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\compas-two-years.csv",
-            "ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\road-safety.csv",
-            "ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\albert.csv",
+            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\road-safety.csv",
+            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\albert.csv",
             "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\bank-marketing.csv",
             "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\Bioresponse.csv",
             "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\california.csv",
