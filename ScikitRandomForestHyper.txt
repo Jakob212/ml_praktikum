@@ -308,3 +308,45 @@ Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\
 Standardabweichung der Genauigkeit: 0.0005
 Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}]
 Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv
+Klassen: [0 1]
+Verteilung: 
+target
+0    1717
+1    1717
+Name: count, dtype: int64
+Beste Genauigkeit: 0.7767
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Beste Genauigkeit: 0.7731
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Beste Genauigkeit: 0.7734
+Beste Parameter: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv: 0.7744
+Standardabweichung der Genauigkeit: 0.0016
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}, {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 50}]
+Beste Hyperparameter insgesamt: {'max_features': 'sqrt', 'min_samples_leaf': 10, 'n_estimators': 100}
+
+Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv
+Klassen: [0 1]
+Verteilung: 
+price_above_median
+0    10317
+1    10317
+Name: count, dtype: int64
+Beste Genauigkeit: 0.8921
+Beste Parameter: {'max_features': 'log2', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.8913
+Beste Parameter: {'max_features': 'log2', 'min_samples_leaf': 10, 'n_estimators': 150}
+
+Beste Genauigkeit: 0.8925
+Beste Parameter: {'max_features': 'log2', 'min_samples_leaf': 10, 'n_estimators': 50}
+
+Durchschnittliche Genauigkeit von ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv: 0.8920
+Standardabweichung der Genauigkeit: 0.0005
+Beste Hyperparameter pro Durchlauf: [{'max_features': 'log2', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'log2', 'min_samples_leaf': 10, 'n_estimators': 150}, {'max_features': 'log2', 'min_samples_leaf': 10, 'n_estimators': 50}]
+Beste Hyperparameter insgesamt: {'max_features': 'log2', 'min_samples_leaf': 10, 'n_estimators': 50}
