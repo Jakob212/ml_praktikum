@@ -1,0 +1,56 @@
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv ===
+Klassen in y: ['N' 'P']
+Klassenverteilung: (array([0, 1], dtype=int64), array([6744, 6744], dtype=int64))
+Klassenverteilung:
+binaryClass
+0    6744
+1    6744
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 55.0947s
+Durchlauf 2 Dauer: 66.6017s
+Durchlauf 3 Dauer: 65.6319s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.76534698, 0.79270463, 0.80894128]]
+
+Test-Accuracy (M ± SD): 0.7890 ± 0.0220
+CV-Accuracy (M ± SD): 0.7775 ± 0.0136
+Laufzeit (M ± SD): 62.4428s ± 6.3821s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\jannis.csv ===
+Klassen in y: [0 1]
+Klassenverteilung: (array([0, 1], dtype=int64), array([28790, 28790], dtype=int64))
+Klassenverteilung:
+class
+0    28790
+1    28790
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 513.0009s
+Durchlauf 2 Dauer: 329.1298s
+Durchlauf 3 Dauer: 472.5541s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.69860373, 0.65906012, 0.70172971]]
+
+Test-Accuracy (M ± SD): 0.6865 ± 0.0238
+CV-Accuracy (M ± SD): 0.6657 ± 0.0142
+Laufzeit (M ± SD): 438.2283s ± 96.6222s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv ===
+Klassen in y: ['g' 'h']
+Klassenverteilung: (array([0, 1], dtype=int64), array([6688, 6688], dtype=int64))
+Klassenverteilung:
+class
+0    6688
+1    6688
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 20.0213s
+Durchlauf 2 Dauer: 17.6350s
+Durchlauf 3 Dauer: 17.3263s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.73559094, 0.73626374, 0.68782238]]
+
+Test-Accuracy (M ± SD): 0.7199 ± 0.0278
+CV-Accuracy (M ± SD): 0.7035 ± 0.0187
+Laufzeit (M ± SD): 18.3275s ± 1.4749s

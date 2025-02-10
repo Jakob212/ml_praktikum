@@ -61,7 +61,6 @@ for dataset in datasets:
     print(f"Verteilung: \n{y.value_counts()}")
 
 
-    # Hyperparameter-Gitter
     param_grid = {
         'n_estimators': [50, 100, 150],
         'min_samples_leaf': [10, 30],

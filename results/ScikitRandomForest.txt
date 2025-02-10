@@ -1,0 +1,508 @@
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv ===
+Klassenverteilung:
+binaryClass
+N    6744
+P    6744
+Name: count, dtype: int64
+Durchlauf 1: 6.16s
+Durchlauf 2: 2.67s
+Durchlauf 3: 2.73s
+Durchlauf 4: 2.70s
+Durchlauf 5: 2.70s
+Durchlauf 6: 2.71s
+Durchlauf 7: 2.68s
+Durchlauf 8: 2.65s
+Durchlauf 9: 2.67s
+Durchlauf 10: 2.65s
+Durchlauf 11: 2.66s
+Durchlauf 12: 2.69s
+Durchlauf 13: 2.65s
+Durchlauf 14: 2.70s
+Durchlauf 15: 2.73s
+
+Test-Accuracies (15 Runs):
+0.8774, 0.8685, 0.8752, 0.8728, 0.8723, 0.8857, 0.8717, 0.8757, 0.8750, 0.8786, 0.8768, 0.8703, 0.8770, 0.8690, 0.8668
+
+Test-Accuracy (M±SD): 0.8742 ± 0.0048
+CV-Accuracy (M±SD): 0.8709 ± 0.0023
+Laufzeit (M±SD): 2.92s ± 0.90s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\jannis.csv ===
+Konvertiere numerische Zielvariable 'class' zu String
+Klassenverteilung:
+class
+0    28790
+1    28790
+Name: count, dtype: int64
+Durchlauf 1: 22.94s
+Durchlauf 2: 27.20s
+Durchlauf 3: 29.89s
+Durchlauf 4: 29.95s
+Durchlauf 5: 26.07s
+Durchlauf 6: 25.99s
+Durchlauf 7: 26.38s
+Durchlauf 8: 26.20s
+Durchlauf 9: 26.17s
+Durchlauf 10: 26.06s
+Durchlauf 11: 25.35s
+Durchlauf 12: 24.96s
+Durchlauf 13: 24.71s
+Durchlauf 14: 23.96s
+Durchlauf 15: 23.62s
+
+Test-Accuracies (15 Runs):
+0.7790, 0.7785, 0.7773, 0.7788, 0.7782, 0.7770, 0.7830, 0.7770, 0.7795, 0.7831, 0.7849, 0.7794, 0.7764, 0.7793, 0.7785
+
+Test-Accuracy (M±SD): 0.7793 ± 0.0025
+CV-Accuracy (M±SD): 0.7748 ± 0.0012
+Laufzeit (M±SD): 25.96s ± 1.98s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv ===
+Klassenverteilung:
+class
+g    6688
+h    6688
+Name: count, dtype: int64
+Durchlauf 1: 2.79s
+Durchlauf 2: 2.81s
+Durchlauf 3: 2.83s
+Durchlauf 4: 2.92s
+Durchlauf 5: 2.74s
+Durchlauf 6: 2.91s
+Durchlauf 7: 2.77s
+Durchlauf 8: 2.74s
+Durchlauf 9: 2.78s
+Durchlauf 10: 2.74s
+Durchlauf 11: 2.74s
+Durchlauf 12: 2.77s
+Durchlauf 13: 2.77s
+Durchlauf 14: 2.72s
+Durchlauf 15: 2.78s
+
+Test-Accuracies (15 Runs):
+0.8432, 0.8553, 0.8531, 0.8491, 0.8471, 0.8414, 0.8473, 0.8500, 0.8464, 0.8509, 0.8435, 0.8399, 0.8520, 0.8571, 0.8471
+
+Test-Accuracy (M±SD): 0.8482 ± 0.0050
+CV-Accuracy (M±SD): 0.8462 ± 0.0026
+Laufzeit (M±SD): 2.79s ± 0.06s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv ===
+Konvertiere numerische Zielvariable 'signal' zu String
+Klassenverteilung:
+signal
+False    36499
+True     36499
+Name: count, dtype: int64
+Durchlauf 1: 33.72s
+Durchlauf 2: 33.24s
+Durchlauf 3: 34.13s
+Durchlauf 4: 33.69s
+Durchlauf 5: 33.46s
+Durchlauf 6: 34.35s
+Durchlauf 7: 33.68s
+Durchlauf 8: 35.17s
+Durchlauf 9: 34.42s
+Durchlauf 10: 34.05s
+Durchlauf 11: 34.77s
+Durchlauf 12: 33.56s
+Durchlauf 13: 37.77s
+Durchlauf 14: 35.15s
+Durchlauf 15: 36.61s
+
+Test-Accuracies (15 Runs):
+0.9281, 0.9263, 0.9263, 0.9287, 0.9271, 0.9282, 0.9269, 0.9262, 0.9268, 0.9264, 0.9258, 0.9283, 0.9278, 0.9295, 0.9241
+
+Test-Accuracy (M±SD): 0.9271 ± 0.0014
+CV-Accuracy (M±SD): 0.9253 ± 0.0006
+Laufzeit (M±SD): 34.52s ± 1.25s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv ===
+Klassenverteilung:
+binaryClass
+N    5041
+P    5041
+Name: count, dtype: int64
+Durchlauf 1: 1.60s
+Durchlauf 2: 1.57s
+Durchlauf 3: 1.65s
+Durchlauf 4: 1.56s
+Durchlauf 5: 1.56s
+Durchlauf 6: 1.71s
+Durchlauf 7: 1.57s
+Durchlauf 8: 1.56s
+Durchlauf 9: 1.56s
+Durchlauf 10: 1.56s
+Durchlauf 11: 1.55s
+Durchlauf 12: 1.67s
+Durchlauf 13: 1.56s
+Durchlauf 14: 1.60s
+Durchlauf 15: 1.60s
+
+Test-Accuracies (15 Runs):
+0.9634, 0.9679, 0.9646, 0.9699, 0.9694, 0.9699, 0.9753, 0.9679, 0.9676, 0.9646, 0.9723, 0.9729, 0.9714, 0.9631, 0.9744
+
+Test-Accuracy (M±SD): 0.9690 ± 0.0039
+CV-Accuracy (M±SD): 0.9644 ± 0.0014
+Laufzeit (M±SD): 1.59s ± 0.05s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv ===
+Konvertiere numerische Zielvariable 'twoyearrecid' zu String
+Klassenverteilung:
+twoyearrecid
+0    2483
+1    2483
+Name: count, dtype: int64
+Durchlauf 1: 1.37s
+Durchlauf 2: 1.39s
+Durchlauf 3: 1.41s
+Durchlauf 4: 1.42s
+Durchlauf 5: 1.43s
+Durchlauf 6: 1.40s
+Durchlauf 7: 1.41s
+Durchlauf 8: 1.37s
+Durchlauf 9: 1.37s
+Durchlauf 10: 1.37s
+Durchlauf 11: 1.38s
+Durchlauf 12: 1.54s
+Durchlauf 13: 1.65s
+Durchlauf 14: 1.64s
+Durchlauf 15: 1.63s
+
+Test-Accuracies (15 Runs):
+0.6775, 0.6697, 0.6679, 0.6643, 0.6679, 0.6733, 0.6697, 0.6878, 0.6697, 0.6715, 0.6781, 0.6697, 0.6667, 0.6854, 0.6866
+
+Test-Accuracy (M±SD): 0.6737 ± 0.0076
+CV-Accuracy (M±SD): 0.6679 ± 0.0054
+Laufzeit (M±SD): 1.45s ± 0.11s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\road-safety.csv ===
+Konvertiere numerische Zielvariable 'SexofDriver' zu String
+Klassenverteilung:
+SexofDriver
+0    55881
+1    55881
+Name: count, dtype: int64
+Durchlauf 1: 19.76s
+Durchlauf 2: 18.14s
+Durchlauf 3: 17.37s
+Durchlauf 4: 17.25s
+Durchlauf 5: 18.87s
+Durchlauf 6: 17.24s
+Durchlauf 7: 17.73s
+Durchlauf 8: 17.32s
+Durchlauf 9: 17.19s
+Durchlauf 10: 17.09s
+Durchlauf 11: 17.02s
+Durchlauf 12: 17.61s
+Durchlauf 13: 17.19s
+Durchlauf 14: 17.15s
+Durchlauf 15: 17.10s
+
+Test-Accuracies (15 Runs):
+0.7781, 0.7792, 0.7746, 0.7749, 0.7772, 0.7758, 0.7785, 0.7768, 0.7739, 0.7777, 0.7789, 0.7750, 0.7772, 0.7751, 0.7797
+
+Test-Accuracy (M±SD): 0.7768 ± 0.0018
+CV-Accuracy (M±SD): 0.7725 ± 0.0008
+Laufzeit (M±SD): 17.60s ± 0.77s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\albert.csv ===
+Konvertiere numerische Zielvariable 'class' zu String
+Klassenverteilung:
+class
+0    29126
+1    29126
+Name: count, dtype: int64
+Durchlauf 1: 7.51s
+Durchlauf 2: 7.39s
+Durchlauf 3: 7.58s
+Durchlauf 4: 7.64s
+Durchlauf 5: 7.60s
+Durchlauf 6: 7.35s
+Durchlauf 7: 7.36s
+Durchlauf 8: 7.32s
+Durchlauf 9: 7.37s
+Durchlauf 10: 7.26s
+Durchlauf 11: 7.26s
+Durchlauf 12: 5.90s
+Durchlauf 13: 7.55s
+Durchlauf 14: 7.43s
+Durchlauf 15: 7.33s
+
+Test-Accuracies (15 Runs):
+0.6542, 0.6560, 0.6573, 0.6560, 0.6596, 0.6561, 0.6570, 0.6583, 0.6574, 0.6585, 0.6574, 0.6531, 0.6569, 0.6578, 0.6598
+
+Test-Accuracy (M±SD): 0.6570 ± 0.0018
+CV-Accuracy (M±SD): 0.6551 ± 0.0012
+Laufzeit (M±SD): 7.32s ± 0.41s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv ===
+Konvertiere numerische Zielvariable 'Class' zu String
+Klassenverteilung:
+Class
+1    5289
+2    5289
+Name: count, dtype: int64
+Durchlauf 1: 1.64s
+Durchlauf 2: 1.69s
+Durchlauf 3: 1.68s
+Durchlauf 4: 1.65s
+Durchlauf 5: 1.65s
+Durchlauf 6: 1.64s
+Durchlauf 7: 1.66s
+Durchlauf 8: 1.77s
+Durchlauf 9: 1.66s
+Durchlauf 10: 1.67s
+Durchlauf 11: 1.64s
+Durchlauf 12: 1.77s
+Durchlauf 13: 1.67s
+Durchlauf 14: 1.63s
+Durchlauf 15: 1.62s
+
+Test-Accuracies (15 Runs):
+0.7972, 0.7989, 0.8094, 0.8001, 0.8009, 0.8049, 0.7950, 0.7995, 0.8015, 0.7992, 0.7998, 0.7995, 0.8023, 0.8077, 0.8035
+
+Test-Accuracy (M±SD): 0.8013 ± 0.0038
+CV-Accuracy (M±SD): 0.7967 ± 0.0022
+Laufzeit (M±SD): 1.67s ± 0.04s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv ===
+Konvertiere numerische Zielvariable 'target' zu String
+Klassenverteilung:
+target
+0    1717
+1    1717
+Name: count, dtype: int64
+Durchlauf 1: 2.06s
+Durchlauf 2: 2.06s
+Durchlauf 3: 2.04s
+Durchlauf 4: 2.10s
+Durchlauf 5: 2.03s
+Durchlauf 6: 2.17s
+Durchlauf 7: 2.10s
+Durchlauf 8: 2.08s
+Durchlauf 9: 2.05s
+Durchlauf 10: 2.10s
+Durchlauf 11: 2.07s
+Durchlauf 12: 2.03s
+Durchlauf 13: 2.08s
+Durchlauf 14: 2.05s
+Durchlauf 15: 2.04s
+
+Test-Accuracies (15 Runs):
+0.7555, 0.7633, 0.7738, 0.7677, 0.7590, 0.7651, 0.7537, 0.7633, 0.7738, 0.7616, 0.7782, 0.7572, 0.7485, 0.7459, 0.7843
+
+Test-Accuracy (M±SD): 0.7634 ± 0.0108
+CV-Accuracy (M±SD): 0.7481 ± 0.0055
+Laufzeit (M±SD): 2.07s ± 0.04s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv ===
+Konvertiere numerische Zielvariable 'price_above_median' zu String
+Klassenverteilung:
+price_above_median
+0    10317
+1    10317
+Name: count, dtype: int64
+Durchlauf 1: 2.90s
+Durchlauf 2: 2.94s
+Durchlauf 3: 2.89s
+Durchlauf 4: 2.90s
+Durchlauf 5: 2.87s
+Durchlauf 6: 2.84s
+Durchlauf 7: 3.03s
+Durchlauf 8: 3.03s
+Durchlauf 9: 2.95s
+Durchlauf 10: 2.81s
+Durchlauf 11: 3.17s
+Durchlauf 12: 3.05s
+Durchlauf 13: 3.05s
+Durchlauf 14: 2.94s
+Durchlauf 15: 2.92s
+
+Test-Accuracies (15 Runs):
+0.8776, 0.8863, 0.8745, 0.8792, 0.8849, 0.8837, 0.8834, 0.8880, 0.8790, 0.8818, 0.8817, 0.8856, 0.8798, 0.8837, 0.8819
+
+Test-Accuracy (M±SD): 0.8821 ± 0.0036
+CV-Accuracy (M±SD): 0.8769 ± 0.0020
+Laufzeit (M±SD): 2.95s ± 0.10s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv ===
+Konvertiere numerische Zielvariable 'SeriousDlqin2yrs' zu String
+Klassenverteilung:
+SeriousDlqin2yrs
+0    8357
+1    8357
+Name: count, dtype: int64
+Durchlauf 1: 2.30s
+Durchlauf 2: 2.25s
+Durchlauf 3: 2.31s
+Durchlauf 4: 2.35s
+Durchlauf 5: 2.29s
+Durchlauf 6: 2.28s
+Durchlauf 7: 2.31s
+Durchlauf 8: 2.31s
+Durchlauf 9: 2.37s
+Durchlauf 10: 2.33s
+Durchlauf 11: 2.28s
+Durchlauf 12: 2.29s
+Durchlauf 13: 2.35s
+Durchlauf 14: 2.34s
+Durchlauf 15: 2.27s
+
+Test-Accuracies (15 Runs):
+0.7735, 0.7737, 0.7692, 0.7660, 0.7739, 0.7785, 0.7805, 0.7740, 0.7828, 0.7809, 0.7793, 0.7733, 0.7735, 0.7757, 0.7846
+
+Test-Accuracy (M±SD): 0.7760 ± 0.0051
+CV-Accuracy (M±SD): 0.7757 ± 0.0044
+Laufzeit (M±SD): 2.31s ± 0.03s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv ===
+Konvertiere numerische Zielvariable 'y' zu String
+Klassenverteilung:
+y
+0    6636
+1    6636
+Name: count, dtype: int64
+Durchlauf 1: 2.53s
+Durchlauf 2: 2.53s
+Durchlauf 3: 2.50s
+Durchlauf 4: 2.56s
+Durchlauf 5: 2.51s
+Durchlauf 6: 2.51s
+Durchlauf 7: 2.56s
+Durchlauf 8: 2.50s
+Durchlauf 9: 2.57s
+Durchlauf 10: 2.53s
+Durchlauf 11: 2.51s
+Durchlauf 12: 2.61s
+Durchlauf 13: 2.66s
+Durchlauf 14: 2.64s
+Durchlauf 15: 2.55s
+
+Test-Accuracies (15 Runs):
+0.7156, 0.7233, 0.7104, 0.7154, 0.7109, 0.7156, 0.7165, 0.7190, 0.7150, 0.7161, 0.7071, 0.7150, 0.7107, 0.7089, 0.7143
+
+Test-Accuracy (M±SD): 0.7143 ± 0.0041
+CV-Accuracy (M±SD): 0.7125 ± 0.0020
+Laufzeit (M±SD): 2.55s ± 0.05s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv ===
+Konvertiere numerische Zielvariable 'readmitted' zu String
+Klassenverteilung:
+readmitted
+0    35545
+1    35545
+Name: count, dtype: int64
+Durchlauf 1: 5.06s
+Durchlauf 2: 5.24s
+Durchlauf 3: 5.15s
+Durchlauf 4: 5.18s
+Durchlauf 5: 5.17s
+Durchlauf 6: 5.16s
+Durchlauf 7: 5.19s
+Durchlauf 8: 5.18s
+Durchlauf 9: 5.32s
+Durchlauf 10: 5.57s
+Durchlauf 11: 5.75s
+Durchlauf 12: 5.36s
+Durchlauf 13: 5.53s
+Durchlauf 14: 5.62s
+Durchlauf 15: 5.59s
+
+Test-Accuracies (15 Runs):
+0.5953, 0.5958, 0.6003, 0.5969, 0.6003, 0.5982, 0.5988, 0.5983, 0.6000, 0.6001, 0.6007, 0.6013, 0.5976, 0.5978, 0.5994
+
+Test-Accuracy (M±SD): 0.5987 ± 0.0018
+CV-Accuracy (M±SD): 0.5981 ± 0.0023
+Laufzeit (M±SD): 5.34s ± 0.22s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv ===
+Klassenverteilung:
+class
+DOWN    19237
+UP      19237
+Name: count, dtype: int64
+Durchlauf 1: 4.18s
+Durchlauf 2: 4.08s
+Durchlauf 3: 4.11s
+Durchlauf 4: 4.10s
+Durchlauf 5: 4.08s
+Durchlauf 6: 4.16s
+Durchlauf 7: 4.04s
+Durchlauf 8: 4.14s
+Durchlauf 9: 4.10s
+Durchlauf 10: 4.07s
+Durchlauf 11: 4.17s
+Durchlauf 12: 4.05s
+Durchlauf 13: 4.14s
+Durchlauf 14: 4.10s
+Durchlauf 15: 4.05s
+
+Test-Accuracies (15 Runs):
+0.8524, 0.8519, 0.8487, 0.8514, 0.8462, 0.8465, 0.8540, 0.8456, 0.8490, 0.8521, 0.8535, 0.8476, 0.8430, 0.8501, 0.8494
+
+Test-Accuracy (M±SD): 0.8494 ± 0.0032
+CV-Accuracy (M±SD): 0.8384 ± 0.0014
+Laufzeit (M±SD): 4.10s ± 0.05s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv ===
+Konvertiere numerische Zielvariable 'label' zu String
+Klassenverteilung:
+label
+0    3804
+1    3804
+Name: count, dtype: int64
+Durchlauf 1: 1.84s
+Durchlauf 2: 1.90s
+Durchlauf 3: 1.87s
+Durchlauf 4: 1.94s
+Durchlauf 5: 2.09s
+Durchlauf 6: 2.06s
+Durchlauf 7: 1.97s
+Durchlauf 8: 1.84s
+Durchlauf 9: 1.99s
+Durchlauf 10: 1.83s
+Durchlauf 11: 1.89s
+Durchlauf 12: 1.83s
+Durchlauf 13: 1.89s
+Durchlauf 14: 1.84s
+Durchlauf 15: 1.82s
+
+Test-Accuracies (15 Runs):
+0.6238, 0.6195, 0.6333, 0.6207, 0.6104, 0.6088, 0.6136, 0.6282, 0.6144, 0.6112, 0.6108, 0.6199, 0.6017, 0.6282, 0.6187
+
+Test-Accuracy (M±SD): 0.6175 ± 0.0085
+CV-Accuracy (M±SD): 0.6023 ± 0.0060
+Laufzeit (M±SD): 1.91s ± 0.09s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv ===
+Konvertiere numerische Zielvariable 'RiskPerformance' zu String
+Klassenverteilung:
+RiskPerformance
+0    5000
+1    5000
+Name: count, dtype: int64
+Durchlauf 1: 1.81s
+Durchlauf 2: 1.72s
+Durchlauf 3: 1.69s
+Durchlauf 4: 1.74s
+Durchlauf 5: 1.74s
+Durchlauf 6: 1.79s
+Durchlauf 7: 1.72s
+Durchlauf 8: 1.69s
+Durchlauf 9: 1.75s
+Durchlauf 10: 1.75s
+Durchlauf 11: 1.82s
+Durchlauf 12: 1.73s
+Durchlauf 13: 1.76s
+Durchlauf 14: 1.73s
+Durchlauf 15: 1.70s
+
+Test-Accuracies (15 Runs):
+0.7211, 0.7175, 0.7253, 0.7187, 0.7109, 0.7082, 0.7178, 0.7148, 0.7130, 0.7112, 0.7082, 0.7202, 0.7091, 0.7181, 0.7088
+
+Test-Accuracy (M±SD): 0.7148 ± 0.0054
+CV-Accuracy (M±SD): 0.7180 ± 0.0037
+Laufzeit (M±SD): 1.74s ± 0.04s
+
+Fertig! Alle Ergebnisse wurden auf der Konsole ausgegeben.

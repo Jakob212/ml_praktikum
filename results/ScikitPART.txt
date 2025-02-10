@@ -1,0 +1,459 @@
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv ===
+Klassenverteilung:
+N: 6744
+P: 6744
+Durchlauf 1 Dauer: 0.4585s
+Durchlauf 2 Dauer: 0.4563s
+Durchlauf 3 Dauer: 0.4599s
+Durchlauf 4 Dauer: 0.4680s
+Durchlauf 5 Dauer: 0.4547s
+Durchlauf 6 Dauer: 0.4591s
+Durchlauf 7 Dauer: 0.4799s
+Durchlauf 8 Dauer: 0.4634s
+Durchlauf 9 Dauer: 0.4664s
+Durchlauf 10 Dauer: 0.4598s
+Durchlauf 11 Dauer: 0.4485s
+Durchlauf 12 Dauer: 0.4573s
+Durchlauf 13 Dauer: 0.4481s
+Durchlauf 14 Dauer: 0.4407s
+Durchlauf 15 Dauer: 0.4516s
+
+Matrix mit den 15 Test-Accuracies:
+[0.8096, 0.8078, 0.8043, 0.8027, 0.8232, 0.8101, 0.8141, 0.8083, 0.8138, 0.8092, 0.8101, 0.8092, 0.8085, 0.8072, 0.8040]
+
+Test-Accuracy (M ± SD): 0.8095 ± 0.0049
+CV-Accuracy (M ± SD): 0.8070 ± 0.0036
+Laufzeit (M ± SD): 0.4582s ± 0.0094s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\jannis.csv ===
+Klassenverteilung:
+0: 28790
+1: 28790
+Durchlauf 1 Dauer: 10.2406s
+Durchlauf 2 Dauer: 10.1190s
+Durchlauf 3 Dauer: 11.9754s
+Durchlauf 4 Dauer: 11.0136s
+Durchlauf 5 Dauer: 10.8521s
+Durchlauf 6 Dauer: 10.4397s
+Durchlauf 7 Dauer: 16.8204s
+Durchlauf 8 Dauer: 16.8374s
+Durchlauf 9 Dauer: 18.9914s
+Durchlauf 10 Dauer: 15.4363s
+Durchlauf 11 Dauer: 14.5700s
+Durchlauf 12 Dauer: 13.5568s
+Durchlauf 13 Dauer: 12.1042s
+Durchlauf 14 Dauer: 11.3968s
+Durchlauf 15 Dauer: 11.1874s
+
+Matrix mit den 15 Test-Accuracies:
+[0.6860, 0.6885, 0.6865, 0.6914, 0.6919, 0.6879, 0.6901, 0.6932, 0.6930, 0.6857, 0.6866, 0.6885, 0.6889, 0.6926, 0.6883]
+
+Test-Accuracy (M ± SD): 0.6893 ± 0.0026
+CV-Accuracy (M ± SD): 0.6848 ± 0.0023
+Laufzeit (M ± SD): 13.0361s ± 2.8366s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv ===
+Klassenverteilung:
+g: 6688
+h: 6688
+Durchlauf 1 Dauer: 0.4290s
+Durchlauf 2 Dauer: 0.4139s
+Durchlauf 3 Dauer: 0.3567s
+Durchlauf 4 Dauer: 0.3537s
+Durchlauf 5 Dauer: 0.3685s
+Durchlauf 6 Dauer: 0.3949s
+Durchlauf 7 Dauer: 0.3625s
+Durchlauf 8 Dauer: 0.3491s
+Durchlauf 9 Dauer: 0.3653s
+Durchlauf 10 Dauer: 0.3502s
+Durchlauf 11 Dauer: 0.3421s
+Durchlauf 12 Dauer: 0.3848s
+Durchlauf 13 Dauer: 0.3541s
+Durchlauf 14 Dauer: 0.3617s
+Durchlauf 15 Dauer: 0.3622s
+
+Matrix mit den 15 Test-Accuracies:
+[0.7959, 0.7876, 0.7829, 0.7887, 0.7899, 0.8000, 0.7849, 0.7876, 0.7894, 0.7943, 0.7912, 0.7970, 0.7876, 0.8051, 0.7952]
+
+Test-Accuracy (M ± SD): 0.7918 ± 0.0060
+CV-Accuracy (M ± SD): 0.7868 ± 0.0050
+Laufzeit (M ± SD): 0.3699s ± 0.0250s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv ===
+Klassenverteilung:
+False: 36499
+True: 36499
+Durchlauf 1 Dauer: 14.4220s
+Durchlauf 2 Dauer: 14.3300s
+Durchlauf 3 Dauer: 13.9188s
+Durchlauf 4 Dauer: 13.8168s
+Durchlauf 5 Dauer: 14.4798s
+Durchlauf 6 Dauer: 13.7257s
+Durchlauf 7 Dauer: 14.4256s
+Durchlauf 8 Dauer: 13.1159s
+Durchlauf 9 Dauer: 13.4130s
+Durchlauf 10 Dauer: 13.3120s
+Durchlauf 11 Dauer: 12.4457s
+Durchlauf 12 Dauer: 12.9924s
+Durchlauf 13 Dauer: 13.4634s
+Durchlauf 14 Dauer: 12.8674s
+Durchlauf 15 Dauer: 13.1649s
+
+Matrix mit den 15 Test-Accuracies:
+[0.8788, 0.8810, 0.8814, 0.8794, 0.8741, 0.8796, 0.8800, 0.8792, 0.8775, 0.8795, 0.8772, 0.8837, 0.8810, 0.8788, 0.8811]
+
+Test-Accuracy (M ± SD): 0.8795 ± 0.0022
+CV-Accuracy (M ± SD): 0.8763 ± 0.0016
+Laufzeit (M ± SD): 13.5929s ± 0.6339s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv ===
+Klassenverteilung:
+N: 5041
+P: 5041
+Durchlauf 1 Dauer: 0.1312s
+Durchlauf 2 Dauer: 0.1176s
+Durchlauf 3 Dauer: 0.1241s
+Durchlauf 4 Dauer: 0.1180s
+Durchlauf 5 Dauer: 0.1176s
+Durchlauf 6 Dauer: 0.1230s
+Durchlauf 7 Dauer: 0.1209s
+Durchlauf 8 Dauer: 0.1212s
+Durchlauf 9 Dauer: 0.1167s
+Durchlauf 10 Dauer: 0.1171s
+Durchlauf 11 Dauer: 0.1196s
+Durchlauf 12 Dauer: 0.1142s
+Durchlauf 13 Dauer: 0.1221s
+Durchlauf 14 Dauer: 0.1182s
+Durchlauf 15 Dauer: 0.1189s
+
+Matrix mit den 15 Test-Accuracies:
+[0.9771, 0.9741, 0.9720, 0.9673, 0.9708, 0.9714, 0.9723, 0.9762, 0.9756, 0.9732, 0.9729, 0.9664, 0.9685, 0.9723, 0.9714]
+
+Test-Accuracy (M ± SD): 0.9721 ± 0.0031
+CV-Accuracy (M ± SD): 0.9670 ± 0.0022
+Laufzeit (M ± SD): 0.1200s ± 0.0041s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv ===
+Klassenverteilung:
+0: 2483
+1: 2483
+Durchlauf 1 Dauer: 0.0479s
+Durchlauf 2 Dauer: 0.0469s
+Durchlauf 3 Dauer: 0.0469s
+Durchlauf 4 Dauer: 0.0454s
+Durchlauf 5 Dauer: 0.0506s
+Durchlauf 6 Dauer: 0.0460s
+Durchlauf 7 Dauer: 0.0491s
+Durchlauf 8 Dauer: 0.0493s
+Durchlauf 9 Dauer: 0.0449s
+Durchlauf 10 Dauer: 0.0459s
+Durchlauf 11 Dauer: 0.0486s
+Durchlauf 12 Dauer: 0.0445s
+Durchlauf 13 Dauer: 0.0440s
+Durchlauf 14 Dauer: 0.0476s
+Durchlauf 15 Dauer: 0.0472s
+
+Matrix mit den 15 Test-Accuracies:
+[0.6196, 0.6063, 0.6153, 0.6033, 0.5948, 0.6377, 0.6256, 0.6147, 0.6093, 0.6099, 0.6075, 0.5833, 0.6051, 0.5906, 0.6214]
+
+Test-Accuracy (M ± SD): 0.6096 ± 0.0139
+CV-Accuracy (M ± SD): 0.6078 ± 0.0065
+Laufzeit (M ± SD): 0.0470s ± 0.0019s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\road-safety.csv ===
+Klassenverteilung:
+0: 55881
+1: 55881
+Durchlauf 1 Dauer: 4.7654s
+Durchlauf 2 Dauer: 4.7618s
+Durchlauf 3 Dauer: 4.7019s
+Durchlauf 4 Dauer: 4.7019s
+Durchlauf 5 Dauer: 5.0428s
+Durchlauf 6 Dauer: 4.8117s
+Durchlauf 7 Dauer: 5.1953s
+Durchlauf 8 Dauer: 4.9357s
+Durchlauf 9 Dauer: 5.0567s
+Durchlauf 10 Dauer: 4.8606s
+Durchlauf 11 Dauer: 4.6073s
+Durchlauf 12 Dauer: 4.8499s
+Durchlauf 13 Dauer: 4.8739s
+Durchlauf 14 Dauer: 4.6904s
+Durchlauf 15 Dauer: 4.6417s
+
+Matrix mit den 15 Test-Accuracies:
+[0.7146, 0.7172, 0.7165, 0.7171, 0.7230, 0.7169, 0.7165, 0.7120, 0.7190, 0.7176, 0.7161, 0.7178, 0.7137, 0.7179, 0.7179]
+
+Test-Accuracy (M ± SD): 0.7169 ± 0.0025
+CV-Accuracy (M ± SD): 0.7106 ± 0.0016
+Laufzeit (M ± SD): 4.8331s ± 0.1671s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\albert.csv ===
+Klassenverteilung:
+0: 29126
+1: 29126
+Durchlauf 1 Dauer: 2.0655s
+Durchlauf 2 Dauer: 2.0783s
+Durchlauf 3 Dauer: 2.0382s
+Durchlauf 4 Dauer: 2.0669s
+Durchlauf 5 Dauer: 2.0780s
+Durchlauf 6 Dauer: 2.0386s
+Durchlauf 7 Dauer: 2.1122s
+Durchlauf 8 Dauer: 2.0838s
+Durchlauf 9 Dauer: 2.0963s
+Durchlauf 10 Dauer: 2.0441s
+Durchlauf 11 Dauer: 2.0462s
+Durchlauf 12 Dauer: 2.0670s
+Durchlauf 13 Dauer: 2.0866s
+Durchlauf 14 Dauer: 2.0721s
+Durchlauf 15 Dauer: 2.0564s
+
+Matrix mit den 15 Test-Accuracies:
+[0.5650, 0.5660, 0.5626, 0.5716, 0.5676, 0.5691, 0.5687, 0.5621, 0.5608, 0.5658, 0.5614, 0.5675, 0.5693, 0.5644, 0.5715]
+
+Test-Accuracy (M ± SD): 0.5662 ± 0.0035
+CV-Accuracy (M ± SD): 0.5663 ± 0.0017
+Laufzeit (M ± SD): 2.0687s ± 0.0216s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv ===
+Klassenverteilung:
+1: 5289
+2: 5289
+Durchlauf 1 Dauer: 0.1233s
+Durchlauf 2 Dauer: 0.1211s
+Durchlauf 3 Dauer: 0.1246s
+Durchlauf 4 Dauer: 0.1231s
+Durchlauf 5 Dauer: 0.1206s
+Durchlauf 6 Dauer: 0.1169s
+Durchlauf 7 Dauer: 0.1168s
+Durchlauf 8 Dauer: 0.1163s
+Durchlauf 9 Dauer: 0.1201s
+Durchlauf 10 Dauer: 0.1210s
+Durchlauf 11 Dauer: 0.1192s
+Durchlauf 12 Dauer: 0.1195s
+Durchlauf 13 Dauer: 0.1176s
+Durchlauf 14 Dauer: 0.1199s
+Durchlauf 15 Dauer: 0.1172s
+
+Matrix mit den 15 Test-Accuracies:
+[0.7172, 0.7258, 0.7317, 0.7303, 0.7348, 0.7371, 0.7201, 0.7229, 0.7209, 0.7110, 0.7204, 0.7201, 0.7155, 0.7133, 0.7167]
+
+Test-Accuracy (M ± SD): 0.7225 ± 0.0079
+CV-Accuracy (M ± SD): 0.7227 ± 0.0048
+Laufzeit (M ± SD): 0.1198s ± 0.0025s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv ===
+Klassenverteilung:
+0: 1717
+1: 1717
+Durchlauf 1 Dauer: 0.7422s
+Durchlauf 2 Dauer: 0.7555s
+Durchlauf 3 Dauer: 0.7214s
+Durchlauf 4 Dauer: 0.7881s
+Durchlauf 5 Dauer: 0.7567s
+Durchlauf 6 Dauer: 0.8118s
+Durchlauf 7 Dauer: 0.8189s
+Durchlauf 8 Dauer: 0.7392s
+Durchlauf 9 Dauer: 0.7760s
+Durchlauf 10 Dauer: 0.7492s
+Durchlauf 11 Dauer: 0.7669s
+Durchlauf 12 Dauer: 0.7731s
+Durchlauf 13 Dauer: 0.7652s
+Durchlauf 14 Dauer: 0.7643s
+Durchlauf 15 Dauer: 0.7633s
+
+Matrix mit den 15 Test-Accuracies:
+[0.7179, 0.7013, 0.6969, 0.6891, 0.6934, 0.6943, 0.7179, 0.6961, 0.7048, 0.6803, 0.7205, 0.7083, 0.6690, 0.7231, 0.6900]
+
+Test-Accuracy (M ± SD): 0.7002 ± 0.0155
+CV-Accuracy (M ± SD): 0.6783 ± 0.0102
+Laufzeit (M ± SD): 0.7661s ± 0.0258s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv ===
+Klassenverteilung:
+0: 10317
+1: 10317
+Durchlauf 1 Dauer: 0.3757s
+Durchlauf 2 Dauer: 0.3621s
+Durchlauf 3 Dauer: 0.3728s
+Durchlauf 4 Dauer: 0.3669s
+Durchlauf 5 Dauer: 0.3712s
+Durchlauf 6 Dauer: 0.3838s
+Durchlauf 7 Dauer: 0.3784s
+Durchlauf 8 Dauer: 0.3792s
+Durchlauf 9 Dauer: 0.3687s
+Durchlauf 10 Dauer: 0.3984s
+Durchlauf 11 Dauer: 0.3661s
+Durchlauf 12 Dauer: 0.3758s
+Durchlauf 13 Dauer: 0.3719s
+Durchlauf 14 Dauer: 0.3801s
+Durchlauf 15 Dauer: 0.3738s
+
+Matrix mit den 15 Test-Accuracies:
+[0.8427, 0.8327, 0.8284, 0.8404, 0.8328, 0.8311, 0.8327, 0.8396, 0.8457, 0.8316, 0.8430, 0.8312, 0.8423, 0.8409, 0.8332]
+
+Test-Accuracy (M ± SD): 0.8366 ± 0.0056
+CV-Accuracy (M ± SD): 0.8286 ± 0.0031
+Laufzeit (M ± SD): 0.3750s ± 0.0087s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv ===
+Klassenverteilung:
+0: 8357
+1: 8357
+Durchlauf 1 Dauer: 0.2483s
+Durchlauf 2 Dauer: 0.2452s
+Durchlauf 3 Dauer: 0.2372s
+Durchlauf 4 Dauer: 0.2441s
+Durchlauf 5 Dauer: 0.2404s
+Durchlauf 6 Dauer: 0.2400s
+Durchlauf 7 Dauer: 0.2473s
+Durchlauf 8 Dauer: 0.2454s
+Durchlauf 9 Dauer: 0.2412s
+Durchlauf 10 Dauer: 0.2417s
+Durchlauf 11 Dauer: 0.2349s
+Durchlauf 12 Dauer: 0.2472s
+Durchlauf 13 Dauer: 0.2577s
+Durchlauf 14 Dauer: 0.2371s
+Durchlauf 15 Dauer: 0.2435s
+
+Matrix mit den 15 Test-Accuracies:
+[0.6933, 0.6780, 0.6929, 0.6935, 0.6936, 0.6883, 0.6895, 0.7030, 0.6816, 0.6854, 0.6944, 0.6901, 0.6927, 0.6936, 0.6895]
+
+Test-Accuracy (M ± SD): 0.6906 ± 0.0059
+CV-Accuracy (M ± SD): 0.6889 ± 0.0050
+Laufzeit (M ± SD): 0.2434s ± 0.0056s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv ===
+Klassenverteilung:
+0: 6636
+1: 6636
+Durchlauf 1 Dauer: 0.4064s
+Durchlauf 2 Dauer: 0.3960s
+Durchlauf 3 Dauer: 0.3916s
+Durchlauf 4 Dauer: 0.4115s
+Durchlauf 5 Dauer: 0.4087s
+Durchlauf 6 Dauer: 0.3972s
+Durchlauf 7 Dauer: 0.3913s
+Durchlauf 8 Dauer: 0.3836s
+Durchlauf 9 Dauer: 0.4070s
+Durchlauf 10 Dauer: 0.3938s
+Durchlauf 11 Dauer: 0.4112s
+Durchlauf 12 Dauer: 0.3970s
+Durchlauf 13 Dauer: 0.4037s
+Durchlauf 14 Dauer: 0.4058s
+Durchlauf 15 Dauer: 0.4122s
+
+Matrix mit den 15 Test-Accuracies:
+[0.6282, 0.6291, 0.6196, 0.6273, 0.6291, 0.6309, 0.6175, 0.6408, 0.6218, 0.6230, 0.6196, 0.6223, 0.6255, 0.6200, 0.6180]
+
+Test-Accuracy (M ± SD): 0.6248 ± 0.0062
+CV-Accuracy (M ± SD): 0.6215 ± 0.0055
+Laufzeit (M ± SD): 0.4011s ± 0.0088s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv ===
+Klassenverteilung:
+0: 35545
+1: 35545
+Durchlauf 1 Dauer: 0.7374s
+Durchlauf 2 Dauer: 0.7380s
+Durchlauf 3 Dauer: 0.7377s
+Durchlauf 4 Dauer: 0.7384s
+Durchlauf 5 Dauer: 0.7669s
+Durchlauf 6 Dauer: 0.7365s
+Durchlauf 7 Dauer: 0.7280s
+Durchlauf 8 Dauer: 0.7383s
+Durchlauf 9 Dauer: 0.7388s
+Durchlauf 10 Dauer: 0.7397s
+Durchlauf 11 Dauer: 0.7513s
+Durchlauf 12 Dauer: 0.7668s
+Durchlauf 13 Dauer: 0.7419s
+Durchlauf 14 Dauer: 0.7506s
+Durchlauf 15 Dauer: 0.7245s
+
+Matrix mit den 15 Test-Accuracies:
+[0.5415, 0.5348, 0.5416, 0.5387, 0.5383, 0.5378, 0.5367, 0.5397, 0.5399, 0.5309, 0.5355, 0.5329, 0.5399, 0.5397, 0.5398]
+
+Test-Accuracy (M ± SD): 0.5378 ± 0.0031
+CV-Accuracy (M ± SD): 0.5373 ± 0.0020
+Laufzeit (M ± SD): 0.7423s ± 0.0120s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv ===
+Klassenverteilung:
+DOWN: 19237
+UP: 19237
+Durchlauf 1 Dauer: 0.5586s
+Durchlauf 2 Dauer: 0.5492s
+Durchlauf 3 Dauer: 0.5438s
+Durchlauf 4 Dauer: 0.5597s
+Durchlauf 5 Dauer: 0.5558s
+Durchlauf 6 Dauer: 0.5398s
+Durchlauf 7 Dauer: 0.5461s
+Durchlauf 8 Dauer: 0.5435s
+Durchlauf 9 Dauer: 0.5444s
+Durchlauf 10 Dauer: 0.5579s
+Durchlauf 11 Dauer: 0.5524s
+Durchlauf 12 Dauer: 0.5580s
+Durchlauf 13 Dauer: 0.5512s
+Durchlauf 14 Dauer: 0.5385s
+Durchlauf 15 Dauer: 0.5425s
+
+Matrix mit den 15 Test-Accuracies:
+[0.8553, 0.8487, 0.8483, 0.8657, 0.8547, 0.8476, 0.8523, 0.8621, 0.8547, 0.8547, 0.8529, 0.8574, 0.8476, 0.8600, 0.8499]
+
+Test-Accuracy (M ± SD): 0.8541 ± 0.0055
+CV-Accuracy (M ± SD): 0.8366 ± 0.0039
+Laufzeit (M ± SD): 0.5494s ± 0.0073s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv ===
+Klassenverteilung:
+0: 3804
+1: 3804
+Durchlauf 1 Dauer: 0.2464s
+Durchlauf 2 Dauer: 0.2372s
+Durchlauf 3 Dauer: 0.2356s
+Durchlauf 4 Dauer: 0.2358s
+Durchlauf 5 Dauer: 0.2341s
+Durchlauf 6 Dauer: 0.2443s
+Durchlauf 7 Dauer: 0.2347s
+Durchlauf 8 Dauer: 0.2389s
+Durchlauf 9 Dauer: 0.2369s
+Durchlauf 10 Dauer: 0.2388s
+Durchlauf 11 Dauer: 0.2351s
+Durchlauf 12 Dauer: 0.2404s
+Durchlauf 13 Dauer: 0.2406s
+Durchlauf 14 Dauer: 0.2347s
+Durchlauf 15 Dauer: 0.2384s
+
+Matrix mit den 15 Test-Accuracies:
+[0.5753, 0.5785, 0.5785, 0.5662, 0.5599, 0.5580, 0.5694, 0.5678, 0.5647, 0.5868, 0.5753, 0.5572, 0.5623, 0.5611, 0.5544]
+
+Test-Accuracy (M ± SD): 0.5677 ± 0.0094
+CV-Accuracy (M ± SD): 0.5526 ± 0.0087
+Laufzeit (M ± SD): 0.2381s ± 0.0036s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv ===
+Klassenverteilung:
+0: 5000
+1: 5000
+Durchlauf 1 Dauer: 0.2414s
+Durchlauf 2 Dauer: 0.2223s
+Durchlauf 3 Dauer: 0.2224s
+Durchlauf 4 Dauer: 0.2157s
+Durchlauf 5 Dauer: 0.2272s
+Durchlauf 6 Dauer: 0.2966s
+Durchlauf 7 Dauer: 0.2206s
+Durchlauf 8 Dauer: 0.2205s
+Durchlauf 9 Dauer: 0.2244s
+Durchlauf 10 Dauer: 0.2167s
+Durchlauf 11 Dauer: 0.2173s
+Durchlauf 12 Dauer: 0.2262s
+Durchlauf 13 Dauer: 0.2325s
+Durchlauf 14 Dauer: 0.2195s
+Durchlauf 15 Dauer: 0.2238s
+
+Matrix mit den 15 Test-Accuracies:
+[0.6179, 0.6131, 0.6413, 0.6230, 0.6263, 0.6326, 0.6362, 0.6230, 0.6254, 0.6254, 0.6320, 0.6293, 0.6365, 0.6347, 0.6317]
+
+Test-Accuracy (M ± SD): 0.6285 ± 0.0076
+CV-Accuracy (M ± SD): 0.6238 ± 0.0061
+Laufzeit (M ± SD): 0.2285s ± 0.0200s

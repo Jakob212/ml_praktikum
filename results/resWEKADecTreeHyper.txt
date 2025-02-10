@@ -1,0 +1,283 @@
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\house_16H.csv ===
+Run  1: Test-Acc=0,8069, Zeit=3,24s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Run  2: Test-Acc=0,8169, Zeit=2,82s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  3: Test-Acc=0,8183, Zeit=2,72s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  4: Test-Acc=0,8025, Zeit=3,68s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  5: Test-Acc=0,8069, Zeit=4,29s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  6: Test-Acc=0,8132, Zeit=4,36s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  7: Test-Acc=0,8147, Zeit=4,27s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  8: Test-Acc=0,7987, Zeit=4,33s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  9: Test-Acc=0,8129, Zeit=4,21s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run 10: Test-Acc=0,8085, Zeit=4,57s, Params={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+=> Durchschnittliche Accuracy: 0,8100 ± 0,0063
+=> Durchschnittliche Zeit: 3,85s ± 0,69s
+Bester Durchlauf: 3 mit Acc=0,8183, Param={max_depth=10, min_samples_leaf=10, max_features=null}
+Am häufigsten bestParams: {max_depth=10,max_features=sqrt,min_samples_leaf=10} (in 3 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\jannis.csv ===
+Klasse war numerisch, umgewandelt zu nominal.
+Run  1: Test-Acc=0,6680, Zeit=47,63s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Run  2: Test-Acc=0,6798, Zeit=47,08s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  3: Test-Acc=0,6805, Zeit=45,11s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  4: Test-Acc=0,6694, Zeit=36,14s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  5: Test-Acc=0,6794, Zeit=27,20s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  6: Test-Acc=0,6810, Zeit=47,13s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Run  7: Test-Acc=0,6849, Zeit=46,66s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Run  8: Test-Acc=0,6744, Zeit=44,53s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Run  9: Test-Acc=0,6784, Zeit=26,53s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Run 10: Test-Acc=0,6757, Zeit=26,08s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+=> Durchschnittliche Accuracy: 0,6772 ± 0,0053
+=> Durchschnittliche Zeit: 39,41s ± 9,43s
+Bester Durchlauf: 7 mit Acc=0,6849, Param={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Am häufigsten bestParams: {max_depth=10,max_features=sqrt,min_samples_leaf=1} (in 6 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MagicTelescope.csv ===
+Run  1: Test-Acc=0,7903, Zeit=2,28s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  2: Test-Acc=0,8038, Zeit=2,25s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  3: Test-Acc=0,7991, Zeit=2,37s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  4: Test-Acc=0,7939, Zeit=2,35s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  5: Test-Acc=0,7852, Zeit=2,34s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  6: Test-Acc=0,8009, Zeit=2,38s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  7: Test-Acc=0,7930, Zeit=2,32s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  8: Test-Acc=0,7923, Zeit=2,22s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  9: Test-Acc=0,7966, Zeit=2,23s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run 10: Test-Acc=0,7865, Zeit=2,40s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+=> Durchschnittliche Accuracy: 0,7941 ± 0,0060
+=> Durchschnittliche Zeit: 2,31s ± 0,07s
+Bester Durchlauf: 2 mit Acc=0,8038, Param={max_depth=10, min_samples_leaf=10, max_features=null}
+Am häufigsten bestParams: {max_depth=10,max_features=null,min_samples_leaf=5} (in 4 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv ===
+Run  1: Test-Acc=0,8678, Zeit=44,36s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Run  2: Test-Acc=0,8725, Zeit=58,95s, Params={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Run  3: Test-Acc=0,8681, Zeit=59,38s, Params={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Run  4: Test-Acc=0,8717, Zeit=56,50s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  5: Test-Acc=0,8719, Zeit=50,15s, Params={max_depth=10, min_samples_leaf=5, max_features=log2}
+Run  6: Test-Acc=0,8673, Zeit=59,35s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  7: Test-Acc=0,8722, Zeit=57,39s, Params={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Run  8: Test-Acc=0,8682, Zeit=49,20s, Params={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Run  9: Test-Acc=0,8720, Zeit=31,92s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run 10: Test-Acc=0,8698, Zeit=31,16s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+=> Durchschnittliche Accuracy: 0,8702 ± 0,0021
+=> Durchschnittliche Zeit: 49,83s ± 10,89s
+Bester Durchlauf: 2 mit Acc=0,8725, Param={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Am häufigsten bestParams: {max_depth=10,max_features=sqrt,min_samples_leaf=5} (in 4 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv ===
+Run  1: Test-Acc=0,9515, Zeit=1,20s, Params={max_depth=null, min_samples_leaf=1, max_features=null}
+Run  2: Test-Acc=0,9530, Zeit=1,13s, Params={max_depth=null, min_samples_leaf=1, max_features=log2}
+Run  3: Test-Acc=0,9679, Zeit=1,13s, Params={max_depth=20, min_samples_leaf=1, max_features=null}
+Run  4: Test-Acc=0,9563, Zeit=1,14s, Params={max_depth=null, min_samples_leaf=1, max_features=log2}
+Run  5: Test-Acc=0,9646, Zeit=1,03s, Params={max_depth=20, min_samples_leaf=1, max_features=null}
+Run  6: Test-Acc=0,9598, Zeit=1,10s, Params={max_depth=20, min_samples_leaf=1, max_features=null}
+Run  7: Test-Acc=0,9583, Zeit=1,06s, Params={max_depth=null, min_samples_leaf=1, max_features=log2}
+Run  8: Test-Acc=0,9456, Zeit=1,02s, Params={max_depth=null, min_samples_leaf=1, max_features=null}
+Run  9: Test-Acc=0,9488, Zeit=0,99s, Params={max_depth=null, min_samples_leaf=1, max_features=null}
+Run 10: Test-Acc=0,9566, Zeit=1,11s, Params={max_depth=null, min_samples_leaf=1, max_features=null}
+=> Durchschnittliche Accuracy: 0,9562 ± 0,0069
+=> Durchschnittliche Zeit: 1,09s ± 0,07s
+Bester Durchlauf: 3 mit Acc=0,9679, Param={max_depth=20, min_samples_leaf=1, max_features=null}
+Am häufigsten bestParams: {max_depth=null,max_features=null,min_samples_leaf=1} (in 4 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv ===
+Klasse war numerisch, umgewandelt zu nominal.
+Run  1: Test-Acc=0,5915, Zeit=0,44s, Params={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Run  2: Test-Acc=0,6024, Zeit=0,38s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  3: Test-Acc=0,5970, Zeit=0,36s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  4: Test-Acc=0,6042, Zeit=0,36s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  5: Test-Acc=0,6012, Zeit=0,38s, Params={max_depth=null, min_samples_leaf=10, max_features=null}
+Run  6: Test-Acc=0,6121, Zeit=0,40s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  7: Test-Acc=0,6157, Zeit=0,39s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  8: Test-Acc=0,6242, Zeit=0,35s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  9: Test-Acc=0,6127, Zeit=0,40s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run 10: Test-Acc=0,6030, Zeit=0,37s, Params={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+=> Durchschnittliche Accuracy: 0,6064 ± 0,0097
+=> Durchschnittliche Zeit: 0,38s ± 0,03s
+Bester Durchlauf: 8 mit Acc=0,6242, Param={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Am häufigsten bestParams: {max_depth=10,max_features=sqrt,min_samples_leaf=10} (in 4 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\road-safety.csv ===
+Klasse war numerisch, umgewandelt zu nominal.
+Run  1: Test-Acc=0,7116, Zeit=34,16s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  2: Test-Acc=0,7034, Zeit=34,49s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  3: Test-Acc=0,7069, Zeit=33,15s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Run  4: Test-Acc=0,7103, Zeit=33,09s, Params={max_depth=20, min_samples_leaf=10, max_features=null}
+Run  5: Test-Acc=0,7141, Zeit=63,86s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  6: Test-Acc=0,7106, Zeit=45,79s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  7: Test-Acc=0,7155, Zeit=49,94s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  8: Test-Acc=0,7137, Zeit=38,68s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  9: Test-Acc=0,7131, Zeit=63,79s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run 10: Test-Acc=0,7108, Zeit=37,06s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+=> Durchschnittliche Accuracy: 0,7110 ± 0,0036
+=> Durchschnittliche Zeit: 43,40s ± 12,12s
+Bester Durchlauf: 7 mit Acc=0,7155, Param={max_depth=10, min_samples_leaf=10, max_features=null}
+Am häufigsten bestParams: {max_depth=10,max_features=null,min_samples_leaf=10} (in 4 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\albert.csv ===
+Klasse war numerisch, umgewandelt zu nominal.
+Run  1: Test-Acc=0,5696, Zeit=12,63s, Params={max_depth=10, min_samples_leaf=1, max_features=log2}
+Run  2: Test-Acc=0,5688, Zeit=12,35s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  3: Test-Acc=0,5645, Zeit=12,83s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  4: Test-Acc=0,5725, Zeit=14,45s, Params={max_depth=10, min_samples_leaf=10, max_features=log2}
+Run  5: Test-Acc=0,5696, Zeit=14,97s, Params={max_depth=10, min_samples_leaf=10, max_features=log2}
+Run  6: Test-Acc=0,5726, Zeit=20,27s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  7: Test-Acc=0,5703, Zeit=26,12s, Params={max_depth=10, min_samples_leaf=10, max_features=log2}
+Run  8: Test-Acc=0,5657, Zeit=26,51s, Params={max_depth=10, min_samples_leaf=1, max_features=log2}
+Run  9: Test-Acc=0,5776, Zeit=26,60s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run 10: Test-Acc=0,5635, Zeit=17,86s, Params={max_depth=10, min_samples_leaf=10, max_features=log2}
+=> Durchschnittliche Accuracy: 0,5695 ± 0,0042
+=> Durchschnittliche Zeit: 18,46s ± 6,01s
+Bester Durchlauf: 9 mit Acc=0,5776, Param={max_depth=10, min_samples_leaf=5, max_features=null}
+Am häufigsten bestParams: {max_depth=10,max_features=log2,min_samples_leaf=10} (in 4 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv ===
+Klasse war numerisch, umgewandelt zu nominal.
+Run  1: Test-Acc=0,7280, Zeit=1,88s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  2: Test-Acc=0,7263, Zeit=1,80s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  3: Test-Acc=0,7258, Zeit=1,75s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  4: Test-Acc=0,7181, Zeit=1,81s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  5: Test-Acc=0,7209, Zeit=1,75s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  6: Test-Acc=0,7249, Zeit=1,74s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  7: Test-Acc=0,7255, Zeit=1,74s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  8: Test-Acc=0,7343, Zeit=1,75s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Run  9: Test-Acc=0,7368, Zeit=1,80s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run 10: Test-Acc=0,7275, Zeit=1,91s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+=> Durchschnittliche Accuracy: 0,7268 ± 0,0055
+=> Durchschnittliche Zeit: 1,79s ± 0,06s
+Bester Durchlauf: 9 mit Acc=0,7368, Param={max_depth=10, min_samples_leaf=10, max_features=null}
+Am häufigsten bestParams: {max_depth=10,max_features=null,min_samples_leaf=10} (in 4 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv ===
+Klasse war numerisch, umgewandelt zu nominal.
+Run  1: Test-Acc=0,6969, Zeit=1,56s, Params={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Run  2: Test-Acc=0,6672, Zeit=1,22s, Params={max_depth=20, min_samples_leaf=10, max_features=sqrt}
+Run  3: Test-Acc=0,7022, Zeit=1,32s, Params={max_depth=10, min_samples_leaf=5, max_features=log2}
+Run  4: Test-Acc=0,6795, Zeit=1,24s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  5: Test-Acc=0,6821, Zeit=1,29s, Params={max_depth=20, min_samples_leaf=1, max_features=sqrt}
+Run  6: Test-Acc=0,6734, Zeit=1,41s, Params={max_depth=null, min_samples_leaf=1, max_features=sqrt}
+Run  7: Test-Acc=0,6576, Zeit=1,43s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Run  8: Test-Acc=0,6830, Zeit=1,25s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  9: Test-Acc=0,6690, Zeit=2,08s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run 10: Test-Acc=0,6821, Zeit=2,27s, Params={max_depth=null, min_samples_leaf=1, max_features=sqrt}
+=> Durchschnittliche Accuracy: 0,6793 ± 0,0134
+=> Durchschnittliche Zeit: 1,51s ± 0,37s
+Bester Durchlauf: 3 mit Acc=0,7022, Param={max_depth=10, min_samples_leaf=5, max_features=log2}
+Am häufigsten bestParams: {max_depth=10,max_features=sqrt,min_samples_leaf=10} (in 3 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv ===
+Klasse war numerisch, umgewandelt zu nominal.
+Run  1: Test-Acc=0,8414, Zeit=4,82s, Params={max_depth=20, min_samples_leaf=10, max_features=log2}
+Run  2: Test-Acc=0,8425, Zeit=4,89s, Params={max_depth=10, min_samples_leaf=10, max_features=log2}
+Run  3: Test-Acc=0,8274, Zeit=4,94s, Params={max_depth=null, min_samples_leaf=10, max_features=null}
+Run  4: Test-Acc=0,8344, Zeit=4,74s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  5: Test-Acc=0,8322, Zeit=5,00s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  6: Test-Acc=0,8407, Zeit=5,06s, Params={max_depth=20, min_samples_leaf=10, max_features=log2}
+Run  7: Test-Acc=0,8187, Zeit=5,27s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  8: Test-Acc=0,8479, Zeit=3,00s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  9: Test-Acc=0,8402, Zeit=2,83s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run 10: Test-Acc=0,8264, Zeit=3,11s, Params={max_depth=20, min_samples_leaf=10, max_features=log2}
+=> Durchschnittliche Accuracy: 0,8352 ± 0,0090
+=> Durchschnittliche Zeit: 4,37s ± 0,97s
+Bester Durchlauf: 8 mit Acc=0,8479, Param={max_depth=10, min_samples_leaf=5, max_features=null}
+Am häufigsten bestParams: {max_depth=20,max_features=log2,min_samples_leaf=10} (in 3 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv ===
+Klasse war numerisch, umgewandelt zu nominal.
+Run  1: Test-Acc=0,6898, Zeit=2,20s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  2: Test-Acc=0,6864, Zeit=2,27s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  3: Test-Acc=0,6945, Zeit=2,18s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  4: Test-Acc=0,6941, Zeit=2,18s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  5: Test-Acc=0,6954, Zeit=3,54s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  6: Test-Acc=0,6776, Zeit=3,98s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  7: Test-Acc=0,6905, Zeit=3,86s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  8: Test-Acc=0,7001, Zeit=4,44s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  9: Test-Acc=0,6859, Zeit=2,76s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run 10: Test-Acc=0,7004, Zeit=2,24s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+=> Durchschnittliche Accuracy: 0,6915 ± 0,0070
+=> Durchschnittliche Zeit: 2,96s ± 0,90s
+Bester Durchlauf: 10 mit Acc=0,7004, Param={max_depth=10, min_samples_leaf=10, max_features=null}
+Am häufigsten bestParams: {max_depth=10,max_features=null,min_samples_leaf=10} (in 4 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv ===
+Klasse war numerisch, umgewandelt zu nominal.
+Run  1: Test-Acc=0,6230, Zeit=2,55s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Run  2: Test-Acc=0,6214, Zeit=4,08s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  3: Test-Acc=0,6087, Zeit=4,40s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  4: Test-Acc=0,6275, Zeit=4,28s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  5: Test-Acc=0,6266, Zeit=4,78s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  6: Test-Acc=0,6119, Zeit=4,48s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  7: Test-Acc=0,6105, Zeit=2,42s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  8: Test-Acc=0,6236, Zeit=2,82s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  9: Test-Acc=0,6214, Zeit=2,64s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run 10: Test-Acc=0,6291, Zeit=3,70s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+=> Durchschnittliche Accuracy: 0,6204 ± 0,0074
+=> Durchschnittliche Zeit: 3,61s ± 0,92s
+Bester Durchlauf: 10 mit Acc=0,6291, Param={max_depth=10, min_samples_leaf=10, max_features=null}
+Am häufigsten bestParams: {max_depth=10,max_features=null,min_samples_leaf=10} (in 4 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv ===
+Klasse war numerisch, umgewandelt zu nominal.
+Run  1: Test-Acc=0,5365, Zeit=16,00s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  2: Test-Acc=0,5371, Zeit=14,94s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  3: Test-Acc=0,5360, Zeit=16,12s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  4: Test-Acc=0,5409, Zeit=15,06s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  5: Test-Acc=0,5314, Zeit=15,07s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  6: Test-Acc=0,5369, Zeit=11,08s, Params={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Run  7: Test-Acc=0,5400, Zeit=8,79s, Params={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Run  8: Test-Acc=0,5416, Zeit=8,78s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  9: Test-Acc=0,5449, Zeit=8,70s, Params={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Run 10: Test-Acc=0,5373, Zeit=8,89s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+=> Durchschnittliche Accuracy: 0,5383 ± 0,0037
+=> Durchschnittliche Zeit: 12,34s ± 3,35s
+Bester Durchlauf: 9 mit Acc=0,5449, Param={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Am häufigsten bestParams: {max_depth=10,max_features=null,min_samples_leaf=5} (in 3 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv ===
+Run  1: Test-Acc=0,8444, Zeit=4,80s, Params={max_depth=null, min_samples_leaf=1, max_features=null}
+Run  2: Test-Acc=0,8398, Zeit=4,52s, Params={max_depth=null, min_samples_leaf=1, max_features=null}
+Run  3: Test-Acc=0,8270, Zeit=4,69s, Params={max_depth=null, min_samples_leaf=1, max_features=null}
+Run  4: Test-Acc=0,8429, Zeit=4,80s, Params={max_depth=null, min_samples_leaf=1, max_features=null}
+Run  5: Test-Acc=0,8344, Zeit=4,91s, Params={max_depth=20, min_samples_leaf=1, max_features=null}
+Run  6: Test-Acc=0,8473, Zeit=4,54s, Params={max_depth=20, min_samples_leaf=1, max_features=null}
+Run  7: Test-Acc=0,8350, Zeit=4,66s, Params={max_depth=null, min_samples_leaf=1, max_features=null}
+Run  8: Test-Acc=0,8308, Zeit=4,73s, Params={max_depth=null, min_samples_leaf=1, max_features=null}
+Run  9: Test-Acc=0,8332, Zeit=4,67s, Params={max_depth=20, min_samples_leaf=5, max_features=null}
+Run 10: Test-Acc=0,8239, Zeit=4,83s, Params={max_depth=null, min_samples_leaf=1, max_features=null}
+=> Durchschnittliche Accuracy: 0,8359 ± 0,0076
+=> Durchschnittliche Zeit: 4,72s ± 0,12s
+Bester Durchlauf: 6 mit Acc=0,8473, Param={max_depth=20, min_samples_leaf=1, max_features=null}
+Am häufigsten bestParams: {max_depth=null,max_features=null,min_samples_leaf=1} (in 7 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv ===
+Klasse war numerisch, umgewandelt zu nominal.
+Run  1: Test-Acc=0,5386, Zeit=1,53s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  2: Test-Acc=0,5493, Zeit=1,50s, Params={max_depth=null, min_samples_leaf=10, max_features=null}
+Run  3: Test-Acc=0,5662, Zeit=1,43s, Params={max_depth=10, min_samples_leaf=5, max_features=sqrt}
+Run  4: Test-Acc=0,5560, Zeit=1,46s, Params={max_depth=20, min_samples_leaf=1, max_features=null}
+Run  5: Test-Acc=0,5726, Zeit=1,51s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  6: Test-Acc=0,5430, Zeit=1,64s, Params={max_depth=20, min_samples_leaf=10, max_features=null}
+Run  7: Test-Acc=0,5402, Zeit=1,54s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  8: Test-Acc=0,5540, Zeit=1,69s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  9: Test-Acc=0,5540, Zeit=1,44s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run 10: Test-Acc=0,5536, Zeit=1,44s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+=> Durchschnittliche Accuracy: 0,5528 ± 0,0108
+=> Durchschnittliche Zeit: 1,52s ± 0,09s
+Bester Durchlauf: 5 mit Acc=0,5726, Param={max_depth=10, min_samples_leaf=1, max_features=null}
+Am häufigsten bestParams: {max_depth=10,max_features=null,min_samples_leaf=5} (in 3 von 10 Runs)
+
+=== Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv ===
+Klasse war numerisch, umgewandelt zu nominal.
+Run  1: Test-Acc=0,6277, Zeit=1,45s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+Run  2: Test-Acc=0,6259, Zeit=1,56s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  3: Test-Acc=0,6274, Zeit=1,57s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  4: Test-Acc=0,6301, Zeit=1,65s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  5: Test-Acc=0,6244, Zeit=1,52s, Params={max_depth=10, min_samples_leaf=1, max_features=sqrt}
+Run  6: Test-Acc=0,6148, Zeit=1,48s, Params={max_depth=10, min_samples_leaf=10, max_features=null}
+Run  7: Test-Acc=0,6271, Zeit=1,64s, Params={max_depth=10, min_samples_leaf=1, max_features=null}
+Run  8: Test-Acc=0,6277, Zeit=1,65s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run  9: Test-Acc=0,6208, Zeit=1,45s, Params={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Run 10: Test-Acc=0,6235, Zeit=1,46s, Params={max_depth=10, min_samples_leaf=5, max_features=null}
+=> Durchschnittliche Accuracy: 0,6249 ± 0,0044
+=> Durchschnittliche Zeit: 1,54s ± 0,08s
+Bester Durchlauf: 4 mit Acc=0,6301, Param={max_depth=10, min_samples_leaf=10, max_features=sqrt}
+Am häufigsten bestParams: {max_depth=10,max_features=sqrt,min_samples_leaf=10} (in 3 von 10 Runs)
