@@ -6,78 +6,79 @@ import weka.classifiers.Evaluation;
 import weka.classifiers.trees.RandomForest;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.NumericToNominal;
+
 import java.io.File;
 import java.util.*;
 
 public class WekaRandomForestGridSearch {
 
-    static String[] datasets = {
-            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\house_16H.csv",
-            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\jannis.csv",
-            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\MagicTelescope.csv",
-            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\MiniBooNE.csv",
-            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\pol.csv",
-            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\compas-two-years.csv",
-            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\road-safety.csv",
-            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\albert.csv",
-            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\bank-marketing.csv",
-            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\Bioresponse.csv",
-            //"ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\california.csv",
-            "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\credit.csv",
-            "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\default-of-credit-card-clients.csv",
-            "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\Diabetes130US.csv",
-            "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\electricity.csv",
-            "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\eye_movements.csv",
-            "ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\heloc.csv"
+    static final String DATA_DIR = "dataset";
+
+    static final String[] DATASET_FILES = {
+        "clf_num/credit.csv",
+        "clf_num/default-of-credit-card-clients.csv",
+        "clf_num/Diabetes130US.csv",
+        "clf_num/electricity.csv",
+        "clf_num/eye_movements.csv",
+        "clf_num/heloc.csv"
     };
 
-    static Map<String, String> targetColumns = new HashMap<>();
+    static final Map<String, String> TARGET_COLUMNS = new HashMap<>();
     static {
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\house_16H.csv", "binaryClass");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\jannis.csv", "class");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\MagicTelescope.csv", "class");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\MiniBooNE.csv", "signal");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\pol.csv", "binaryClass");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\compas-two-years.csv", "twoyearrecid");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\road-safety.csv", "SexofDriver");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_cat\\albert.csv", "class");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\bank-marketing.csv", "Class");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\Bioresponse.csv", "target");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\california.csv", "price_above_median");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\credit.csv", "SeriousDlqin2yrs");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\default-of-credit-card-clients.csv", "y");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\Diabetes130US.csv", "readmitted");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\electricity.csv", "class");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\eye_movements.csv", "label");
-        targetColumns.put("ml_praktikum_jagoetz_wkathari\\dataset\\clf_num\\heloc.csv", "RiskPerformance");
+        TARGET_COLUMNS.put("house_16H.csv", "binaryClass");
+        TARGET_COLUMNS.put("jannis.csv", "class");
+        TARGET_COLUMNS.put("MagicTelescope.csv", "class");
+        TARGET_COLUMNS.put("MiniBooNE.csv", "signal");
+        TARGET_COLUMNS.put("pol.csv", "binaryClass");
+        TARGET_COLUMNS.put("compas-two-years.csv", "twoyearrecid");
+        TARGET_COLUMNS.put("road-safety.csv", "SexofDriver");
+        TARGET_COLUMNS.put("albert.csv", "class");
+        TARGET_COLUMNS.put("bank-marketing.csv", "Class");
+        TARGET_COLUMNS.put("Bioresponse.csv", "target");
+        TARGET_COLUMNS.put("california.csv", "price_above_median");
+        TARGET_COLUMNS.put("credit.csv", "SeriousDlqin2yrs");
+        TARGET_COLUMNS.put("default-of-credit-card-clients.csv", "y");
+        TARGET_COLUMNS.put("Diabetes130US.csv", "readmitted");
+        TARGET_COLUMNS.put("electricity.csv", "class");
+        TARGET_COLUMNS.put("eye_movements.csv", "label");
+        TARGET_COLUMNS.put("heloc.csv", "RiskPerformance");
     }
 
     public static void main(String[] args) throws Exception {
-        
-        // Hyperparameter-Ranges
+
         String[] numTreesOptions = {"50", "100", "150"};
         String[] minLeafOptions = {"10", "30"};
         String[] maxFeaturesOptions = {"sqrt", "log2"};
 
-        for (String dataset : datasets) {
-            if (!targetColumns.containsKey(dataset)) {
-                System.out.println("Überspringe " + dataset + " - keine Zielspalte definiert");
+        for (String relPath : DATASET_FILES) {
+
+            File file = new File(DATA_DIR, relPath);
+            String filename = file.getName();
+
+            if (!TARGET_COLUMNS.containsKey(filename)) {
+                System.out.println("Überspringe " + filename + " – keine Zielspalte definiert");
                 continue;
             }
-            
-            String targetCol = targetColumns.get(dataset);
-            System.out.println("\n=== Verarbeite " + dataset + " ===");
 
-            // 1. Daten laden
+            String targetCol = TARGET_COLUMNS.get(filename);
+            System.out.println("\n=== Verarbeite " + relPath + " ===");
+
+            if (!file.exists()) {
+                System.out.println("Datei nicht gefunden: " + file.getPath());
+                continue;
+            }
+
             CSVLoader loader = new CSVLoader();
-            loader.setSource(new File(dataset));
+            loader.setSource(file);
             Instances data = loader.getDataSet();
 
-            // 2. Klassenattribut setzen
+            if (data.attribute(targetCol) == null) {
+                System.out.println("Zielattribut " + targetCol + " nicht gefunden – überspringe.");
+                continue;
+            }
             int classIndex = data.attribute(targetCol).index();
             data.setClassIndex(classIndex);
 
-            // 3. Numerische Klasse konvertieren
             if (data.classAttribute().isNumeric()) {
                 NumericToNominal filter = new NumericToNominal();
                 filter.setOptions(new String[]{"-R", String.valueOf(classIndex + 1)});
@@ -87,7 +88,6 @@ public class WekaRandomForestGridSearch {
                 System.out.println("Klasse zu nominal konvertiert");
             }
 
-            // 4. Grid Search Durchläufe
             List<Double> accuracies = new ArrayList<>();
             List<Map<String, String>> bestParamsList = new ArrayList<>();
 
@@ -95,20 +95,17 @@ public class WekaRandomForestGridSearch {
                 System.out.println("\n--- Run " + (run + 1) + " ---");
                 long startTime = System.currentTimeMillis();
 
-                // 4a. Daten shufflen
                 Instances shuffledData = new Instances(data);
                 shuffledData.randomize(new Random(run));
 
-                // 4b. Grid Search
-                double bestRunAcc = 0;
+                double bestRunAcc = 0.0;
                 Map<String, String> bestParams = new HashMap<>();
                 int numFeatures = shuffledData.numAttributes() - 1;
 
                 for (String nTrees : numTreesOptions) {
                     for (String minLeaf : minLeafOptions) {
                         for (String maxFeat : maxFeaturesOptions) {
-                            
-                            // Max Features berechnen
+
                             int k = 0;
                             if ("sqrt".equals(maxFeat)) {
                                 k = (int) Math.max(1, Math.floor(Math.sqrt(numFeatures)));
@@ -116,16 +113,14 @@ public class WekaRandomForestGridSearch {
                                 k = (int) Math.max(1, Math.floor(Math.log(numFeatures) / Math.log(2)));
                             }
 
-                            // Modell konfigurieren
                             RandomForest rf = new RandomForest();
                             rf.setOptions(new String[]{
                                 "-I", nTrees,
                                 "-M", minLeaf,
                                 "-K", String.valueOf(k),
-                                "-S", "42"  // Random Seed
+                                "-S", "42"
                             });
 
-                            // 10-fache Cross-Validation
                             Evaluation eval = new Evaluation(shuffledData);
                             eval.crossValidateModel(rf, shuffledData, 10, new Random(run));
                             double currentAcc = eval.pctCorrect();
@@ -141,42 +136,42 @@ public class WekaRandomForestGridSearch {
                     }
                 }
 
-                // 4c. Ergebnisse speichern
                 accuracies.add(bestRunAcc);
                 bestParamsList.add(bestParams);
-                double elapsed = (System.currentTimeMillis() - startTime) / 1000.0;
 
-                System.out.printf("Beste Accuracy: %.2f%%\n", bestRunAcc);
+                double elapsed = (System.currentTimeMillis() - startTime) / 1000.0;
+                System.out.printf("Beste Accuracy: %.2f%%%n", bestRunAcc);
                 System.out.println("Parameter: " + bestParams);
-                System.out.printf("Zeit: %.2fs\n", elapsed);
+                System.out.printf("Zeit: %.2fs%n", elapsed);
             }
 
-            // 5. Statistische Auswertung
             System.out.println("\n===== Ergebniszusammenfassung =====");
-            
-            // Mittelwert & Standardabweichung
-            double meanAcc = accuracies.stream()
-                .mapToDouble(Double::doubleValue)
-                .average().orElse(0);
-            
-            double stdAcc = Math.sqrt(accuracies.stream()
-                .mapToDouble(a -> Math.pow(a - meanAcc, 2))
-                .average().orElse(0));
 
-            System.out.printf("Durchschnittliche Genauigkeit: %.2f%% ± %.2f%%\n", meanAcc, stdAcc);
-            
-            // Häufigste Parameterkombination
+            double meanAcc = accuracies.stream()
+                    .mapToDouble(Double::doubleValue)
+                    .average()
+                    .orElse(0.0);
+
+            double stdAcc = Math.sqrt(
+                    accuracies.stream()
+                            .mapToDouble(a -> Math.pow(a - meanAcc, 2))
+                            .average()
+                            .orElse(0.0)
+            );
+
+            System.out.printf("Durchschnittliche Genauigkeit: %.2f%% ± %.2f%%%n", meanAcc, stdAcc);
+
             Map<String, Integer> paramCount = new HashMap<>();
             for (Map<String, String> params : bestParamsList) {
                 String key = params.toString();
                 paramCount.put(key, paramCount.getOrDefault(key, 0) + 1);
             }
-            
+
             String mostCommon = Collections.max(
-                paramCount.entrySet(), 
-                Map.Entry.comparingByValue()
+                    paramCount.entrySet(),
+                    Map.Entry.comparingByValue()
             ).getKey();
-            
+
             System.out.println("Häufigste Parameter: " + mostCommon);
         }
     }

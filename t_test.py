@@ -9,8 +9,6 @@ def corrected_resampled_ttest(weka_acc, scikit_acc, n1, n2):
     
     # Anzahl Wiederholungen
     n = len(weka_acc)
-    if len(scikit_acc) != n:
-        raise ValueError("weka_acc und scikit_acc müssen gleich lang sein!")
     
     # Differenzen x_j = weka - scikit
     x = weka_acc - scikit_acc

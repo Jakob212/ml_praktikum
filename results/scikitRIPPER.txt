@@ -54,3 +54,225 @@ Matrix mit den 15 Test-Accuracies:
 Test-Accuracy (M ± SD): 0.7199 ± 0.0278
 CV-Accuracy (M ± SD): 0.7035 ± 0.0187
 Laufzeit (M ± SD): 18.3275s ± 1.4749s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\MiniBooNE.csv ===
+Klassen in y: [False  True]
+Klassenverteilung: (array([False,  True]), array([36499, 36499], dtype=int64))
+Klassenverteilung:
+signal
+False    36499
+True     36499
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 1371.8767s
+Durchlauf 2 Dauer: 3012.3720s
+
+Matrix mit den 15 Test-Accuracies:
+
+Matrix mit den 15 Test-Accuracies:
+[[0.87379279, 0.87535446]]
+Matrix mit den 15 Test-Accuracies:
+[[0.87379279, 0.87535446]]
+[[0.87379279, 0.87535446]]
+
+
+Test-Accuracy (M ± SD): 0.8746 ± 0.0011
+CV-Accuracy (M ± SD): 0.8596 ± 0.0046
+Laufzeit (M ± SD): 2192.1244s ± 1160.0053s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\pol.csv ===
+Klassen in y: ['N' 'P']
+Klassenverteilung: (array([0, 1], dtype=int64), array([5041, 5041], dtype=int64))
+Klassenverteilung:
+binaryClass
+0    5041
+1    5041
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 35.0783s
+Durchlauf 2 Dauer: 25.2496s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.89824457, 0.90627789]]
+
+Test-Accuracy (M ± SD): 0.9023 ± 0.0057
+CV-Accuracy (M ± SD): 0.8756 ± 0.0309
+Laufzeit (M ± SD): 30.1640s ± 6.9499s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_cat\compas-two-years.csv ===
+Klassen in y: [0 1]
+Klassenverteilung: (array([0, 1], dtype=int64), array([2483, 2483], dtype=int64))
+Klassenverteilung:
+twoyearrecid
+0    2483
+1    2483
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 3.8773s
+Durchlauf 2 Dauer: 4.2544s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.59057971, 0.59661836]]
+
+Test-Accuracy (M ± SD): 0.5936 ± 0.0043
+CV-Accuracy (M ± SD): 0.6048 ± 0.0051
+Laufzeit (M ± SD): 4.0659s ± 0.2666s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\bank-marketing.csv ===
+Klassen in y: ['1' '2']
+Klassenverteilung: (array([0, 1], dtype=int64), array([5289, 5289], dtype=int64))
+Klassenverteilung:
+Class
+0    5289
+1    5289
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 16.8329s
+Durchlauf 2 Dauer: 14.6053s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.74730573, 0.7461713 ]]
+
+Test-Accuracy (M ± SD): 0.7467 ± 0.0008
+CV-Accuracy (M ± SD): 0.7348 ± 0.0004
+Laufzeit (M ± SD): 15.7191s ± 1.5752s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Bioresponse.csv ===
+Klassen in y: ['0' '1']
+Klassenverteilung: (array([0, 1], dtype=int64), array([1717, 1717], dtype=int64))
+Klassenverteilung:
+target
+0    1717
+1    1717
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 185.4178s
+Durchlauf 2 Dauer: 199.3836s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.68034934, 0.67161572]]
+
+Test-Accuracy (M ± SD): 0.6760 ± 0.0062
+CV-Accuracy (M ± SD): 0.6461 ± 0.0167
+Laufzeit (M ± SD): 192.4007s ± 9.8753s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\california.csv ===
+Klassen in y: [0 1]
+Klassenverteilung: (array([0, 1], dtype=int64), array([10317, 10317], dtype=int64))
+Klassenverteilung:
+price_above_median
+0    10317
+1    10317
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 28.7306s
+Durchlauf 2 Dauer: 63.3569s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.72346612, 0.73233498]]
+
+Test-Accuracy (M ± SD): 0.7279 ± 0.0063
+CV-Accuracy (M ± SD): 0.7513 ± 0.0225
+Laufzeit (M ± SD): 46.0437s ± 24.4845s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\credit.csv ===
+Klassen in y: [0 1]
+Klassenverteilung: (array([0, 1], dtype=int64), array([8357, 8357], dtype=int64))
+Klassenverteilung:
+SeriousDlqin2yrs
+0    8357
+1    8357
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 21.4575s
+Durchlauf 2 Dauer: 28.9478s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.65865039, 0.66690596]]
+
+Test-Accuracy (M ± SD): 0.6628 ± 0.0058
+CV-Accuracy (M ± SD): 0.7087 ± 0.0208
+Laufzeit (M ± SD): 25.2027s ± 5.2965s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\default-of-credit-card-clients.csv ===
+Klassen in y: [0 1]
+Klassenverteilung: (array([0, 1], dtype=int64), array([6636, 6636], dtype=int64))
+Klassenverteilung:
+y
+0    6636
+1    6636
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 24.0929s
+Durchlauf 2 Dauer: 21.8477s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.64918626, 0.69439421]]
+
+Test-Accuracy (M ± SD): 0.6718 ± 0.0320
+CV-Accuracy (M ± SD): 0.6664 ± 0.0028
+Laufzeit (M ± SD): 22.9703s ± 1.5876s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\Diabetes130US.csv ===
+Klassen in y: [0 1]
+Klassenverteilung: (array([0, 1], dtype=int64), array([35545, 35545], dtype=int64))
+Klassenverteilung:
+readmitted
+0    35545
+1    35545
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 169.7742s
+Durchlauf 2 Dauer: 171.9147s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.53922437, 0.55770773]]
+
+Test-Accuracy (M ± SD): 0.5485 ± 0.0131
+CV-Accuracy (M ± SD): 0.5299 ± 0.0043
+Laufzeit (M ± SD): 170.8445s ± 1.5136s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\electricity.csv ===
+Klassen in y: ['DOWN' 'UP']
+Klassenverteilung: (array([0, 1], dtype=int64), array([19237, 19237], dtype=int64))
+Klassenverteilung:
+class
+0    19237
+1    19237
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 191.3974s
+Durchlauf 2 Dauer: 114.0293s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.75204678, 0.7148538 ]]
+
+Test-Accuracy (M ± SD): 0.7335 ± 0.0263
+CV-Accuracy (M ± SD): 0.7153 ± 0.0070
+Laufzeit (M ± SD): 152.7134s ± 54.7075s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\eye_movements.csv ===
+Klassen in y: [0 1]
+Klassenverteilung: (array([0, 1], dtype=int64), array([3804, 3804], dtype=int64))
+Klassenverteilung:
+label
+0    3804
+1    3804
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 6.6712s
+Durchlauf 2 Dauer: 7.2191s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.50197161, 0.5090694 ]]
+
+Test-Accuracy (M ± SD): 0.5055 ± 0.0050
+CV-Accuracy (M ± SD): 0.5036 ± 0.0052
+Laufzeit (M ± SD): 6.9452s ± 0.3874s
+
+=== Verarbeite Datensatz: ml_praktikum_jagoetz_wkathari\dataset\clf_num\heloc.csv ===
+Klassen in y: [0 1]
+Klassenverteilung: (array([0, 1], dtype=int64), array([5000, 5000], dtype=int64))
+Klassenverteilung:
+RiskPerformance
+0    5000
+1    5000
+Name: count, dtype: int64
+Durchlauf 1 Dauer: 21.1796s
+Durchlauf 2 Dauer: 21.0225s
+
+Matrix mit den 15 Test-Accuracies:
+[[0.65296941, 0.68956209]]
+
+Test-Accuracy (M ± SD): 0.6713 ± 0.0259
+CV-Accuracy (M ± SD): 0.6436 ± 0.0277
+Laufzeit (M ± SD): 21.1011s ± 0.1111s
